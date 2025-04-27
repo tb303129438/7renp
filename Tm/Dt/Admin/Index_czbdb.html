@@ -1,0 +1,143 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Dt/lib/treeview/jquery.treeview.css"/>
+<script type="text/javascript" src="__PUBLIC__/Dt/lib/treeview/jquery.cookie.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/Dt/lib/treeview/jquery.treeview.js" ></script>
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <!--主要内容块-->
+    <div class="main">
+        <div class="table-responsive table_box">
+            <div>
+                <ul class="nav nav-tabs">
+                    <li class="">
+                        <a href="/Admin/index/cz" >充值推广积分</a>
+                    </li>
+                    <li class="">
+                        <a href="/Admin/index/czbdb">充值报单币</a>
+                    </li>
+                </ul>
+                
+            </div>
+            <h3>报单币充值----</h3>
+            <div class="panel-footer">
+                <!--<div class="sousuo">-->
+                    <!--<div class="input-group col-sm-5">-->
+                        <!--<span class="input-group-addon">关键字</span>-->
+                        <!--<input type="text" class="form-control" placeholder="Username">-->
+							  <!--<span class="input-group-btn">-->
+					            <!--<button class="btn btn-default" type="button">搜索</button>-->
+					          <!--</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<span >推广积分余额￥{$res.integral1}</span>-->
+			<form action="/Admin/index/doczbdb" method="post">
+                <div class="tree_box">
+                            {$str}
+                        <li>
+							<h4>充值的用户</h4>
+							<div>
+								<input type="text" value="" id="name" name="name" placeholder="请输入账号编码">
+									*请核对用户名
+									<span onkeyup="check_name">({$apq.realname})</span>
+							</div>
+						</li>
+						<li>
+							<h4>充值积分</h4>
+							<div class="">
+								<input type="text" value="" id="czbdb" name="czbdb" placeholder="请输入你要充值的积分">
+							</div>
+						<li>
+							<h4>密码</h4>
+							<div>
+								<input type="text" value="" id="paypassword" name="paypassword" placeholder="请输入你的交易密码">
+							</div>
+						</li>
+						<li>
+							<div class="but_box">
+						  		<button type="submit" class="but" id="alertBtn" onclick="return Check();">提交</button>
+						  	</div>
+						</li>
+                </div>
+                
+                
+                
+			</form>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+</div>
+
+
+
+<include file="./Tm/Dt/Admin/Foot.html" />
+<script type="text/javascript" src="__PUBLIC__/Dt/lib/bootstrap/js/jquery.min.js" ></script>
+<script>
+	
+	function Check()
+{
+ 	if ($.trim($('#name').val()) == '')
+    {
+        alert('请输入账号！');
+        $('#name').focus();
+        return false;
+    }
+    
+    if ($.trim($('#czbdb').val()) == '')
+    {
+        alert('请先输入积分！');
+        $('#czbdb').focus();
+        return false;
+    }
+    if ($.trim($('#paypassword').val()) == '')
+    {
+        alert('交易密码不能为空！');
+        $('#paypassword').focus();
+        return false;
+    }
+    save();
+    return false;
+}
+
+
+//var save=function()
+//{
+//
+//
+//  var czbdb,paypassword;
+//  czbdb=$.trim($('#czbdb').val());
+//  paypassword=$.trim($('#paypassword').val());
+// 
+// $.ajax({
+//      type: "POST",
+//      url: "/admin/index/doczbdb",
+//      data: {'czbdb':czbdb,'paypassword':paypassword},
+////      async:false,
+//      //dataType: "json",
+//      success: function(data){
+//          if(data==1)
+//          {
+//              alert('充值成功！');
+//              location.href='/Admin/index/czbdb.html';
+//          }
+//          if(data==2)
+//          {
+//              alert('填写的会员帐号有误,请核查！');
+//              $('#username').focus();
+//              return false;
+//          }
+//          
+//      }
+//  })
+//}
+
+</script>

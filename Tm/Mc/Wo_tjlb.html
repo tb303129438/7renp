@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
+		<meta name="format-detection" content="telephone=no">
+		<title>汽车分销平台</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/iconfont/iconfont.css"/>
+		<script type="text/javascript" src="__PUBLIC__/Mc/libs/jQuery/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Mc/home/js/jxmc.js" ></script>
+	</head>
+	<body>
+		<include file="./Tm/Mc/Left.html" />
+		
+		<div class="zgb"></div>
+		<div class="nav_btn"><i class="icon iconfont icon-daohang"></i></div>
+		<div class="mobile_contai">
+			<div class="topbar">
+				推荐列表
+			</div>
+			<div class="contai_main">
+				<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.min.js" ></script>
+				<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/mui/css/mui.picker.min.css"/>
+				
+				<div class="selct_box">
+				</div>
+				
+				<div class="tjlb_box">
+					<div class="list_box">
+						<!--<div class="tjlb">
+							<div class="tjlb_title">
+								<div class="text_l">&nbsp;</div>
+								<div class="text_r">推荐人数：<span>{$rrt}</span></div>
+							</div>
+							
+							
+							
+							<div class="tjlb_foot">
+								<div class="text_l"></div>
+								<div class="text_r"></div>
+							</div>
+						</div>-->
+						<div class="mui-text-right ahref"></div>
+						
+			
+			<div class="date_select marB_10">
+						<div class="date_select_box">
+							<span class="icon iconfont icon-rili"></span>
+							<input type="text" placeholder="请输入会员帐号" name="name" id="name">
+							<button><i class="icon iconfont icon-fangdajing btn" onclick="showUser()"></i></button>
+						</div>
+				</div>
+				<div id="showUserBtn"></div>
+    			<div class="contai_area bg_hui">
+    				<div class="table_box">
+	    				<table class="table text_c" style="width: 190%;">
+	    					<tr>
+	    						<td>会员帐户</td>
+	    						<td>会员姓名</td>
+	    						<td>手机号码</td>
+	    						<td>分盘轮数</td>
+	    						<td>分盘详情</td>
+	    						<td>资格所属</td>
+	    						<td>注册日期</td>
+	    					</tr>
+	    					<foreach name="rqt" item="vo">
+		    					<tr>
+		    						<td>{$vo.username}</td>
+		    						<td>{$vo.realname}</td>
+		    						<td>{$vo.mobile}</td>
+		    						<td>{$vo.rounds}</td>
+		    						<td><a href="/home/wo/wtjg/id/{$vo.id}" style="color: #00A1CB;">详情</a></td>
+		    						<td><a href="/pc/wo/wtjg?id={$vo[ss]}" style="color: brown;">{$vo.number1}</a></td>
+		    						<td>{$vo.createtime|date='Y-m-d H:i:s',###}</td>
+		    					</tr>
+		    				</foreach>
+	    				</table>
+    				</div>
+    			</div>
+				
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.picker.min.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/Mc/home/js/date.js" ></script>
+</html>
+<script>
+		function showUser(){
+	var name = $("#name").val();
+	$.ajax({
+		url:"{:U('showUs')}",
+		data:{'name':name},
+		dataType:'json',
+//		async:false,
+		type:'post',
+		success:function(data){
+			if(data.status==0){
+				$("#showUserBtn").html("<font color='red'>您输入的用户不存在</font>");
+			}else if(data.status==1){
+				$("#showUserBtn").html("<font color='green'>"+'真实姓名：'+data.realname+'<br/>'+'联系电话：'+data.mobile+"</font>");
+			}
+		}
+	});
+}
+</script>

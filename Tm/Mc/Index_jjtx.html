@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="/Public/Mc/lib/mui/css/mui.min.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/lib/mui/css/mui.picker.min.css"/>
+	</head>
+	<script src="/Public/Mc/lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript" src="/Public/Mc/js/jquery-1.9.1.js" ></script>
+	<body>
+		<header class="mui-bar mui-bar-nav bg_hs">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">积分提现</h1>
+		</header>
+		<div class="m_contai">
+			<div class="mui-content p_top">
+				<ul class="bdzx_box">
+					<form action="/Home/index/dojjtx" method="post">
+						<style type="text/css">
+							h4{
+								font-weight: normal;
+								margin-bottom: 6px;
+								font-size: 16px;
+							}
+							.bdzx_box{
+								background: #fff;
+							}
+							/*.slect{
+								    line-height: 21px;
+								    height: 40px;
+								    margin-bottom: 15px;
+								    padding: 10px 15px;
+								    -webkit-user-select: text;
+								    border: 1px solid rgba(0,0,0,.2)!important;
+								    border-radius: 3px;
+								    outline: 0;
+								    background-color: #fff;
+								    -webkit-appearance: none;
+								    font-size: 16px;
+							}*/
+						</style>
+						推广积分余额： ￥{$zj.integral1}
+						<li style="margin-bottom: 10px;">
+							<h4>提现积分</h4>
+							<div class="">
+								<input type="text" value="" placeholder="请输入你要提现的积分" name="price" id="price">
+							</div>
+							<p style="margin-top: -15px;font-size: 12px;">提现积分需要是2000的倍数，否则无法提现成功</p>
+						</li>
+						<li style="margin-bottom: 10px;">
+							<h4>手机号码</h4>
+							<div class="">
+								<input type="text" value="" placeholder="请输入你的手机号码" name="phone" id="phone">
+							</div>
+						<li>
+							<input type="radio" id="alipay"  name="pay" value="0" checked="checked">支付宝&nbsp;&nbsp;
+
+							<input type="radio" id="bank"  name="pay" value="1">银行
+						</li>
+						<li class="pay0">
+							请在此处填写帐号<input type="text" id="alipay" name="alipay" value=""/>
+						</li>
+						
+						<li>
+							<h4>密码</h4>
+							<div>
+								<input type="password" value="" placeholder="请输入你的交易密码" name="password">
+							</div>
+						</li>
+						<li>
+							<div class="but_box">
+						  		<button type="submit" class="but" id="alertBtn">提交</button>
+						  	</div>
+						</li>
+					</form>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+<script type="text/javascript">
+/*
+<li>
+	请在此处填写帐号
+	<input type="text" id="tianxie" name="tianxie" value=""/>
+</li>
+<li>
+	请在此处填写银行
+	<input type="text" id="bankk" name="bankk" value=""/>
+</li>
+<li>
+	请在此处填写银行地址
+	<input type="text" id="bankaddress" name="bankaddress" value=""/>
+</li>
+<li>
+	请在此处填写银行账号
+	<input type="text" id="banknumber" name="banknumber" value=""/>
+</li>
+*/	
+$(function(){
+	$("#alipay").change(function(){
+		if($(this).is(":checked")==true){
+			if($(".pay0").length<=0){
+				$(".pay1").each(function(k,v){
+					$(v).remove();
+				});
+				$(this).parent().after('<li class="pay0">请在此处填写帐号<input type="text" id="alipay" name="alipay" value=""/></li>');
+			}
+		}
+	});
+
+	$("#bank").change(function(){
+		if($(this).is(":checked")==true){
+			if($(".pay1").length<=0){
+				$(".pay0").remove();
+				$(this).parent().after('<li class="pay1">请在此处填写帐号<input type="text" id="zhanghao" name="zhanghao" value=""/></li><li class="pay1">请在此处填写银行<input type="text" id="bank" name="bank" value=""/></li><li class="pay1">请在此处填写银行地址<input type="text" id="bankaddress" name="bankaddress" value=""/></li><li class="pay1"></li>');
+			}
+		}
+	});
+
+
+})
+</script>
+</html>

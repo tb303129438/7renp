@@ -1,0 +1,221 @@
+[ 2024-05-01T09:47:40+08:00 ] 121.199.160.57 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Undefined index: adminname C:\wwwroot\h5.mingdeshandong.cn\App\Common\Controller\AdminController.class.php 第 26 行.
+
+[ 2024-05-01T09:48:58+08:00 ] 121.199.160.57 /admin/images/no.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2024-05-01T09:49:24+08:00 ] 121.199.160.57 /admin/images/ajax_loader.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+
+[ 2024-05-01T09:49:26+08:00 ] 121.199.160.57 /admin/images/go_back.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2024-05-01T09:49:26+08:00 ] 121.199.160.57 /admin/js/codemirror/css/csscolors.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Js
+
+[ 2024-05-01T09:49:31+08:00 ] 121.199.160.57 /admin/kindeditor/plugins/emoticons/52.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2024-05-01T09:51:47+08:00 ] 121.199.160.57 /admin/images/bg_menu.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2024-05-01T09:52:33+08:00 ] 121.199.160.57 /admin/templates/met/images/2.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2024-05-01T09:53:50+08:00 ] 121.199.160.57 /admin/image/login.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Image
+
+[ 2024-05-01T09:53:51+08:00 ] 121.199.160.57 /admin/image/attention.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2024-05-01T09:53:53+08:00 ] 121.199.160.57 /admin/image/bar.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+
+[ 2024-05-01T09:54:53+08:00 ] 121.199.160.57 /admin/Images/del.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2024-05-01T09:56:14+08:00 ] 121.199.160.57 /admin/info/system?wt=json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Info
+
+[ 2024-05-01T09:56:44+08:00 ] 121.199.160.57 /admin/Admin_top.asp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Admin_top.asp
+
+[ 2024-05-01T09:56:46+08:00 ] 121.199.160.57 /admin/images/2_13.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+
+[ 2024-05-01T09:56:47+08:00 ] 121.199.160.57 /admin/images/close.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+
+[ 2024-05-01T09:56:48+08:00 ] 121.199.160.57 /admin/images/g.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+
+[ 2024-05-01T20:15:55+08:00 ] 18.246.213.172 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2024-05-01T22:54:27+08:00 ] 120.225.9.85 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Undefined index: adminname C:\wwwroot\h5.mingdeshandong.cn\App\Common\Controller\AdminController.class.php 第 26 行.
+
+[ 2024-05-01T22:54:31+08:00 ] 120.225.9.85 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2024-05-01T22:54:40+08:00 ] 120.225.9.85 /Admin/login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `tm_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tm_admin` WHERE ( adminname='admin' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\PasswordHash::__construct(), called in C:\wwwroot\h5.mingdeshandong.cn\App\Admin\Controller\LoginController.class.php on line 202 and defined C:\wwwroot\h5.mingdeshandong.cn\Tp\Library\Think\PasswordHash.class.php 第 34 行.
+NOTIC: [2] Missing argument 2 for Think\PasswordHash::__construct(), called in C:\wwwroot\h5.mingdeshandong.cn\App\Admin\Controller\LoginController.class.php on line 202 and defined C:\wwwroot\h5.mingdeshandong.cn\Tp\Library\Think\PasswordHash.class.php 第 34 行.
+NOTIC: [8] Undefined variable: iteration_count_log2 C:\wwwroot\h5.mingdeshandong.cn\Tp\Library\Think\PasswordHash.class.php 第 38 行.
+NOTIC: [8] Undefined variable: portable_hashes C:\wwwroot\h5.mingdeshandong.cn\Tp\Library\Think\PasswordHash.class.php 第 42 行.
+
+[ 2024-05-01T22:54:40+08:00 ] 120.225.9.85 /admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0020s ]
+SQL: SELECT count(1) as total FROM `tm_user`  [ RunTime:0.0000s ]
+SQL: SELECT count(1) as total FROM `tm_user` WHERE ( status=1 )  [ RunTime:0.0000s ]
+SQL: SELECT count(1) as total FROM `tm_user` WHERE ( status=0 )  [ RunTime:0.0000s ]
+SQL: SELECT count(1) as total FROM `tm_user` WHERE ( createtime>1714492800 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_income` [ RunTime:0.0029s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( status=1 and gotegary=2 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_parameter` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tm_parameter` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( status=1 and gotegary=1 and createtime>1714492800 )  [ RunTime:0.0000s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( status=1 and gotegary=4 and createtime>1714492800 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2024-05-01T22:54:51+08:00 ] 120.225.9.85 /admin/index/member.html?t=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tm_user` WHERE ( 1=1 and tohelp=1 and status=1 and (number like "%%" or username like "%%" or mobile like "%%" or realname like "%%" ) ) ORDER BY  id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: select count(*) as total from tm_user where 1=1 and tohelp=1 and status=1 and (number like "%%" or username like "%%" or mobile like "%%" or realname like "%%" ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_user`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\wwwroot\h5.mingdeshandong.cn\App\Runtime\Cache\Admin\3db4199aa2d7dfb9022e93b26d4fe403.php 第 357 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\wwwroot\h5.mingdeshandong.cn\App\Runtime\Cache\Admin\3db4199aa2d7dfb9022e93b26d4fe403.php 第 363 行.
+NOTIC: [8] Undefined index: tohelp C:\wwwroot\h5.mingdeshandong.cn\App\Runtime\Cache\Admin\3db4199aa2d7dfb9022e93b26d4fe403.php 第 434 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2024-05-01T22:55:26+08:00 ] 120.225.9.85 /admin/index/login?id=249
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+

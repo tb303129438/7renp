@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
+		<title>汽车分销平台</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/iconfont/iconfont.css"/>
+		<script type="text/javascript" src="__PUBLIC__/Mc/libs/jQuery/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Mc/js/jxmc.js" ></script>
+	</head>
+	<body>
+		<include file="./Tm/Mc/Left.html" />
+		<div class="zgb"></div>
+		<div class="nav_btn"><i class="icon iconfont icon-daohang"></i></div>
+		<div class="mobile_contai">
+			<div class="topbar">
+				<div class="top_title title1"></div>
+			</div>
+				<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.min.js" ></script>
+				<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/mui/css/mui.picker.min.css"/>
+				<div class="tab_box">
+					<div class="tab_contai">
+						
+						
+						<div class="tab_contai_1">
+							
+							<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.min.js" ></script>
+							<div class="form_gruop_box">
+								<if condition="$aq.tohelp eq 0">
+									<div class="tsy_box" style="color: red;">
+										<span>注意：您的帐号类型为普通会员，注册的新用户需联系服务中心进行激活！</span>
+									</div>
+								</if>
+								<div class="contai_area bg_hui">
+									<form action="" method="post" id="formssss">
+										<div class="inp_box">
+											<p>会员帐号</p>
+											<input type="text" class="inp" placeholder="" id="username" name="username" value=""  />
+										</div>
+										<div class="inp_box">
+											<p>会员姓名</p>
+											<input type="text" class="inp" placeholder="" id="realname" name="realname" />
+										</div>
+										<div class="inp_box">
+											<p>手机号码</p>
+											<input type="text" class="inp" placeholder="" id="mobile" name="mobile" />
+										</div>
+										<div class="inp_box">
+											<p>身份证号</p>
+											<input type="text" class="inp" placeholder="" id="paper" name="paper" />
+										</div>
+										<if condition="$aq.tohelp eq 0">
+											<div class="inp_box">
+												<p>推荐会员</p>
+												<input type="text" class="inp" placeholder="" id="tusername" name="tusername" value="{$aq.username}" readonly="true"/>
+											</div>
+										<else />
+											<div class="inp_box">
+													<p>推荐会员</p>
+													<input type="text" class="inp" placeholder="" id="tusername" name="tusername"/>
+												</div>
+											</if>
+										<if condition="$aq.tohelp eq 0">
+											<div class="inp_box">
+												<p>报单中心</p>
+												<input type="text" class="inp" placeholder="" id="fwzx" name="fwzx"/>
+											</div>
+										</if>
+										<div class="inp_box">
+											<p>登录密码</p>
+											<input type="password" class="inp" placeholder="" id="password" name="password" value="111111"/><span style="color: brown;">注意：登录密码默认为111111</span>
+										</div>
+										<div class="inp_box">
+											<p>安全密码</p>
+											<input type="password" class="inp" placeholder="" id="paypassword" name="paypassword" value="222222" /><span style="color: brown;">注意：安全密码默认为222222</span>
+										</div>
+										<div class="inp_box">
+									  		<input type="checkbox" name="save" id="save" checked="checked" value="1">
+									  		<label>阅读并接受</label>
+									  		<a href="/Home/index/yhxy.html">《陌车用户协议》</a>
+									  	</div>
+										<div class="btn_box text_c" id='showCityPicker3'>
+									  		<button type="submit" class="but" onclick="return Check();">确认注册</button>		<!-- -->
+									  	</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+		</div>
+	</body>
+	
+	<!--选择器js-->
+	<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.picker.min.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.poppicker.js" ></script>
+</html>
+<script type="text/javascript" src="/Public/Mc/home/js/add.js"></script>

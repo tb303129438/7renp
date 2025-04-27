@@ -1,0 +1,278 @@
+<div id="left" class="hidden-xs">
+    <div class="logo">
+        <h1>
+            <a href="#">
+                <img src="__PUBLIC__/Dt/image/admin-logo.jpg"/>
+            </a>
+        </h1>
+    </div>
+    <div class="time">
+        <div>
+            <span>0</span><span>6</span>:<span>2</span><span>6</span>:<span>1</span><span>2</span>
+        </div>
+    </div>
+    <div class="pc_nav clearfix">
+        <div class="pc_nav_box">
+            <ul>
+                <li <if condition="checknav('admin/index/index.html') eq 1 ">class="bg_color" </if>>
+                <span class="ico1"></span>
+                <a href="/admin/index/index.html">后台首页</a>
+                </li>
+
+
+                <li  <if condition="checknav('/password.html') eq 1 or checknav('/setting.html') eq 1 or checknav('/parameter.html') eq 1 or checknav('/deldir.html') eq 1 or checknav('admin/ad/index.html') eq 1">class="bg_color" </if> <if condition="power(1) eq 0"> style="display:none"</if>>
+                <span class="ico4"></span>
+                <a href="javascript:;">系统配置</a>
+                    <ul >
+
+                        <li  <if condition="power(8) eq 0"> style="display:none"</if>>
+                            <a href="/admin/index/password.html"  <if condition="checknav('/password.html') eq 1">class="fous"</if>>修改密码</a>
+                        </li>
+                       
+ 
+                        <!--<li <if condition="power(9) eq 0"> style="display:none"</if>>
+                            <a href="/admin/index/setting.html"  <if condition="checknav('/setting.html') eq 1">class="fous"</if>>开关设置</a>
+                        </li>-->
+
+
+                        <li >
+                            <a href="/admin/index/parameter.html" <if condition="checknav('/parameter.html') eq 1">class="fous"</if>>参数设置</a>
+                        </li>
+ 
+                        <li <if condition="power(9) eq 0"> style="display:none"</if>>
+                        <a href="/admin/index/deldir.html" <if condition="checknav('/deldir.html') eq 1">class="fous"</if>>清除缓存</a>
+                        </li>
+
+
+                        
+
+
+                    </ul>
+                </li>
+
+
+
+                <li <if condition="checknav('/adminadd.html') eq 1 or checknav('/adminedit.html') eq 1 or checknav('/admin.html') eq 1">class="bg_color" </if> <if condition="power(2) eq 0"> style="display:none"</if>>
+                    <span class="ico2"></span>
+                    <a href="javascript:;">管理员管理</a>
+                    <ul >
+
+                        <li <if condition="power(11) eq 0"> style="display:none"</if>>
+
+                            <a href="/admin/index/adminadd.html"  <if condition="checknav('/adminadd.html') eq 1">class="fous"</if>>添加管理员</a>
+                        </li>
+
+
+                        <li <if condition="power(12) eq 0"> style="display:none"</if>>
+                            <a href="/admin/index/admin.html" <if condition="checknav('/admin.html') eq 1 or checknav('/adminedit.html') eq 1">class="fous"</if>>管理员列表</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
+                <li <if condition="checknav('/user_add.html') eq 1 or checknav('/member.html') eq 1 or checknav('/team.html') eq 1 or checknav('/sqbd.html') eq 1 or checknav('/gcsq.html') eq 1">class="bg_color" </if> <if condition="power(3) eq 0"> style="display:none"</if>>
+                <span class="ico3"></span>
+                    <a href="javascript:;">会员管理中心</a>
+                    <ul >
+
+                      <!--   <li <if condition="power(13) eq 0"> style="display:none"</if>>
+
+                            <a href="/admin/index/user_add.html" <if condition="checknav('/user_add.html') eq 1">class="fous"</if>>新会员注册</a>
+                        </li>
+ -->
+
+                        <li <if condition="power(14) eq 0"> style="display:none"</if>>
+                        	<a href="/admin/index/member.html?t=3" <if condition="checknav('/member.html?t=3') eq 1 ">class="fous"</if>>未激活会员</a>
+                            <a href="/admin/index/member.html?t=1" <if condition="checknav('/member.html?t=1') eq 1 ">class="fous"</if>>已激活会员</a>
+                            <a href="/admin/index/member.html?t=2" <if condition="checknav('/member.html?t=2') eq 1">class="fous"</if>>服务中心</a>
+                        </li>
+                        <li <if condition="power(15) eq 0"> style="display:none"</if>>
+                            <a href="/admin/index/sqbd.html" <if condition="checknav('/sqbd.html') eq 1">class="fous"</if>>申请报单中心</a>
+                        </li>
+     					<li <if condition="power(16) eq 0"> style="display:none"</if>>
+                            <a href="/admin/index/gcsq.html" <if condition="checknav('/gcsq.html') eq 1">class="fous"</if>>购车申请审核</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+               
+
+
+
+                <li <if condition="checknav('admin/index/cz.html') eq 1 or checknav('admin/index/txjl.html') eq 1  or checknav('admin/index/jjjl.html') eq 1">class="bg_color" </if> <if condition="power(5) eq 0"> style="display:none"</if>>
+                <span class="ico5"></span>
+                    <a href="javascript:;">财务管理</a>
+                    <ul >
+                        <li <if condition="power(15) eq 0"> style="display:none"</if>>
+                            <a href="/admin/index/cz.html" <if condition="checknav('/cz.html') eq 1">class="fous"</if>>充值</a>
+                        </li>
+                        <li>
+                            <a href="/admin/index/txjl.html"  <if condition="checknav('admin/index/txjl.html') eq 1">class="fous"</if>>提现记录</a>
+                        </li>
+                        <li>
+                            <a href="/admin/index/jjjl.html"  <if condition="checknav('admin/index/jjjl.html') eq 1">class="fous"</if>>积分记录</a>
+                        </li>
+                    </ul>
+                </li>
+
+               <!--  <li <if condition="checknav('/product_add.html') eq 1 or checknav('/product_edit.html') eq 1 or checknav('/product.html') eq 1 or checknav('admin/cotegary/index.html') eq 1 or checknav('admin/index/order.html') eq 1">class="bg_color" </if> <if condition="power(6) eq 0"> style="display:none"</if>>
+                <span class="ico6"></span>
+                    <a href="javascript:;">产品管理</a>
+                    <ul >
+                      <li  <if condition="power(27) eq 0"> style="display:none"</if>>
+                            <a href="/admin/cotegary/index.html" <if condition="checknav('admin/cotegary/index.html') eq 1">class="fous"</if>>产品分类</a>
+                        </li>
+                        <li  <if condition="power(27) eq 0"> style="display:none"</if>>
+                            <a href="/admin/index/product_add.html" <if condition="checknav('/product_add.html') eq 1">class="fous"</if>>添加产品</a>
+                        </li>
+                        <li <if condition="power(28) eq 0"> style="display:none"</if>>
+                            <a href="/admin/index/product.html" <if condition="checknav('/product_edit.html') eq 1 or checknav('/product.html') eq 1">class="fous"</if>>产品管理</a>
+                        </li>
+
+                       <!--  <li <if condition="power(28) eq 0"> style="display:none"</if>>
+                            <a href="/admin/index/order.html" <if condition="checknav('admin/index/order.html') eq 1 or checknav('admin/index/order.html') eq 1">class="fous"</if>>订单管理</a>
+                        </li> -->
+                        
+                        <!-- <li <if condition="power(28) eq 0"> style="display:none"</if>>
+                            <a href="/admin/index/models.html" <if condition="checknav('admin/index/models.html') eq 1 or checknav('admin/index/models.html') eq 1">class="fous"</if>>车型管理</a>
+                        </li> 
+
+                    </ul>
+                </li> -->
+
+
+                <li <if condition="checknav('/news.html') eq 1 or checknav('/news_add.html') eq 1 or checknav('/message.html') eq 1 ">class="bg_color" </if> <if condition="power(7) eq 0"> style="display:none"</if>>
+                    <span class="ico7"></span>
+                    <a href="javascript:;">交流中心</a>
+                    <ul >
+
+                        <!--<li <if condition="power(29) eq 0"> style="display:none"</if>><a href="/admin/index/news_add.html"  <if condition="checknav('/news_add.html') eq 1">class="fous"</if>>添加公告</a></li>-->
+
+                        <!--<li <if condition="power(30) eq 0"> style="display:none"</if>><a href="/admin/index/news.html"  <if condition="checknav('/news.html') eq 1">class="fous"</if>>网站公告</a></li>-->
+
+                        <li <if condition="power(30) eq 0"> style="display:none"</if>><a href="/admin/index/help_add.html"  <if condition="checknav('/help_add.html') eq 1">class="fous"</if>>添加公告</a></li>
+                        
+                        <li <if condition="power(30) eq 0"> style="display:none"</if>><a href="/admin/index/help.html"  <if condition="checknav('/help.html') eq 1">class="fous"</if>>公告列表</a></li>
+
+                            <li <if condition="power(31) eq 0"> style="display:none"</if>><a href="/admin/index/message.html"  <if condition="checknav('/message.html') eq 1">class="fous"</if>>留言反馈</a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+            <a href="/admin/index/logout.html" class="exit">
+               <img src="__PUBLIC__/Dt/image/exit.png"/>
+                安全退出
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--手机导航-->
+
+<div class="moblie_nav visible-xs-block">
+    <p class="moblie_nav_top clearfix">
+        <span class="glyphicon glyphicon-remove nav_close pull-right"></span>
+    </p>
+    <ul>
+        <li class="bg_color">
+            <a href="/admin/index/index.html">后台首页</a>
+        </li>
+
+
+        <li>
+            <a href="javascript:;">系统配置</a>
+            <ul style="display: none;">
+                <li >
+
+                    <a href="/admin/index/password.html" >修改密码</a>
+                </li>
+                <li>
+                    <a href="/admin/ad/index.html" >广告管理</a>
+                </li>
+                <!-- <li>
+                    <a href="/admin/index/parameter.html">积分参数设置</a>
+
+                </li> -->
+                <li>
+                    <a href="/admin/index/deldir.html" >清除缓存</a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="javascript:;">会员管理中心</a>
+            <ul style="display: none;">
+
+
+                   <li >
+                            <a href="/admin/index/member.html?t=3"  >未激活会员</a>
+                            <a href="/admin/index/member.html?t=1" >已激活会员</a>
+                            <a href="/admin/index/member.html?t=2"  >服务中心</a>
+                        </li>
+                        <li  >
+                            <a href="/admin/index/sqbd.html"  >申请报单中心</a>
+                        </li>
+                        <li  >
+                            <a href="/admin/index/gcsq.html" >购车申请审核</a>
+                        </li>
+
+                    
+
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;">财务管理</a>
+            <ul style="display: none;">
+                <!--  <li>
+                    <a href="/admin/index/xj.html" >用户积分钱包</a>
+                 </li>
+                 <li>
+                     <a href="/admin/index/gcjj.html" >销售奖钱包</a>
+                </li>
+                <li> -->
+                        <!-- <a href="/admin/index/team.html">推荐网络</a> -->
+                        <a href="/admin/index/cz.html" >充值</a>
+                    </li>
+                    <li>
+                        <a href="/admin/index/txjl.html" >提现记录</a>
+                    </li>
+                     <li>
+                        <a href="/admin/index/jjjl.html" >积分记录</a>
+                    </li>
+
+            </ul>
+        </li> 
+       <!--  <li>
+            <a href="javascript:;">产品管理</a>
+            <ul style="display: none;">
+                <li>
+                    <a href="/admin/cotegary/list.html">产品分类</a>
+                </li>
+                <li>
+                    <a href="/admin/index/product_add.html">添加产品</a>
+                </li>
+                <li>
+                    <a href="/admin/index/product.html">产品管理</a>
+                </li>
+
+                <!-- <li>
+                    <a href="/admin/index/order.html">订单管理</a>
+                </li> 
+
+            </ul>
+        </li> -->
+        <li>
+            <a href="javascript:;">交流中心</a>
+            <ul style="display: none;">
+                <!--<li><a href="/admin/index/news_add.html">添加公告</a></li>-->
+                <!--<li><a href="/admin/index/news.html">网站公告</a></li>-->
+                <li><a href="/admin/index/help_add.html">添加公告</a></li>
+                <li><a href="/admin/index/help.html" >公告列表</a></li>
+                <li><a href="/admin/index/message.html">留言反馈</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>

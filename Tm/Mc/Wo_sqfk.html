@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="/Public/Mc/lib/mui/css/mui.min.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/style.css"/>
+	</head>
+	<script src="/Public/Mc/lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+	<body>
+
+		<style>
+			.gg_box{
+				padding: 0 20px;
+			}
+			.gg_box h2{
+			    font-size: 18px;
+			    text-align: center;
+			    padding: 14px;
+			    font-weight: normal;
+			}
+			.gg_contai{
+				text-indent: 2em;
+			}
+			.gg_footer{
+				padding: 10px 0;
+			}
+			.gg_footer p{
+				overflow: hidden;
+				font-size: 14px;
+			}
+		</style>
+		<header class="mui-bar mui-bar-nav bg_hs">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">反馈消息</h1>
+		</header>
+		<div class="mui-content">
+			<div class="gg_box">
+				<div class="gg_contai">{$vo.content}</div>
+				<form action="/Home/wo/dosqfk" method="post">
+				<div class="gg_footer">
+					<label>标题：</label>
+                        <div>
+							<input type="text" id="title" name="title">
+						</div>
+					<label>内容：</label>
+                        <div>
+							<textarea rows="5" id="content" name="content" style="height:10%;"></textarea>
+                        </div>
+						<div style="float: right;">
+							<button type="submit" value="">提交</button>
+						</div>
+				</div>
+						</form>
+			</div>
+		</div>
+	</body>
+</html>

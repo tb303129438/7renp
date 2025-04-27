@@ -1,0 +1,61 @@
+<include file="./Tm/Dt/Top.html" />
+
+<include file="./Tm/Dt/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="tabbable" id="tabs-184023">
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a data-toggle="tab">在线留言</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="wxts2">
+                            <p><i class="glyphicon glyphicon-play"></i>&nbsp;温馨提示</p>
+                            <p class="borcent"></p>
+                            <h2>请认真填写您的留言。</h2>
+                        </div>
+                        <div class="tab-content bgcolor-d5e2eb pad20">
+                            <form action="/user/domessage.html" class="form-horizontal" method="post" id="myform" name="myform">
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label">标题：</label>
+                                    <div class="col-sm-4">
+								      <input type="text" class="form-control" id="title" name="title">
+								    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label">内容：</label>
+                                    <div class="col-sm-6">
+								      <textarea class="form-control" rows="5" id="content" name="content"></textarea>
+								    </div>
+                                </div>
+                                <div class="form-group">
+                                	<label class="col-sm-1 control-label"></label>
+                                	<div class="col-sm-6">
+                                    	<input type="submit" value="提交" onclick="return Check()" class="btn btn-default"/>
+                                   </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+<include file="./Tm/Dt/Foot.html" />
+<script src="__PUBLIC__/Dt/Home/user_message.js" type="text/javascript" charset="utf-8"></script>

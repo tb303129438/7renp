@@ -1,0 +1,702 @@
+[ 2024-04-16T12:02:08+08:00 ] 112.224.162.27 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+
+[ 2024-04-16T12:02:09+08:00 ] 112.224.162.27 /pc/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Undefined variable: code /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/e58151cd04ab4962bc61ad75b789d131.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2024-04-16T12:02:34+08:00 ] 112.224.162.27 /pc/index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='mj00001' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2024-04-16T12:02:35+08:00 ] 112.224.162.27 /pc/index/login?u=mj00001&v=jzvu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Undefined variable: code /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/e58151cd04ab4962bc61ad75b789d131.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2024-04-16T12:02:47+08:00 ] 112.224.162.27 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+
+[ 2024-04-16T12:02:47+08:00 ] 112.224.162.27 /pc/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Undefined variable: code /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/e58151cd04ab4962bc61ad75b789d131.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2024-04-16T12:03:21+08:00 ] 112.224.162.27 /pc/index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+
+[ 2024-04-16T12:03:26+08:00 ] 112.224.162.27 /pc/index/login?u=mj000001&v=2nsa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8] Undefined variable: code /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/e58151cd04ab4962bc61ad75b789d131.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2024-04-16T12:04:02+08:00 ] 112.224.162.27 /pc/index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='jm000001' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2024-04-16T12:04:10+08:00 ] 112.224.162.27 /pc/index/login?u=jm000001&v=5jbd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Undefined variable: code /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/e58151cd04ab4962bc61ad75b789d131.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2024-04-16T23:34:10+08:00 ] 39.71.190.130 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+
+[ 2024-04-16T23:34:10+08:00 ] 39.71.190.130 /pc/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined variable: code /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/e58151cd04ab4962bc61ad75b789d131.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2024-04-16T23:34:19+08:00 ] 39.71.190.130 /pc/index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2024-04-16T23:34:21+08:00 ] 39.71.190.130 /pc/index/login?u=admin&v=kkkv
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Undefined variable: code /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/e58151cd04ab4962bc61ad75b789d131.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2024-04-16T23:34:29+08:00 ] 39.71.190.130 /pc/index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2024-04-16T23:34:31+08:00 ] 39.71.190.130 /pc/index/login?u=admin&v=jnfm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Undefined variable: code /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/e58151cd04ab4962bc61ad75b789d131.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2024-04-16T23:34:38+08:00 ] 39.71.190.130 /pc/index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2024-04-16T23:34:39+08:00 ] 39.71.190.130 /pc/index/login?u=admin&v=2pm7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined variable: code /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/e58151cd04ab4962bc61ad75b789d131.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2024-04-16T23:35:05+08:00 ] 39.71.190.130 /pc/index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2024-04-16T23:35:07+08:00 ] 39.71.190.130 /pc/index/login?u=admin&v=xbyu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8] Undefined variable: code /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/e58151cd04ab4962bc61ad75b789d131.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2024-04-16T23:35:41+08:00 ] 39.71.190.130 /pc/index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2024-04-16T23:35:43+08:00 ] 39.71.190.130 /pc/index/login?u=admin&v=jwup
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Undefined variable: code /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/e58151cd04ab4962bc61ad75b789d131.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000308s ]
+
+[ 2024-04-16T23:37:28+08:00 ] 39.71.190.130 /pc/index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2024-04-16T23:37:30+08:00 ] 39.71.190.130 /pc/index/login?u=admin&v=6dj7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+NOTIC: [8] Undefined variable: code /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/e58151cd04ab4962bc61ad75b789d131.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2024-04-16T23:40:29+08:00 ] 39.71.190.130 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+
+[ 2024-04-16T23:40:29+08:00 ] 39.71.190.130 /pc/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Undefined variable: code /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/e58151cd04ab4962bc61ad75b789d131.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2024-04-16T23:40:39+08:00 ] 39.71.190.130 /pc/index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='MJ000001' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 1 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Pc/Controller/IndexController.class.php on line 476 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [2] Missing argument 2 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Pc/Controller/IndexController.class.php on line 476 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [8] Undefined variable: iteration_count_log2 /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 38 行.
+NOTIC: [8] Undefined variable: portable_hashes /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 42 行.
+
+[ 2024-04-16T23:40:41+08:00 ] 39.71.190.130 /pc/index/login?u=MJ000001&v=qwt5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Undefined variable: code /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/e58151cd04ab4962bc61ad75b789d131.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2024-04-16T23:40:50+08:00 ] 39.71.190.130 /pc/index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='MJ000001' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 1 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Pc/Controller/IndexController.class.php on line 476 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [2] Missing argument 2 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Pc/Controller/IndexController.class.php on line 476 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [8] Undefined variable: iteration_count_log2 /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 38 行.
+NOTIC: [8] Undefined variable: portable_hashes /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 42 行.
+
+[ 2024-04-16T23:40:50+08:00 ] 39.71.190.130 /pc/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 1 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Pc/Controller/IndexController.class.php on line 476 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [2] Missing argument 2 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Pc/Controller/IndexController.class.php on line 476 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [8] Undefined variable: iteration_count_log2 /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 38 行.
+NOTIC: [8] Undefined variable: portable_hashes /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 42 行.
+
+[ 2024-04-16T23:40:53+08:00 ] 39.71.190.130 /pc/wo/mmxg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2024-04-16T23:43:28+08:00 ] 39.71.190.130 /pc/wo/mmxg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2024-04-16T23:43:30+08:00 ] 39.71.190.130 /pc/wo/wtjg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='MJ000001' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tm_tree` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tm_tree` WHERE ( userid=249 and `out`=0 ) ORDER BY id desc LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_tree` WHERE ( (number=0 or number=0) and `out`=0 ) ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_tree` WHERE ( number=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=(select userid from tm_tree where number=2) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=(select userid from tm_tree where number=3) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=(select userid from tm_tree where number=4) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=(select userid from tm_tree where number=5) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=(select userid from tm_tree where number=6) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=(select userid from tm_tree where number=7) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: a01 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 168 行.
+NOTIC: [8] Undefined variable: a01 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 171 行.
+NOTIC: [8] Undefined variable: a11 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 193 行.
+NOTIC: [8] Undefined variable: a12 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 196 行.
+NOTIC: [8] Undefined variable: a21 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 217 行.
+NOTIC: [8] Undefined variable: a22 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 220 行.
+NOTIC: [8] Undefined variable: a31 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 244 行.
+NOTIC: [8] Undefined variable: a32 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 247 行.
+NOTIC: [8] Undefined variable: a41 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 268 行.
+NOTIC: [8] Undefined variable: a42 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 271 行.
+NOTIC: [8] Undefined variable: a51 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 294 行.
+NOTIC: [8] Undefined variable: a52 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 297 行.
+NOTIC: [8] Undefined variable: a61 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 318 行.
+NOTIC: [8] Undefined variable: a62 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2024-04-16T23:51:23+08:00 ] 39.71.190.130 /pc/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 1 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Pc/Controller/IndexController.class.php on line 476 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [2] Missing argument 2 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Pc/Controller/IndexController.class.php on line 476 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [8] Undefined variable: iteration_count_log2 /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 38 行.
+NOTIC: [8] Undefined variable: portable_hashes /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `tm_ad` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tm_ad` ORDER BY id asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tm_setting` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tm_setting` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tm_type` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tm_type` ORDER BY typeid desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tm_integral` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tm_integral` WHERE ( userid=249 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_integral` WHERE ( userid=249 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tm_income` [ RunTime:0.0004s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( userid=249 and status=1 and (gotegary=4 or gotegary=1) )  [ RunTime:0.0001s ]
+SQL: SELECT count(1) as total FROM `tm_type` WHERE ( 1713282683-createtime<24*3600 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tm_samsara` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tm_samsara` WHERE ( userid=249 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2024-04-16T23:51:34+08:00 ] 39.71.190.130 /pc/wo/tjlb.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tm_user` WHERE ( tusername='MJ000001' )  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tm_user` WHERE ( tusername='MJ000001' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: dv /www/wwwroot/che.xuanzeguiyuan.com/App/Pc/Controller/WoController.class.php 第 157 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pageurl /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 206 行.
+NOTIC: [8] Undefined variable: search /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 206 行.
+NOTIC: [8] Undefined variable: page /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 210 行.
+NOTIC: [8] Undefined variable: pageurl /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 212 行.
+NOTIC: [8] Undefined variable: page /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 212 行.
+NOTIC: [8] Undefined variable: search /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 212 行.
+NOTIC: [8] Undefined variable: count /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 214 行.
+NOTIC: [8] Undefined variable: count /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 214 行.
+NOTIC: [8] Undefined variable: count /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 230 行.
+NOTIC: [8] Undefined variable: page /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 230 行.
+NOTIC: [8] Undefined variable: pageurl /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 235 行.
+NOTIC: [8] Undefined variable: count /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 235 行.
+NOTIC: [8] Undefined variable: search /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 235 行.
+NOTIC: [8] Undefined variable: count /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 244 行.
+NOTIC: [8] Undefined variable: count /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 245 行.
+NOTIC: [8] Undefined variable: total /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 245 行.
+NOTIC: [8] Undefined variable: pageurl /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 277 行.
+NOTIC: [8] Undefined variable: search /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/46b5e30671442e2ccf8520b8c030d1e3.php 第 277 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000384s ]
+
+[ 2024-04-16T23:51:37+08:00 ] 39.71.190.130 /pc/wo/wtjg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='MJ000001' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tm_tree` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tm_tree` WHERE ( userid=249 and `out`=0 ) ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_tree` WHERE ( (number=0 or number=0) and `out`=0 ) ORDER BY id asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_tree` WHERE ( number=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=(select userid from tm_tree where number=2) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=(select userid from tm_tree where number=3) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=(select userid from tm_tree where number=4) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=(select userid from tm_tree where number=5) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=(select userid from tm_tree where number=6) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=(select userid from tm_tree where number=7) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: a01 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 168 行.
+NOTIC: [8] Undefined variable: a01 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 171 行.
+NOTIC: [8] Undefined variable: a11 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 193 行.
+NOTIC: [8] Undefined variable: a12 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 196 行.
+NOTIC: [8] Undefined variable: a21 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 217 行.
+NOTIC: [8] Undefined variable: a22 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 220 行.
+NOTIC: [8] Undefined variable: a31 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 244 行.
+NOTIC: [8] Undefined variable: a32 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 247 行.
+NOTIC: [8] Undefined variable: a41 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 268 行.
+NOTIC: [8] Undefined variable: a42 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 271 行.
+NOTIC: [8] Undefined variable: a51 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 294 行.
+NOTIC: [8] Undefined variable: a52 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 297 行.
+NOTIC: [8] Undefined variable: a61 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 318 行.
+NOTIC: [8] Undefined variable: a62 /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Pc/b575c13d851040c085ba7e0388e24534.php 第 321 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+

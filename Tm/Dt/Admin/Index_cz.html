@@ -1,0 +1,129 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Dt/lib/treeview/jquery.treeview.css"/>
+<script type="text/javascript" src="__PUBLIC__/Dt/lib/treeview/jquery.cookie.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/Dt/lib/treeview/jquery.treeview.js" ></script>
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="tabbable" id="tabs-184023">
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#panel-32409" data-toggle="tab">充值</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="wxts2">
+                            <p><i class="glyphicon glyphicon-play"></i>&nbsp;温馨提示</p>
+                            <p class="borcent"></p>
+                            
+                        </div>
+                        <div class="tab-content bgcolor-d5e2eb">
+                            <div class="tab-pane active">
+                                <div class="dlmm">
+                                    <form class="form-horizontal" role="form" action="/admin/index/docz" method="post">
+                                        <div class="form-group">
+                                            <label for="inputEmail3" class="col-sm-3 control-label">请输入充值账号</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="name" name="name" placeholder="输入充值账户" onblur="showUser()">
+                                            <div id="showUserBtn"></div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="inputPassword3" class="col-sm-3 control-label">请输入积分</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="czje" name="czje" placeholder="输入充值金额">
+                                            </div>
+                                        </div>
+                                         <div class="form-group">
+                                            <label for="inputPassword3" class="col-sm-3 control-label">请选择充值类型</label>
+                                            <div class="col-sm-9">
+                                               <input type="radio" name="chongzhi" id="xjb" value="1" checked="checked">推广积分
+                                               <input type="radio" name="chongzhi" id="bdb" value="3">注册积分
+                                                <input type="radio" name="chongzhi" id="gcjj" value="2">消费积分
+                                                </div>
+                                           
+                                        </div>
+                                        
+                                        <div class="form-group but-box">
+                                            <div class="col-sm-offset-3 col-sm-8">
+                                                <input type="submit" class="width-100" name="button1" id="button1" value="提交" onclick="return Check();" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<include file="./Tm/Dt/Admin/Foot.html" />
+<script type="text/javascript" src="__PUBLIC__/Dt/lib/bootstrap/js/jquery.min.js" ></script>
+<script>
+function showUser(){
+	var name = $("#name").val();
+	$.ajax({
+		url:"{:U('showUsers')}",
+		data:{'name':name},
+		dataType:'json',
+		//async:false,
+		type:'post',
+		success:function(data){
+			if(data.status==0){
+				$("#showUserBtn").html("<font color='red'>您输入的用户不存在</font>");
+			}else if(data.status==1){
+				$("#showUserBtn").html("<font color='green'>"+data.realname+"</font>");
+			}
+		}
+	});
+}	
+	
+	function Check()
+{
+    
+    if ($.trim($('#name').val()) == '')
+    {
+        alert('请先输入充值账户！');
+        $('#name').focus();
+        return false;
+    }
+    
+    if ($.trim($('#czje').val()) == '')
+    {
+        alert('请先输入积分！');
+        $('#czje').focus();
+        return false;
+    }
+    var reg =/^(?:[\+\-]?\d+(?:\.\d+)?)?$/;
+    if(!reg.test($.trim($('#czje').val())))
+    {
+        alert("积分输入有误，请重新输入！");
+        $('#czje').focus();
+        return false;
+    }
+    save();
+    return false;
+}
+
+
+</script>

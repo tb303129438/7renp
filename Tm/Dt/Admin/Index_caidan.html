@@ -1,0 +1,51 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+<!--顶部信息栏-->
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+        <div class="container-fluid">
+            <div class="wxts2">
+                <p><i class="glyphicon glyphicon-play"></i>&nbsp;温馨提示</p>
+                <p class="borcent"></p>
+                <h2>1、每次只能拆解一个订单为两个！</h2>
+            </div>
+            <div class="bz_box">
+                <form class="form-horizontal" role="form" id="form" method="post" action="/admin/index/docaidan">
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">总积分</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="total" name="total"  value="{$room.price}"  disabled >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">拆解积分</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="price" name="price"  placeholder="请输入拆解积分" >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-5">
+                            <input type="hidden" id="t" name="t" value="{$t}">
+                            <input type="hidden" id="o" name="o" value="{$o}">
+                            <input type="hidden" id="id" name="id" value="{$room.id}">
+                            <input type="submit" id="button" class="btn btn-default" onclick="return Check('{$room.price}')" value="提交">
+                            <input type="button" id="button1" class="btn btn-default" onclick="javascript:history.go(-1);" value="返回">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<include file="./Tm/Dt/Foot.html" />
+<script src="__PUBLIC__/Admin/js/caidan.js" type="text/javascript" charset="utf-8"></script>

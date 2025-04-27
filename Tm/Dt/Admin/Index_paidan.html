@@ -1,0 +1,66 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<!--顶部信息栏-->
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+        <div class="container-fluid">
+            <div class="wxts2">
+                <p><i class="glyphicon glyphicon-play"></i>&nbsp;温馨提示</p>
+                <p class="borcent"></p>
+                <h2>1、系统提示： 排单币用于排单，排单币不足时无法进行排单！</h2>
+            </div>
+            <div class="bz_box">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">充值账户</label>
+                        <div class="col-sm-5">
+                            <input type="text" id="username" name="username" class="form-control" value=""  placeholder="请输入充值帐户">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">充值类型</label>
+                        <div class="col-sm-5">
+                          <label><input type="radio"  name="gotegary" value="1" checked> 充值</label>　<label><input type="radio" name="gotegary" value="2"> 扣除</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">充值排单币</label>
+                        <div class="col-sm-5">
+                            <input type="email" class="form-control" id="yzje" name="yzje" placeholder="请输入充值排单币数量">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" id="price"  class="col-sm-2 control-label">快速选择</label>
+                        <div class="col-sm-6">
+                            <ul class="ksxz">
+                                <li><a href="javascript:;" class="border_jin">50<span class="sj"></span></a></li>
+                                <li><a href="javascript:;"><span></span>100</a></li>
+                                <li><a href="javascript:;"><span></span>500</a></li>
+                                <li><a href="javascript:;"><span></span>1000</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-5">
+                            <button type="button" id="button" class="btn btn-default" onclick="Check()">提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<include file="./Tm/Dt/Admin/Foot.html" />
+
+<script src="__PUBLIC__/Admin/js/paidan.js" type="text/javascript" charset="utf-8"></script>

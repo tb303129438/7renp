@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="widtd=device-widtd,initial-scale=1,minimum-scale=1" />
+		<meta name="format-detection" content="telephone=no">
+		<title>汽车分销平台</title>
+		
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/treeview/jquery.treeview.css"/>
+	
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/iconfont/iconfont.css"/>
+		<script type="text/javascript" src="__PUBLIC__/Mc/libs/jQuery/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Mc/js/jxmc.js" ></script>
+		
+		
+		<!--日期插件-->
+		<script type="text/javascript" src="__PUBLIC__/Mc/libs/datePicker/datePicker.js" ></script>
+		
+		
+	</head>
+	<body>
+		<include file="./Tm/Mc/Left.html" />
+		<div class="zgb"></div>
+		<div class="nav_btn"><i class="icon iconfont icon-daohang"></i></div>
+		
+		
+		
+		<div class="mobile_contai">
+			<div class="topbar">
+				报单列表
+			</div>
+			<div class="contai_main">
+				
+				<div class="date_select">
+					
+					
+				</div>
+				
+				
+				<script type="text/javascript" src="__PUBLIC__/Mc/libs/treeview/jquery.treeview.js" ></script>
+
+						
+				<!--<div class="tree_title">
+					<span class="icon iconfont icon-sanjiao"></span>
+					<span>字段表示：会员名+姓名+时间</span>
+				</div>
+				<div class="tree_box">
+					<div>
+					
+							<dl class="tree_gruop">
+								<dt class="tree_list man"><span>{$rjk.username}</span>&nbsp;,&nbsp;<span>{$rjk.realname}</span>，<span>{$rjk.createtime|date="Y-m-d",###}</span></dt>
+					                   		
+					                <dd class="next_chider">
+						                <dl class="tree_gruop">
+				   							<volist name="ck" id="vv">
+								            <dt class="tree_list man"><span>{$vv.username}&nbsp;</span>,&nbsp;<span>{$vv.realname}&nbsp;</span>,&nbsp;<span>{$vv.createtime|date="Y-m-d",###}&nbsp;</span></dt>
+								                  		
+				                			</volist>
+								        </dl> 
+				                  	</dd>
+				                </dl> 
+	                		
+        			</div>
+    			</div>-->
+    			<div class="date_select marB_10">
+					<form action="/home/wo/wtjg" method="post"> 
+						<div class="date_select_box">
+							<span class="icon iconfont icon-rili"></span>
+							<input type="text" placeholder="请输入会员帐号查询" name="name" id="name">
+							<button><i class="icon iconfont icon-fangdajing but"></i></button>
+						</div>
+					</form>
+				</div>
+
+    			<div class="contai_area bg_hui">
+    			<div class="date_select marB_10">
+				报单列表：(共{$number}条记录)
+				</div>
+    				<div class="table_box">
+	    				<table class="table text_c" style="width: 190%;">
+	    					<tr>
+	    						<td>会员帐号</td>
+								<td>姓名</td>
+								<td>分盘轮数</td>
+								<!--<td>所属资格</td>-->
+								<td>电话号码</td>
+								<td>时间</td>
+								<td>状态</td>
+								<td>操作</td>
+	    					</tr>
+	    					<volist name="jhm" id="vo">
+		    					<tr>
+		    						<td>{$vo.username}</td>
+		    						<td>{$vo.realname}</td>
+		    						<td>{$vo.rounds}</td>
+		    						<td>{$vo.mobile}</td>
+									<td>{$vo.createtime|date="Y-m-d H:i:s",###}</td>
+									<td>
+											<div>
+												<if condition="$vo.status eq 0 ">
+													<a class="caozuo_btn" style="color: indianred;">未激活</a>
+												<else />
+													<a class="caozuo_btn ck_btn" style="color: #00B7EE;">已激活</a>
+												</if>
+											</div>
+										</td>
+										<td>
+											<if condition="$vo.status eq 0 ">
+												<a href="/home/wo/delbduser?id={$vo.id}" onclick="return firm();" style="color: indianred;">删除</a>	
+											</if>
+										</td>
+		    					</tr>
+		    				</volist>
+	    				</table>
+    				</div>
+    			</div>
+			</div>
+			
+		</div>
+	</body>
+	
+	
+</html>
+<script>
+	   function firm() {  
+
+        //利用对话框返回的值 （true 或者 false）  
+        if (confirm("你确定删除吗？")) {  
+             
+        }else{
+        	return false;
+        }  
+
+    } 
+</script>

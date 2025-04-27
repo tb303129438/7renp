@@ -1,0 +1,171 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="tabbable" id="tabs-184023">
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#panel-32409" data-toggle="tab">注册新会员</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="wxts2">
+                            <p class="zhuyi">注意：凡是带<span style="color: red;">&nbsp;*&nbsp;</span>的为必填项！</p>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="panel-32409">
+                                <div class="xjzh">
+                                    <div class="container-fluid">
+                                        <form class="form-horizontal" role="form" method="post" action="">
+                                            <div class="row btred">
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" class="col-sm-3 control-label">会员类型<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <select name="lx" id="lx" class="form-control">
+                                                            <option value="1">注册报单中心</option>
+                                                            <option value="2">注册新会员</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" class="col-sm-3 control-label">会员帐号<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="username" name="username" placeholder="输入会员帐户">
+
+                                                    </div>
+                                                </div>
+                                                
+
+                                                <!-- <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">推荐人账户<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="tusername" name="tusername"  placeholder="输入推荐人账户" >
+                                                    </div>
+                                                </div> -->
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" class="col-sm-3 control-label">姓名<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="realname" name="realname" placeholder="输入姓名">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">身份证<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="paper" name="paper" placeholder="输入身份证">
+                                                    </div>
+                                                </div>
+                                                 <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">手机号码<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="mobile" name="mobile" placeholder="输入手机号码">
+                                                    </div>
+                                                </div> 
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">推荐人账户<span>&nbsp;</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="tusername" name="tusername"  placeholder="输入推荐人账户" >
+                                                    </div>
+                                                </div>
+                                                <div class="form-group" id="fwzxdiv" style="display:none">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">报单中心<span>&nbsp;</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="fwzx" name="fwzx"  placeholder="输入服务中心账户" >
+                                                    </div>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">开户姓名<span>&nbsp;</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="bankname" name="bankname" value="{$room.bankname}" placeholder="输入开户姓名">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">开户银行<span>&nbsp;</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="bank" name="bank" value="{$room.bank}" placeholder="输入开户银行">
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">银行账号<span>&nbsp;</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control"  id="bankcode" name="bankcode" value="{$room.bankcode}" placeholder="输入银行账号">
+
+
+                                                    </div>
+                                                </div>
+<!-- 
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">微信<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="weixin" name="weixin" placeholder="输入微信">
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">支付宝<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="alipay" name="alipay" placeholder="输入支付宝">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">收货地址<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="address" name="address" placeholder="输入收货地址">
+                                                    </div>
+                                                </div> -->
+
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">登录密码<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="password" class="form-control" id="password" name="password" value="111111" placeholder="默认密码111111">
+                                                        <p>默认密码111111</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">安全密码<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="password" class="form-control" id="paypassword" name="paypassword" value="222222" placeholder="默认密码222222">
+                                                        <p>默认密码222222</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="col-sm-4 col-sm-offset-2">
+                                                        <div class="but-box">
+                                                            <input type="submit" class="width-100" name="" id="" value="提交" onclick="return Check();"/>	
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--手机导航-->
+
+
+
+</div>
+
+
+<include file="./Tm/Dt/Admin/Foot.html" />
+<script src="__PUBLIC__/Admin/js/user_add.js" type="text/javascript" charset="utf-8"></script>

@@ -1,0 +1,299 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+<link href="__PUBLIC__/upload/css.css" rel="stylesheet" media="screen" type="text/css">
+<script src="__PUBLIC__/Ckeditor/ckeditor.js"></script>
+<script src="__PUBLIC__/Ckeditor/sample.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Dt/lib/jedate/jedate.min.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/upload/jquery.form.js"></script>
+<script type="text/javascript" src="__PUBLIC__/upload/upload.js"></script>
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="tabbable" id="tabs-184023">
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a data-toggle="tab">首页广告管理</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content bgcolor-d5e2eb pad20">
+                            <form action="/admin/ad/add.html" class="form-horizontal" method="post" id="myform" name="myform">
+                               
+                                
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">LOGO：</label>
+                                    <div class="col-sm-4">
+                                        <div id="pic0" class="imgcontent">
+                                            <div  class="btnimg">
+
+                                                <if condition="$room[0]['img'] eq ''">
+                                                    <img   src="/Public/upload/bg.jpg" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                    <else />
+                                                    <img   src="{$room[0].img}" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                </if>
+                                                <span class="btnspan" ></span>
+                                                <input id="fileupload0" type="file" name="mypic">
+
+                                                <div class="progress">
+                                                    <span class="bar"></span><span class="percent">0%</span >
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <input type="hidden" id="pic0url"  name="pic0url" value="{$room[0].img}" >
+                                        <div style="font-size:12px;padding-top:5px">
+				                                        上传图片大小不能超过200K<br>
+				                                        图片尺寸为（220x80）
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">链接：</label>
+                                    <div class="col-sm-4">
+                                      <input type="text" class="form-control" id="url0" name="url0" value="{$room[0].url}">
+                                    </div>
+                                </div>
+
+
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label">首页右上：</label>
+                                    <div class="col-sm-4">
+                                       <div id="pic1" class="imgcontent">
+                                            <div  class="btnimg">
+
+                                                <if condition="$room[1]['img'] eq ''">
+                                                    <img   src="/Public/upload/bg.jpg" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                    <else />
+                                                    <img   src="{$room[1].img}" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                </if>
+                                                <span class="btnspan" ></span>
+                                                <input id="fileupload1" type="file" name="mypic">
+
+                                                <div class="progress">
+                                                    <span class="bar"></span><span class="percent">0%</span >
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <input type="hidden" id="pic1url"  name="pic1url" value="{$room[1].img}" >
+                                        <div style="font-size:12px;padding-top:5px">
+                                        上传图片大小不能超过200K<br>
+                                        图片尺寸为（260x90）
+                                        </div>
+                                    </div>
+                                </div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label">链接：</label>
+                                    <div class="col-sm-4">
+                                      <input type="text" class="form-control" id="url1" name="url1" value="{$room[1].url}">
+                                    </div>
+                                </div>
+                              
+                               <div class="form-group">
+                                    <label class="col-sm-2 control-label">首页幻灯片一：</label>
+                                    <div class="col-sm-4">
+                                       <div id="pic2" class="imgcontent">
+                                            <div  class="btnimg">
+
+                                                <if condition="$room[2]['img'] eq ''">
+                                                    <img   src="/Public/upload/bg.jpg" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                    <else />
+                                                    <img   src="{$room[2].img}" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                </if>
+                                                <span class="btnspan" ></span>
+                                                <input id="fileupload2" type="file" name="mypic">
+
+                                                <div class="progress">
+                                                    <span class="bar"></span><span class="percent">0%</span >
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <input type="hidden" id="pic2url"  name="pic2url" value="{$room[2].img}" >
+                                         <div style="font-size:12px;padding-top:5px">
+                                        上传图片大小不能超过200K<br>
+                                        图片尺寸为（1200x430）
+                                        </div>
+                                    </div>
+                                </div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label">链接：</label>
+                                    <div class="col-sm-4">
+                                      <input type="text" class="form-control" id="url2" name="url2" value="{$room[2].url}">
+                                    </div>
+                                </div>
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">首页幻灯片二：</label>
+                                    <div class="col-sm-4">
+                                         <div id="pic3" class="imgcontent">
+                                            <div  class="btnimg">
+
+                                                <if condition="$room[3]['img'] eq ''">
+                                                    <img   src="/Public/upload/bg.jpg" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                    <else />
+                                                    <img   src="{$room[3].img}" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                </if>
+                                                <span class="btnspan" ></span>
+                                                <input id="fileupload3" type="file" name="mypic">
+
+                                                <div class="progress">
+                                                    <span class="bar"></span><span class="percent">0%</span >
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <input type="hidden" id="pic3url"  name="pic3url" value="{$room[3].img}" >
+                                         <div style="font-size:12px;padding-top:5px">
+                                        上传图片大小不能超过200K<br>
+                                        图片尺寸为（1200x430）
+                                        </div>
+                                    </div>
+                                </div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label">链接：</label>
+                                    <div class="col-sm-4">
+                                      <input type="text" class="form-control" id="url3" name="url3" value="{$room[3].url}">
+                                    </div>
+                                </div>
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">首页幻灯片三：</label>
+                                    <div class="col-sm-4">
+                                        <div id="pic4" class="imgcontent">
+                                            <div  class="btnimg">
+
+                                                <if condition="$room[4]['img'] eq ''">
+                                                    <img   src="/Public/upload/bg.jpg" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                    <else />
+                                                    <img   src="{$room[4].img}" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                </if>
+                                                <span class="btnspan" ></span>
+                                                <input id="fileupload4" type="file" name="mypic">
+
+                                                <div class="progress">
+                                                    <span class="bar"></span><span class="percent">0%</span >
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <input type="hidden" id="pic4url"  name="pic4url" value="{$room[4].img}" >
+                                         <div style="font-size:12px;padding-top:5px">
+                                        上传图片大小不能超过200K<br>
+                                        图片尺寸为（1200x430）
+                                        </div>
+                                    </div>
+                                </div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label">链接：</label>
+                                    <div class="col-sm-4">
+                                      <input type="text" class="form-control" id="url4" name="url4" value="{$room[4].url}">
+                                    </div>
+                                </div>
+
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">首页下方：</label>
+                                    <div class="col-sm-4">
+                                         <div id="pic5" class="imgcontent">
+                                            <div  class="btnimg">
+
+                                                <if condition="$room[5]['img'] eq ''">
+                                                    <img   src="/Public/upload/bg.jpg" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                    <else />
+                                                    <img   src="{$room[5].img}" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                </if>
+                                                <span class="btnspan" ></span>
+                                                <input id="fileupload5" type="file" name="mypic">
+
+                                                <div class="progress">
+                                                    <span class="bar"></span><span class="percent">0%</span >
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <input type="hidden" id="pic5url"  name="pic5url" value="{$room[5].img}" >
+                                         <div style="font-size:12px;padding-top:5px">
+                                        上传图片大小不能超过200K<br>
+                                        图片尺寸为（1200x80）
+                                        </div>
+                                    </div>
+                                </div>
+
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label">链接：</label>
+                                    <div class="col-sm-4">
+                                      <input type="text" class="form-control" id="url5" name="url5" value="{$room[5].url}">
+                                    </div>
+                                </div>
+
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">详情页右边：</label>
+                                    <div class="col-sm-4">
+                                      <div id="pic6" class="imgcontent">
+                                            <div  class="btnimg">
+
+                                                <if condition="$room[6]['img'] eq ''">
+                                                    <img   src="/Public/upload/bg.jpg" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                    <else />
+                                                    <img   src="{$room[6].img}" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                </if>
+                                                <span class="btnspan" ></span>
+                                                <input id="fileupload6" type="file" name="mypic">
+
+                                                <div class="progress">
+                                                    <span class="bar"></span><span class="percent">0%</span >
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <input type="hidden" id="pic6url"  name="pic6url" value="{$room[6].img}" >
+                                       <div style="font-size:12px;padding-top:5px">
+                                        上传图片大小不能超过200K<br>
+                                        图片尺寸为（210x150）
+                                        </div>
+                                    </div>
+                                </div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label">链接：</label>
+                                    <div class="col-sm-4">
+                                      <input type="text" class="form-control" id="url6" name="url6" value="{$room[6].url}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                	<label class="col-sm-2 control-label"></label>
+                                	<div class="col-sm-6">
+                                    	<input type="submit" value="提交"  class="btn btn-default"/>
+                                   </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+<script>
+    //initSample();
+    //var stem = CKEDITOR.instances.editor.getData();
+    //CKEDITOR.replace( 'editor' );
+   upload("pic0","fileupload0");
+   upload("pic1","fileupload1");
+   upload("pic2","fileupload2");
+   upload("pic3","fileupload3");
+   upload("pic4","fileupload4");
+   upload("pic5","fileupload5");
+   upload("pic6","fileupload6");
+</script>
+
+<include file="./Tm/Dt/Foot.html" />

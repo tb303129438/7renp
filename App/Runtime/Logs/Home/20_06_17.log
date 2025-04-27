@@ -1,0 +1,520 @@
+[ 2020-06-17T09:22:55+08:00 ] 47.57.79.175 /news.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: t D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 636 行.
+SQL: SHOW COLUMNS FROM `tm_news` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_news` WHERE ( 1=1 and (""="" or title like "%%") ) ORDER BY  id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: select count(*) as total from tm_news where 1=1 and (""="" or title like "%%") [ RunTime:0.0000s ]
+ERR: 模板不存在:./Tm/Mc/Index_news.html
+
+[ 2020-06-17T09:24:22+08:00 ] 47.57.79.175 /user.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T09:24:24+08:00 ] 47.57.79.175 /user/user.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T09:24:26+08:00 ] 47.57.79.175 /user.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T09:24:41+08:00 ] 47.57.79.175 /login.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: username D:\wwwroot\che.ruishengkj.net\App\Runtime\Cache\Home\023520e0553f6bdaf00bceb77e19a448.php 第 24 行.
+NOTIC: [8] Undefined variable: code D:\wwwroot\che.ruishengkj.net\App\Runtime\Cache\Home\023520e0553f6bdaf00bceb77e19a448.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-06-17T09:24:51+08:00 ] 47.57.79.175 /home.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tm_ad` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_ad` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_setting` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `tm_setting` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_type` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_type` ORDER BY typeid desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_cotegary` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=28 )  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=29 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=27 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=24 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=25 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=31 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=32 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=33 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_order` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_order` ORDER BY id desc LIMIT 12   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: t D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 96 行.
+NOTIC: [8] Undefined index: c1 D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 97 行.
+NOTIC: [8] Undefined index: c2 D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 98 行.
+NOTIC: [8] Undefined index: c3 D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `tm_product` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_product` WHERE ( 1=1 and (""="" or productname like "%%") ) ORDER BY  id desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: select count(*) as total from tm_product where 1=1 and (""="" or productname like "%%") [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_product` WHERE ( syqf=1 ) ORDER BY  id desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_product` WHERE ( syqf=2 ) ORDER BY  id desc LIMIT 6   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: username D:\wwwroot\che.ruishengkj.net\App\Runtime\Cache\Home\44ea56b2b89a107e1beb78635f4ccc31.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-06-17T09:27:07+08:00 ] 47.57.79.175 /user/user.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T09:27:12+08:00 ] 47.57.79.175 /user/user.tar.gz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T10:22:22+08:00 ] 47.57.79.175 /news.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: t D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 636 行.
+SQL: SHOW COLUMNS FROM `tm_news` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_news` WHERE ( 1=1 and (""="" or title like "%%") ) ORDER BY  id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: select count(*) as total from tm_news where 1=1 and (""="" or title like "%%") [ RunTime:0.0000s ]
+ERR: 模板不存在:./Tm/Mc/Index_news.html
+
+[ 2020-06-17T10:22:37+08:00 ] 47.57.79.175 /user.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T10:22:38+08:00 ] 47.57.79.175 /user/user.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T10:22:38+08:00 ] 47.57.79.175 /user.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T10:22:41+08:00 ] 47.57.79.175 /login.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: username D:\wwwroot\che.ruishengkj.net\App\Runtime\Cache\Home\023520e0553f6bdaf00bceb77e19a448.php 第 24 行.
+NOTIC: [8] Undefined variable: code D:\wwwroot\che.ruishengkj.net\App\Runtime\Cache\Home\023520e0553f6bdaf00bceb77e19a448.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-06-17T10:22:43+08:00 ] 47.57.79.175 /home.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tm_ad` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_ad` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_setting` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_setting` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_type` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `tm_type` ORDER BY typeid desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_cotegary` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=28 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=29 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=27 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=24 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=25 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=31 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=32 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=33 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_order` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_order` ORDER BY id desc LIMIT 12   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: t D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 96 行.
+NOTIC: [8] Undefined index: c1 D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 97 行.
+NOTIC: [8] Undefined index: c2 D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 98 行.
+NOTIC: [8] Undefined index: c3 D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `tm_product` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_product` WHERE ( 1=1 and (""="" or productname like "%%") ) ORDER BY  id desc LIMIT 0,12   [ RunTime:0.0156s ]
+SQL: select count(*) as total from tm_product where 1=1 and (""="" or productname like "%%") [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_product` WHERE ( syqf=1 ) ORDER BY  id desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_product` WHERE ( syqf=2 ) ORDER BY  id desc LIMIT 6   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: username D:\wwwroot\che.ruishengkj.net\App\Runtime\Cache\Home\44ea56b2b89a107e1beb78635f4ccc31.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-06-17T10:23:04+08:00 ] 47.57.79.175 /user/user.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T10:23:04+08:00 ] 47.57.79.175 /user/user.tar.gz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T22:28:23+08:00 ] 47.57.79.175 /news.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: t D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 636 行.
+SQL: SHOW COLUMNS FROM `tm_news` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_news` WHERE ( 1=1 and (""="" or title like "%%") ) ORDER BY  id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: select count(*) as total from tm_news where 1=1 and (""="" or title like "%%") [ RunTime:0.0000s ]
+ERR: 模板不存在:./Tm/Mc/Index_news.html
+
+[ 2020-06-17T22:29:29+08:00 ] 47.57.79.175 /user.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T22:29:31+08:00 ] 47.57.79.175 /user/user.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T22:29:33+08:00 ] 47.57.79.175 /user.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T22:29:43+08:00 ] 47.57.79.175 /login.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: username D:\wwwroot\che.ruishengkj.net\App\Runtime\Cache\Home\023520e0553f6bdaf00bceb77e19a448.php 第 24 行.
+NOTIC: [8] Undefined variable: code D:\wwwroot\che.ruishengkj.net\App\Runtime\Cache\Home\023520e0553f6bdaf00bceb77e19a448.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-06-17T22:29:52+08:00 ] 47.57.79.175 /home.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tm_ad` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_ad` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_setting` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_setting` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_type` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `tm_type` ORDER BY typeid desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_cotegary` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=28 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=29 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=27 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=24 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=25 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=31 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=32 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=33 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_order` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_order` ORDER BY id desc LIMIT 12   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: t D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 96 行.
+NOTIC: [8] Undefined index: c1 D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 97 行.
+NOTIC: [8] Undefined index: c2 D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 98 行.
+NOTIC: [8] Undefined index: c3 D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `tm_product` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `tm_product` WHERE ( 1=1 and (""="" or productname like "%%") ) ORDER BY  id desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: select count(*) as total from tm_product where 1=1 and (""="" or productname like "%%") [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_product` WHERE ( syqf=1 ) ORDER BY  id desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_product` WHERE ( syqf=2 ) ORDER BY  id desc LIMIT 6   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: username D:\wwwroot\che.ruishengkj.net\App\Runtime\Cache\Home\44ea56b2b89a107e1beb78635f4ccc31.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-06-17T22:31:51+08:00 ] 47.57.79.175 /user/user.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T22:31:55+08:00 ] 47.57.79.175 /user/user.tar.gz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T23:44:51+08:00 ] 47.57.79.175 /news.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: t D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 636 行.
+SQL: SHOW COLUMNS FROM `tm_news` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_news` WHERE ( 1=1 and (""="" or title like "%%") ) ORDER BY  id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: select count(*) as total from tm_news where 1=1 and (""="" or title like "%%") [ RunTime:0.0000s ]
+ERR: 模板不存在:./Tm/Mc/Index_news.html
+
+[ 2020-06-17T23:45:19+08:00 ] 47.57.79.175 /user.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T23:45:20+08:00 ] 47.57.79.175 /user/user.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T23:45:20+08:00 ] 47.57.79.175 /user.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T23:45:25+08:00 ] 47.57.79.175 /login.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015631s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: username D:\wwwroot\che.ruishengkj.net\App\Runtime\Cache\Home\023520e0553f6bdaf00bceb77e19a448.php 第 24 行.
+NOTIC: [8] Undefined variable: code D:\wwwroot\che.ruishengkj.net\App\Runtime\Cache\Home\023520e0553f6bdaf00bceb77e19a448.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-06-17T23:45:27+08:00 ] 47.57.79.175 /home.rar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tm_ad` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_ad` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_setting` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `tm_setting` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_type` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_type` ORDER BY typeid desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_cotegary` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=28 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=29 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=26 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=27 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=24 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=25 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=30 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=31 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=32 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_cotegary` WHERE ( parentid=33 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_order` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_order` ORDER BY id desc LIMIT 12   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: t D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 96 行.
+NOTIC: [8] Undefined index: c1 D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 97 行.
+NOTIC: [8] Undefined index: c2 D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 98 行.
+NOTIC: [8] Undefined index: c3 D:\wwwroot\che.ruishengkj.net\App\Home\Controller\IndexController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `tm_product` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_product` WHERE ( 1=1 and (""="" or productname like "%%") ) ORDER BY  id desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: select count(*) as total from tm_product where 1=1 and (""="" or productname like "%%") [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_product` WHERE ( syqf=1 ) ORDER BY  id desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tm_product` WHERE ( syqf=2 ) ORDER BY  id desc LIMIT 6   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: username D:\wwwroot\che.ruishengkj.net\App\Runtime\Cache\Home\44ea56b2b89a107e1beb78635f4ccc31.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-06-17T23:46:05+08:00 ] 47.57.79.175 /user/user.zip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+
+[ 2020-06-17T23:46:06+08:00 ] 47.57.79.175 /user/user.tar.gz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: adminname D:\wwwroot\che.ruishengkj.net\App\Common\Controller\UserController.class.php 第 44 行.
+

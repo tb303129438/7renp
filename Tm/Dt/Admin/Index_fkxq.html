@@ -1,0 +1,106 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+<link href="__PUBLIC__/upload/css.css" rel="stylesheet" media="screen" type="text/css">
+
+<script type="text/javascript" src="__PUBLIC__/Dt/lib/jedate/jedate.min.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/upload/jquery.form.js"></script>
+<script type="text/javascript" src="__PUBLIC__/upload/upload.js"></script>
+
+<!--编辑器-->
+<script type="text/javascript" charset="utf8" src="__PUBLIC__/Ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf8" src="__PUBLIC__/Ueditor/ueditor.all.min.js"> </script>
+
+<style>
+	/*#mmy textarea{
+		margin: 0px;
+	    width: 192px;
+	    height: 119px
+	    resize : none;
+	}*/
+
+</style>
+ <script type="text/javascript" src="__PUBLIC__/P1/js/jquery.cityselect.js"></script>
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="tabbable" id="tabs-184023">
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a data-toggle="tab">添加产品</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content bgcolor-d5e2eb pad20">
+                            <div class="form-horizontal">
+                               
+                               <div class="form-group">
+                                    <label class="col-sm-2 control-label">标题：</label>
+                                    <div class="col-sm-4">
+								      <input type="text" class="form-control" id="productname" name="productname" value="{$bc.title}">
+								    </div>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">内容：</label>
+                                    <div class="col-sm-4" id="mmy">
+                                        <textarea name="" style="resize:none;width: 250px;height: 100px;">{$bc.content}</textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">留言者：</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="price" name="price" value="{$bc.username}">
+                                    </div>
+                                </div>
+
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">留言时间：</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="origin" name="origin" value="{$bc.createtime|date='Y-m-d H:i:s',###}">
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                            <div class="row">
+					            <div class="panel panel-default">
+					                <div class="panel-heading">
+					                    <h3 class="panel-title">快速回复</h3>
+					                </div>
+					                <div class="panel-body">
+					                    <form action="{:U('Index/hffkxq')}" method="post">
+					                    	<input type="hidden" name="id" value="{$bc.id}" />
+					                        <div class="form-group">
+					                            <div class="col-sm-12">
+					                                <textarea class="form-control" name="hfcontent" rows="3"></textarea>
+					                            </div>
+					                        </div>
+					                        <div class="form-group">
+					                            <div class="col-sm-offset-10 col-sm-2">
+					                                <button type="submit" class="btn btn-info">马上回复</button>
+					                            </div>
+					                        </div>
+					                    </form>
+					                </div>
+					            </div>
+        					</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<include file="./Tm/Dt/Foot.html" />
+<script src="__PUBLIC__/Admin/js/product_add.js" type="text/javascript" charset="utf-8"></script>

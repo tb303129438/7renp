@@ -1,0 +1,109 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+<link href="__PUBLIC__/upload/css.css" rel="stylesheet" media="screen" type="text/css">
+
+
+<script type="text/javascript" src="__PUBLIC__/Dt/lib/jedate/jedate.min.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/upload/jquery.form.js"></script>
+<script type="text/javascript" src="__PUBLIC__/upload/upload.js"></script>
+<script type="text/javascript" src="__PUBLIC__/P1/js/jquery.cityselect.js"></script>
+<!--编辑器-->
+<script type="text/javascript" charset="utf8" src="__PUBLIC__/Ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf8" src="__PUBLIC__/Ueditor/ueditor.all.min.js"> </script>
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="tabbable" id="tabs-184023">
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a data-toggle="tab">购车申请</a>
+                                </li>
+                            </ul>
+                        </div>
+						
+                        <div class="tab-content bgcolor-d5e2eb pad20">
+                            <form action="/admin/index/gcsqcx_edit" method='post' class="form-horizontal" id="myform" name="myform">
+                                
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">会员帐号：</label>
+                                    <div class="col-sm-4">
+								      <input type="text" class="form-control" id="username" name="username" value="{$date.username}" readonly="true" />
+								    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">真实姓名：</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="realname" name="realname" value="{$date.realname}" readonly="true"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">电话号码：</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="mobile" name="mobile" value="{$date.mobile}" readonly="true"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">所购车辆型号：</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="by" name="by" value="{$date.by}" readonly="true"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">提车时间：</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="time" name="time" value="{$date.time}" readonly="true"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">申请时间：</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="" name="" value="{$date.createtime|date='Y-m-d H:i:s',###}" readonly="true">
+                                    </div>
+                                </div>
+								<div class="form-group">
+                                    <label class="col-sm-2 control-label"></label>
+                                    <div class="col-sm-4" style="content: auto;">
+                                    	<input type="hidden" name="id" value="{$date.userid}" id="id"> 
+                                        <button type="submit"  id="hhh" name="hhh" value="">审核通过</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+<script>
+    //initSample();
+    //var stem = CKEDITOR.instances.editor.getData();
+   var ue = UE.getEditor('editor');
+   upload("img1","fileupload1");
+
+    $(function() {
+              
+                $("#city").citySelect({
+                url:eval({$str}),
+                prov:"{$vo.c1}",
+                city:"{$vo.c2}",
+                dist:"{$vo.c3}",
+                nodata:"none"
+            });
+
+              
+    });
+</script>
+
+<include file="./Tm/Dt/Foot.html" />
+<script src="__PUBLIC__/Admin/js/product_add.js" type="text/javascript" charset="utf-8"></script>

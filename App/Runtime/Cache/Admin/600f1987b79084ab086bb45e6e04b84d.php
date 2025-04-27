@@ -1,0 +1,129 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>后台管理系统登陆</title>
+    <link href="/Public/Dt/image/favicon.ico" rel="icon" type="image/x-icon"/>
+    <!--bootstrap-css-->
+    <link rel="stylesheet" type="text/css" href="/Public/Dt/lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/Public/Dt/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="/Public/Dt/css/login.css"/>
+    <!--[if lte IE 9]>
+    <script type="text/javascript" src="/Public/Dt/lib/html5shiv/html5shiv.min.js" ></script>
+    <script type="text/javascript" src="/Public/Dt/lib/html5shiv/html5shiv-printshiv.min.js" ></script>
+    <![endif]-->
+    <script type="text/javascript" src="/Public/Dt/js/jquery-1.9.1.min.js" ></script>
+
+
+    <script type="text/javascript" src="/Public/Dt/lib/bootstrap/js/bootstrap.min.js" ></script>
+</head>
+<body>
+<div class="login_logo">
+    <img src="/Public/Dt/image/LOGO.PNG"/>
+</div>
+
+
+<div class="login_box container">
+    <form action="/Admin/login/dologin" name='form' id='form' method='post' method="post">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <span class="sp_user"></span>
+                    <input type="text" class="form-control p_text" placeholder="输入账号" name="username" id="username" value="<?php echo ($username); ?>" >
+                </div>
+                <div class="form-group">
+                    <span class="sp_pasw"></span>
+                    <input type="password" class="form-control p_text" placeholder="输入密码" name="password" id="password" >
+                </div>
+               <!--  <div class="form-group">
+                    <span class="sp_yzm"></span>
+                    <input type="text" class="form-control p_text yzm" placeholder="手机验证码" name="mobile_code" id="mobile_code" value="">
+                    <div style="position: absolute;right: 15px;top: 0;">
+                        <input id="zphone" name="zphone" type="button" value=" 获取手机验证码 " onClick="get_mobile_code();" class="btn btn-danger">
+                    </div>
+                </div> -->
+                <div class="form-group">
+                    <span class="sp_yzm"></span>
+                    <input type="text" class="form-control p_text yzm" placeholder="输入验证码" name="verify" id="verify" value="<?php echo ($code); ?>">
+                    <p class="yzm_img" id="captcha-container"><img  width="120"  style="cursor: hand;margin-right:14px; cursor:pointer;"  height="50" alt="验证码" src="/Admin/login/verify" title="点击刷新"></p>
+                </div>
+               
+                <div class="">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block" value="登录" onclick="return checkuser();"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+    </form>
+</div>
+<div style="display: none;">
+  
+
+</div>
+</body>
+</html>
+<script type="text/javascript" src="/Public/Admin/js/login.js" ></script>
+<script>
+//获取手机验证码
+function get_mobile_code(){
+
+
+
+$.post('/Admin/Login/smslogin', {send_code:$('#mobile_code').val()}, function(msg) {
+//alert(jQuery.trim(unescape(msg)));
+
+if(msg==3)
+{
+alert('请求超时，请刷新页面后重试！');
+return;
+}
+
+    if(msg==7)
+    {
+        alert('发送失败！');
+        return;
+    }
+if(msg==4){
+alert('手机验证码已经发送，请注意查收！');
+RemainTime();
+}
+
+
+});
+};
+var iTime = 59;
+var Account;
+function RemainTime(){
+document.getElementById('zphone').disabled = true;
+var iSecond,sSecond="",sTime="";
+if (iTime >= 0){
+iSecond = parseInt(iTime%60);
+iMinute = parseInt(iTime/60)
+if (iSecond >= 0){
+if(iMinute>0){
+sSecond = iMinute + "分" + iSecond + "秒";
+}else{
+sSecond = iSecond + "秒";
+}
+}
+sTime=sSecond;
+if(iTime==0){
+clearTimeout(Account);
+sTime='获取手机验证码';
+iTime = 59;
+document.getElementById('zphone').disabled = false;
+}else{
+Account = setTimeout("RemainTime()",1000);
+iTime=iTime-1;
+}
+}else{
+sTime='没有倒计时';
+}
+document.getElementById('zphone').value = sTime;
+}
+
+</script>

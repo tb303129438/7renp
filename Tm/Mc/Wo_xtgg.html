@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
+		<title>汽车分销平台</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/iconfont/iconfont.css"/>
+		<script type="text/javascript" src="__PUBLIC__/Mc/libs/jQuery/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Mc/js/jxmc.js" ></script>
+	</head>
+	<body>
+		<include file="./Tm/Mc/left.html" />
+		<div class="zgb"></div>
+		<div class="nav_btn"><i class="icon iconfont icon-daohang"></i></div>
+		<div class="mobile_contai">
+			<div class="topbar">
+				系统公告
+			</div>
+				<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.min.js" ></script>
+				<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/mui/css/mui.picker.min.css"/>
+				
+				<div class="tab_box">
+					<!-- <ul class="tab_title text_c">
+						<li class="active">全部公告</li>
+					</ul> -->
+					<div class="tab_contai">
+						<div class="tab_contai_1">
+							<div class="contai_main">
+								<div class="tjlb_box">
+									<div class="list_box">
+										<volist name="res" id="vo">
+										<div class="tjlb">
+											<a href="/Home/wo/ggxq.html?typeid={$vo.typeid}">
+												<div class="tjlb_foot">
+													<div class="text_l">{$vo.typename}</div>
+													<div class="text_r">{$vo.createtime|date='Y-m-d H:i:s',###}</div>
+												</div>
+												
+											</a>
+										</div>
+										</volist>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+		</div>
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.picker.min.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/Mc/js/date.js" ></script>
+</html>

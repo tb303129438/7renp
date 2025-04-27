@@ -1,0 +1,38 @@
+@media (max-width: 970px) {
+	.contai{
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 10px;
+		overflow: hidden;
+	}
+	.hide{
+		display: none!important;
+	}
+	.show{
+		display: block!important;
+	}
+	.logo_img li{
+		margin: 0;
+		float: initial;
+	}
+	
+	.select_inp input[type="text"]{
+		width: 69%;
+	}
+	.select_inp input[type="submit"]{
+		width: 26%;
+	}
+	.m_l_float{
+		float: left!important;
+	}
+	.m_r_float{
+		float: right!important;
+	}
+	.sp_footer_box{
+		width: 100%;
+		margin: 0;
+	}
+	.list_title_fy{
+		width: 100%;
+	}
+}

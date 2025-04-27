@@ -1,0 +1,109 @@
+[ 2024-05-03T11:26:36+08:00 ] 39.82.245.247 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001954s ]
+
+[ 2024-05-03T11:26:48+08:00 ] 39.82.245.247 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: adminname C:\wwwroot\h5.mingdeshandong.cn\App\Common\Controller\AdminController.class.php 第 26 行.
+
+[ 2024-05-03T11:26:52+08:00 ] 39.82.245.247 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001954s ]
+
+[ 2024-05-03T11:27:02+08:00 ] 39.82.245.247 /Admin/login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tm_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tm_admin` WHERE ( adminname='admin' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\PasswordHash::__construct(), called in C:\wwwroot\h5.mingdeshandong.cn\App\Admin\Controller\LoginController.class.php on line 202 and defined C:\wwwroot\h5.mingdeshandong.cn\Tp\Library\Think\PasswordHash.class.php 第 34 行.
+NOTIC: [2] Missing argument 2 for Think\PasswordHash::__construct(), called in C:\wwwroot\h5.mingdeshandong.cn\App\Admin\Controller\LoginController.class.php on line 202 and defined C:\wwwroot\h5.mingdeshandong.cn\Tp\Library\Think\PasswordHash.class.php 第 34 行.
+NOTIC: [8] Undefined variable: iteration_count_log2 C:\wwwroot\h5.mingdeshandong.cn\Tp\Library\Think\PasswordHash.class.php 第 38 行.
+NOTIC: [8] Undefined variable: portable_hashes C:\wwwroot\h5.mingdeshandong.cn\Tp\Library\Think\PasswordHash.class.php 第 42 行.
+
+[ 2024-05-03T11:27:02+08:00 ] 39.82.245.247 /admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0029s ]
+SQL: SELECT count(1) as total FROM `tm_user`  [ RunTime:0.0000s ]
+SQL: SELECT count(1) as total FROM `tm_user` WHERE ( status=1 )  [ RunTime:0.0000s ]
+SQL: SELECT count(1) as total FROM `tm_user` WHERE ( status=0 )  [ RunTime:0.0010s ]
+SQL: SELECT count(1) as total FROM `tm_user` WHERE ( createtime>1714665600 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tm_income` [ RunTime:0.0020s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( status=1 and gotegary=2 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tm_parameter` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tm_parameter` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( status=1 and gotegary=1 and createtime>1714665600 )  [ RunTime:0.0000s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( status=1 and gotegary=4 and createtime>1714665600 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2024-05-03T11:27:12+08:00 ] 39.82.245.247 /admin/index/parameter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tm_parameter` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tm_parameter` ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2024-05-03T21:13:45+08:00 ] 35.162.143.122 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+

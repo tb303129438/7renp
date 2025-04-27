@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="/Public/Mc/lib/mui/css/mui.min.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/style.css"/>
+	</head>
+	<script src="/Public/Mc/lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+	<body>
+
+		<style>
+			.mui-control-content {
+				background-color: white;
+				min-height: 215px;
+			}
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar{
+				background: #FFA800!important;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+				color: #FFA800;
+			}
+			.mui-scroll{
+				position: initial;
+			}
+			.mui-table-view-cell:after {
+			    left: 0;
+			}
+		</style>
+		<header class="mui-bar mui-bar-nav bg_hs">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">{$product.productname}</h1>
+		</header>
+		<div>
+			<!-- <div class="gm_but">
+							<a href="/Home/index/tjdd.html?id={$product.id}">我要买车</a>
+			</div> -->
+			
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item  mui-active" href="#item1mobile">
+				车款详情
+			</a>
+					<a class="mui-control-item" href="#item2mobile">
+				参数配置
+			</a>
+					<a class="mui-control-item" href="#item3mobile">
+				常见问题
+			</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+
+						<div class="mui-scroll">
+							<div class="xq_img">
+								<img src="{$product.pic}"/>
+							</div>
+							<div class="p-10">
+								<div class="xq_cm">
+									<h4>{$product.productname}</h4>
+								</div>
+								<div class="xq_jg">
+									<!-- <del>官方指导价：{$product.price}万</del> -->
+									<span>陌车返利价：{$product.price}万</span>
+								</div>
+								<!-- <div class="xq_dj">
+									<span>定金<b>￥58000</b></span>
+									<i>需预约</i>
+									<i>售全国</i>
+								</div> -->
+							</div>
+						</div>
+						<div class="mui-scroll">
+							<div class="jbxx">
+						    	<p>
+						    		基本信息
+						    	</p>
+						    </div>
+						    <ul class="mui-table-view jbxx_box">
+								<li class="mui-table-view-cell flex">
+									<div class="mui-text-left">品牌</div>
+									<div class="mui-text-right">{$product.c1}</div>
+								</li>
+								<li class="mui-table-view-cell flex">
+									<div class="mui-text-left">型号</div>
+									<div class="mui-text-right">{$product.c2}</div>
+								</li>
+								<li class="mui-table-view-cell flex">
+									<div class="mui-text-left">出产地</div>
+									<div class="mui-text-right">{$product.origin}</div>
+								</li>
+							</ul>
+						</div>
+						{$product.content}
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll">
+							<div class="jbxx">
+						    	<p>
+						    		基本信息
+						    	</p>
+						    </div>
+						    <ul class="mui-table-view jbxx_box">
+								<li class="mui-table-view-cell flex">
+									<div class="mui-text-left">品牌</div>
+									<div class="mui-text-right">{$product.c1}</div>
+								</li>
+								<li class="mui-table-view-cell flex">
+									<div class="mui-text-left">型号</div>
+									<div class="mui-text-right">{$product.c2}</div>
+								</li>
+								<li class="mui-table-view-cell flex">
+									<div class="mui-text-left">出产地</div>
+									<div class="mui-text-right">{$product.origin}</div>
+								</li>
+								<li class="mui-table-view-cell flex">
+									<div class="mui-text-left">马力</div>
+									<div class="mui-text-right">{$product.horsepower}</div>
+								</li>
+								<li class="mui-table-view-cell flex">
+									<div class="mui-text-left">颜色</div>
+									<div class="mui-text-right">{$product.color}</div>
+								</li>
+								<li class="mui-table-view-cell flex">
+									<div class="mui-text-left">排量</div>
+									<div class="mui-text-right">{$product.pailiang}</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<p>问：购买后什么时候能提车，到哪里提？</p>
+									<p>答：购买好通过办理好手续就可以到云服务点提车。</p>
+								</li>
+								<li class="mui-table-view-cell">
+									<p>问：购买后什么时候能提车，到哪里提？</p>
+									<p>答：购买好通过办理好手续就可以到云服务点提车。</p>
+								</li>
+								<li class="mui-table-view-cell">
+									<p>问：购买后什么时候能提车，到哪里提？</p>
+									<p>答：购买好通过办理好手续就可以到云服务点提车。</p>
+								</li>
+								<li class="mui-table-view-cell">
+									<p>问：购买后什么时候能提车，到哪里提？</p>
+									<p>答：购买好通过办理好手续就可以到云服务点提车。</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			mui.init({
+				swipeBack: false
+			});
+		</script>
+
+	</body>
+</html>

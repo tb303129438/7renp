@@ -1,0 +1,197 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <script type="text/javascript" src="__PUBLIC__/Dt/lib/jedate/jedate.min.js" ></script>
+    <div class="main">
+
+
+        <div class="panel panel-primary">
+        	<div class="panel-heading">
+	        	<h3 class="panel-title">提供帮助列表</h3>
+	      	</div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table shijian" id="shijian">
+                        <tr>
+                            <th>订单号</th>
+                            <th>会员名</th>
+                            <th>姓名</th>
+                            <th>匹配人数</th>
+                            <th>积分</th>
+                            <th>剩余积分</th>
+                            <th>时间</th>
+                            <th>状态</th>
+                            <th></th>
+                        </tr>
+                        
+                        <volist name="tdata" id="vo">
+                        <tr id="tr{$vo.id}">
+                            <td>{$vo.orderid}</td>
+                            <td>{$vo.username}</td>
+                            <td>{$vo.realname}</td>
+                            <td>0</td>
+                            <td>{$vo.price}</td>
+                            <td>0</td>
+                            <td>
+                                {$vo.createtime|date="Y-m-d H:i:s",###}
+                            </td>
+                            <td>等待匹配</td>
+                            <td>
+                            	<a href="javascript:;">
+                            		<i class="glyphicon glyphicon-chevron-down"></i>
+                            	</a>
+                            </td>
+                        </tr>
+                            <tr id="trp{$vo.id}">
+                            	<td colspan="9">
+                            		<div>
+		                                <table  class="table">
+		                                    <tr><td colspan="10">匹配列表</td></tr>
+		                                    <tr>
+		                                        <th>选择</th>
+		                                        <th>订单号</th>
+		                                        <th>会员名</th>
+		                                        <th>姓名</th>
+		                                        <th>匹配人数</th>
+		                                        <th>积分</th>
+		                                        <th>剩余积分</th>
+		                                        <th>时间</th>
+		                                        <th>状态</th>
+		                                        <th>操作</th>
+
+		                                    </tr>
+		                                    <volist name="vo.sub" id="vo1">
+		                                        <tr>
+		                                            <td><input type="checkbox" name="T{$vo.id}" value="{$vo1.id}"checked></td>
+		                                            <td>{$vo1.orderid}</td>
+		                                            <td>{$vo1.username}</td>
+		                                            <td>{$vo1.realname}</td>
+		                                            <td>0</td>
+		                                            <td>{$vo1.price}</td>
+		                                            <td>0</td>
+		                                            <td>
+		                                                {$vo1.createtime|date="Y-m-d H:i:s",###}
+		                                            </td>
+		                                            <td></td>
+
+		                                        </tr>
+		
+
+		                                        <tr><td colspan="10"><input type="button" id="buttont{$vo.id}" name="buttont{$vo.id}" value="确定匹配" onclick="pipei('{$vo.id}')" > <input type="button" id="button2" name="button2" value="手动匹配"  onclick="caidan('{$vo.id}',1)" ></td></tr>                                    </volist>
+		                                </table>
+									</div>
+                            </td></tr>
+                        </volist>
+
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <div>
+        	<!--接收帮助列表-->
+         <div class="panel panel-primary">
+        	<div class="panel-heading">
+	        	<h3 class="panel-title">接受帮助列表</h3>
+	      	</div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table shijian">
+                        <tr>
+                            <tr>
+                            <th>订单号</th>
+                            <th>会员名</th>
+                            <th>姓名</th>
+                            <th>匹配人数</th>
+                            <th>积分</th>
+                            <th>剩余积分</th>
+                            <th>时间</th>
+                            <th>状态</th>
+                            <th></th>
+                        </tr>
+                        <volist name="gdata" id="vo">
+                            <tr>
+                                <td>{$vo.orderid}</td>
+                                <td>{$vo.username}</td>
+                                <td>{$vo.realname}</td>
+                                <td>{$vo.number}</td>
+                                <td>{$vo.price}</td>
+                                <td>{$vo.surplus}</td>
+                                <td>
+                                    {$vo.createtime|date="Y-m-d H:i:s",###}
+                                </td>
+                                <td>等待匹配</td>
+                                <td>
+	                            	<a href="javascript:;">
+	                            		<i class="glyphicon glyphicon-chevron-down"></i>
+	                            	</a>
+	                            </td>
+                            </tr>
+                            <tr id="grp{$vo.id}">
+                                <td colspan="9">
+                                    <div>
+                                        <table  class="table">
+                                            <tr><td colspan="10">匹配列表</td></tr>
+                                            <tr>
+                                                <th>选择</th>
+                                                <th>订单号</th>
+                                                <th>会员名</th>
+                                                <th>姓名</th>
+                                                <th>匹配人数</th>
+                                                <th>积分</th>
+                                                <th>剩余积分</th>
+                                                <th>时间</th>
+                                                <th>状态</th>
+                                                <th>操作</th>
+
+                                            </tr>
+                                            <volist name="vo.sub" id="vo1">
+                                                <tr>
+                                                    <td><input type="checkbox" name="T{$vo.id}" value="{$vo1.id}"checked></td>
+                                                    <td>{$vo1.orderid}</td>
+                                                    <td>{$vo1.username}</td>
+                                                    <td>{$vo1.realname}</td>
+                                                    <td>0</td>
+                                                    <td>{$vo1.price}</td>
+                                                    <td>0</td>
+                                                    <td>
+                                                        {$vo1.createtime|date="Y-m-d H:i:s",###}
+                                                    </td>
+                                                    <td></td>
+
+                                                </tr>
+
+
+                                                <tr><td colspan="10"><input type="button" id="buttong{$vo.id}" name="buttong{$vo.id}" value="确定匹配" onclick="pipeiget('{$vo.id}')" > <input type="button" id="button4" name="button4" value="手动匹配"  onclick="caidan('{$vo.id}',2)" ></td></tr>                                    </volist>
+                                        </table>
+                                    </div>
+                                </td></tr>
+                        </volist>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+						<script>
+							$(".shijian").find("a").click(function(){
+//								alert($("#shijian").find("a").length)
+								var zt = $(this).parent().parent().next().find("div").css("display")
+								if (zt == "none") {
+									$(this).parent().parent().next().find("div").slideDown().parent().css("padding","8");
+								} else{
+									$(this).parent().parent().next().find("div").slideUp().parent().css("padding","0");
+								}
+							})
+						</script>
+<include file="./Tm/Dt/Admin/Foot.html" />
+
+<script src="__PUBLIC__/Admin/js/pipei.js" type="text/javascript" charset="utf-8"></script>

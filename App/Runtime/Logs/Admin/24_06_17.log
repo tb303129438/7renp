@@ -1,0 +1,9 @@
+[ 2024-06-17T15:14:36+08:00 ] 38.45.123.38 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Undefined index: adminname C:\wwwroot\h5.mingdeshandong.cn\App\Common\Controller\AdminController.class.php 第 26 行.
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>汽车分销平台</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Pc/libs/bootstrap/css/bootstrap.min.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Pc/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Pc/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Pc/css/mobile.css"/>
+		
+		<script type="text/javascript" src="__PUBLIC__/Pc/libs/jq/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Pc/libs/bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Pc/home/js/jxmc.js" ></script>
+		
+		
+	</head>
+	<body>
+		<include file="./Tm/Pc/Left.html" />
+		
+		<div class="right_box">
+			
+			<include file="./Tm/Pc/Top.html" />
+			
+			<div class="right_main">
+				
+				<div class="main_title">
+					购车申请
+				</div>
+				
+				<div class="tsy_box">
+					<i class="tsy_ico"></i>注意：提交购车资料经审核后，方可进行提现
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="form_box">
+								<form action="/pc/wo/dogcsq" method="post">
+									
+									<div class="inp_row">
+										<p class="text_title">会员账号</p>
+										<p class="input_box"><input type="text" name="username" id="username" value="{$room.username}" placeholder="请输入会员帐号"/></p>
+									</div>
+									<div class="inp_row">
+										<p class="text_title">会员姓名</p>
+										<p class="input_box"><input type="text" name="realname" id="realname" value="{$room.realname}" placeholder="请输入真实姓名" /></p>
+									</div>
+									<div class="inp_row">
+										<p class="text_title">消费积分</p>
+										<p class="input_box"><input type="text" name="price" id="price"  placeholder="请输入消费积分" /></p>
+									</div>
+									<div class="inp_row">
+										<p class="text_title">所购车辆车型</p>
+										<p class="input_box"><input type="text" name="by" id="by" value="" placeholder="请输入所购车辆车型" /></p>
+									</div>
+									<div class="inp_row">
+										<p class="text_title">手机号码</p>
+										<p class="input_box"><input type="text" name="mobile" id="mobile" value="{$room.mobile}" placeholder="请输入手机号码" /></p>
+									</div>
+									<div class="inp_row">
+										<p class="text_title">提车日期</p>
+										<p class="input_box"><input type="text" name="time" id="time" value="" placeholder="请输入提车日期" /></p>
+									</div>
+									<div class="btn_box text_r">
+										<button type="submit" class="btn" onclick="return Check();">确认提交</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
+<script>
+
+	//修改密码
+	var Check=function()
+	{
+		if ($.trim($('#username').val()) == '')
+   	 	{
+	        alert('请先输入会员帐号！');
+	        $('#username').focus();
+	        return false;
+    	}
+    	if ($.trim($('#realname').val()) == '')
+   	 	{
+	        alert('请先输入真实姓名！');
+	        $('#realname').focus();
+	        return false;
+    	}
+   	 	if ($.trim($('#by').val()) == '')
+   	 	{
+	        alert('请先输入所购车辆车型！');
+	        $('#by').focus();
+	        return false;
+    	}
+    	if ($.trim($('#mobile').val()) == '')
+  		{
+	        alert('请先输入手机号码！');
+	        $('#mobile').focus();
+	        return false;
+    	}
+    	var reg = /^1(3|4|5|7|8)\d{9}$/;
+    	if(!reg.test($.trim($('#mobile').val())))
+    	{
+	        alert("手机号码格式不对！");
+	        $('#mobile').focus();
+	        return false;
+    	}
+    	if ($.trim($('#time').val()) == '')
+   	 	{
+	        alert('请先输入提车日期！');
+	        $('#time').focus();
+	        return false;
+    	}
+	save();
+    return false;
+}
+	
+
+
+</script>

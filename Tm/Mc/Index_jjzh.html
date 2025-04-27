@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="lib/mui/css/mui.min.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/mui/css/mui.picker.min.css"/>
+	</head>
+	<script src="lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
+	<body>
+		<header class="mui-bar mui-bar-nav bg_hs">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">积分转换</h1>
+		</header>
+		<div class="m_contai">
+			<div class="mui-content p_top">
+				<ul class="bdzx_box">
+					<form action="1.php">
+						<style type="text/css">
+							h4{
+								font-weight: normal;
+								margin-bottom: 6px;
+								font-size: 16px;
+							}
+							.bdzx_box{
+								background: #fff;
+							}
+							.slect{
+								    line-height: 21px;
+								    height: 40px;
+								    margin-bottom: 15px;
+								    padding: 10px 15px;
+								    -webkit-user-select: text;
+								    border: 1px solid rgba(0,0,0,.2)!important;
+								    border-radius: 3px;
+								    outline: 0;
+								    background-color: #fff;
+								    -webkit-appearance: none;
+								    font-size: 16px;
+							}
+						</style>
+						<li>
+							<h4>选择类型</h4>
+							<div class="">
+								<select class="mui-btn mui-btn-block slect">
+									<option value="item-1">请选择</option>
+									<option value="item-2">推广积分转报单币</option>
+									<option value="item-3">消费积分转推广积分(税费20%)</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<h4>账户余额</h4>
+							<div>
+								<input type="text" value="0" readonly>
+							</div>
+						</li>
+						<li>
+							<h4>转换积分</h4>
+							<div id='showCityPicker'>
+								<input type="text" id="cityResult">
+							</div>
+						</li>
+						<li>
+							<div class="but_box">
+						  		<button type="submit" class="but" id="alertBtn">提交</button>
+						  	</div>
+						</li>
+					</form>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

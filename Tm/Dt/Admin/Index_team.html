@@ -1,0 +1,60 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Dt/lib/treeview/jquery.treeview.css"/>
+<script type="text/javascript" src="__PUBLIC__/Dt/lib/treeview/jquery.cookie.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/Dt/lib/treeview/jquery.treeview.js" ></script>
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <!--主要内容块-->
+    <div class="main">
+        <div class="table-responsive table_box">
+            <div>
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#panel-32409" data-toggle="tab">推荐网络</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel-footer">
+                <!--<div class="sousuo">-->
+                    <!--<div class="input-group col-sm-5">-->
+                        <!--<span class="input-group-addon">关键字</span>-->
+                        <!--<input type="text" class="form-control" placeholder="Username">-->
+							  <!--<span class="input-group-btn">-->
+					            <!--<button class="btn btn-default" type="button">搜索</button>-->
+					          <!--</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="tree_box">
+
+                            {$str}
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#tree").treeview({
+            animated: "fast",
+            collapsed: false,
+            unique: false,
+            //persist: "cookie",
+//					toggle: function() {
+//						window.console && console.log("%o was toggled", this);
+//					}
+        });
+    </script>
+
+
+
+</div>
+
+
+
+<include file="./Tm/Dt/Admin/Foot.html" />
+

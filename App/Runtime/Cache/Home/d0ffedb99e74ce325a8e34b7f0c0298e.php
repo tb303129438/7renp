@@ -1,0 +1,43 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
+		<title>汽车分销平台</title>
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/libs/iconfont/iconfont.css"/>
+	</head>
+	<body>
+	<div class="login_bg"></div>
+		<div class="mobile_contai">
+			<div class="login_box">
+				<div class="logo_box">
+					<img src="/Public/Mc/image/logo.png"/>
+				</div>
+				<div class="form_box">
+					<h3 class="text_c">设置密码</h3>
+					<form action="/home/index/doszmm" method="post">
+						<div class="input_gruop">
+							<input type="text" name="username" placeholder="请输入新会员帐号" />
+						</div>
+						<div class="input_gruop">
+							
+							<input type="text" name="paper" placeholder="请输入身份证号码" />
+						</div>
+						<div class="input_gruop">
+							<input type="password" name="newpassword" placeholder="请输入新密码" />
+						</div>
+						<div class="input_gruop">
+							
+							<input type="password" name="newpassword" placeholder="再次输入新密码" />
+						</div>
+						<div class="btn_gruop">
+							<input class="btn" type="submit" name="" id="" value="修改密码" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

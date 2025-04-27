@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="__PUBLIC__/Mc/lib/mui/css/mui.min.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/lib/mui/css/mui.picker.min.css"/>
+	</head>
+	<script src="__PUBLIC__/Mc/lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Mc/js/jquery-1.9.1.js" ></script>
+	<body>
+		<header class="mui-bar mui-bar-nav bg_hs">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">转让</h1>
+		</header>
+		<div class="m_contai">
+			<div class="mui-content p_top">
+				<ul class="bdzx_box">
+					<form action="/Home/wo/dorecharge" method="post">
+						<style type="text/css">
+							h4{
+								font-weight: normal;
+								margin-bottom: 6px;
+								font-size: 16px;
+							}
+							.bdzx_box{
+								background: #fff;
+							}
+							/*.slect{
+								    line-height: 21px;
+								    height: 40px;
+								    margin-bottom: 15px;
+								    padding: 10px 15px;
+								    -webkit-user-select: text;
+								    border: 1px solid rgba(0,0,0,.2)!important;
+								    border-radius: 3px;
+								    outline: 0;
+								    background-color: #fff;
+								    -webkit-appearance: none;
+								    font-size: 16px;
+							}*/
+						</style>
+						<p>积分余额：{$recharge.integral1}</p>
+						<li style="margin-bottom: 10px;">
+							<select name="zzlx" id="zzlx" onchange="showBtn()">
+								<option value="0" checked="checked">请选择账户类型</option>
+								<option value="1">用户积分</option>
+							<if condition="$res.tohelp eq 1">
+								<option value="2">报单积分</option>
+							</if>
+								<option value="3">销售积分</option>
+							</select>
+						<li>
+						<li style="margin-bottom: 10px;">
+							<h4>请输入你要转让的积分</h4>
+							<div class="">
+								<input type="text" value="" placeholder="请输入你要转让的积分" id="recharge" name="recharge">
+							</div>
+						<li>
+						<li style="margin-bottom: 10px;">
+							<h4>请输入你要转让的用户</h4>
+							<div class="">
+								<input type="text" value="" placeholder="请输入你要转让的用户" id="name" name="name" onblur="showUser()">
+							</div>
+							<div id="showUserBtn"></div>
+						<li>
+							<div class="">
+								<label>
+									<input type="radio"  name="zz" id="xjb" value="1" checked="checked">用户积分&nbsp;&nbsp;
+								</label>
+	
+								
+									<label style="display:none">
+										<input type="radio"  name="zz" id="bdb" value="2">报单积分&nbsp;&nbsp;
+									</label>
+								
+								<label style="display:none">
+									<input type="radio"  name="zz" id="gcjj" value="3">销售积分&nbsp;&nbsp;
+								</label>
+							</div>
+						
+							<h4>安全密码</h4>
+							<div>
+								<input type="password" value="" placeholder="请输入你的安全密码" id="paypassword" name="paypassword">
+							</div>
+						</li>
+						<li>
+							<div class="but_box">
+						  		<button type="submit" class="but" id="alertBtn" onclick="return Check();">提交</button>
+						  	</div>
+						</li>
+					</form>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+function showUser(){
+	var name = $("#name").val();
+	$.ajax({
+		url:"{:U('showUsers')}",
+		data:{'name':name},
+		dataType:'json',
+//		async:false,
+		type:'post',
+		success:function(data){
+			if(data.status==0){
+				$("#showUserBtn").html("<font color='red'>您输入的用户不存在</font>");
+			}else if(data.status==1){
+				$("#showUserBtn").html("<font color='green'>"+data.realname+"</font>");
+			}
+		}
+	});
+}
+	 function Check()
+{
+	
+	 if ($.trim($('#recharge').val()) == '')
+	       {
+	           alert('请先输入积分！');
+	           $('#recharge').focus();
+	           return false;
+	       }
+	 
+     if ($.trim($('#name').val()) == '')
+       {
+           alert('请输入转让用户！');
+           $('#name').focus();
+           return false;
+       }
+
+
+     if ($.trim($('#paypassword').val()) == '')
+       {
+           alert('请输入交易密码！');
+           $('#paypassword').focus();
+           return false;
+       }
+ }
+
+function showBtn(){
+	if($("#zzlx").val()==1){
+		$("#xjb").parent().show();
+		$("#bdb").parent().show();
+		$("#gcjj").parent().hide();
+		$("#xjb").prop("checked",true);
+	}else if($("#zzlx").val()==2){
+		$("#xjb").parent().hide();
+		$("#bdb").parent().show();
+		$("#gcjj").parent().hide();
+		$("#bdb").prop("checked",true);
+	}else if($("#zzlx").val()==3){
+		$("#xjb").parent().show();
+		$("#bdb").parent().hide();
+		$("#gcjj").parent().show();
+		$("#gcjj").prop("checked",true);
+	}
+}
+
+</script>

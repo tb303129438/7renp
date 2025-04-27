@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="/Public/Mc/lib/mui/css/mui.min.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/style.css"/>
+	</head>
+	<script src="/Public/Mc/lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript" src="/Public/Mc/js/jquery-1.9.1.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/Mc/lib/bootstrap/js/jquery.min.js" ></script>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/iconfont/iconfont.css"/>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+	<body>
+		<header>
+		   <div class="nav_btn"><i class="icon iconfont icon-daohang"></i></div>
+		    <div class="topbar">
+				个人信息
+			</div>
+			<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.min.js" ></script>
+		</header>
+		<div class="m_contai">
+			<div class="main main_p_body">
+				<div class="form_box">
+					<form>
+					  	<style type="text/css">
+					  		.slect{
+							    line-height: 34px;
+							    height:34px;
+							    margin-bottom: 15px;
+							    padding: 0px 15px;
+							    -webkit-user-select: text;
+							    border: 1px solid rgba(0,0,0,.2)!important;
+							    border-radius: 3px;
+							    outline: 0;
+							    background-color: #fff;
+							    -webkit-appearance: none;
+							    font-size: 14px;
+							}
+					  	</style>
+						<div class="form-group">
+						    <label>真实姓名</label>
+						    <input type="text" class="form-control" value="" placeholder="请输入真实姓名" id="bankname">
+					  	</div>
+						<div class="form-group">
+						    <label>收款方式</label>
+						     <input type="text" class="form-control" value="" placeholder="请输入开户银行" id="bank">
+					  	</div>
+						<div class="form-group">
+						    <label>银行卡号</label>
+						    <input type="text" class="form-control" placeholder="请输入银行卡号" id="bankcode">
+					  	</div>
+						<div class="form-group">
+						    <label>开户地址</label>
+						    <input type="text" class="form-control" placeholder="请输入银行开户地址" id="bankaddress">
+					  	</div>
+						<div class="tsy">
+							<i class="icon iconfont icon-zhuyi"></i>
+							<span>请务必正确填写，确保你的提现尽快到账</span>
+						</div>
+					  	<div class="but_box">
+					  		<button type="button" class="but" onclick="Checkbank();">确认</button>
+					  	</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript" charset="UTF-8">
+function Checkbank()
+{
+    if ($.trim($('#bankname').val()) == '')
+    {
+        alert('请先输入开户姓名！');
+        $('#bankname').focus();
+        return false;
+
+    }
+    if ($.trim($('#bank').val()) == '1')
+    {
+        alert('请选择开户银行！');
+        $('#bank').focus();
+        return false;
+
+    }
+
+    if ($.trim($('#bankcode').val()) == '')
+    {
+        alert('请先输入银行帐号！');
+        $('#bankcode').focus();
+        return false;
+
+    }
+    var reg = /^[1-9][0-9]\d{14}|[1-9][0-9]\d{18}$/;
+    if(!reg.test($('#bankcode').val()))
+    {
+        alert("银行帐号格式不对！");
+        $('#bankcode').focus();
+        return false;
+    }
+if ($.trim($('#bankaddress').val()) == '')
+    {
+        alert('请输入开户地址！');
+        $('#bankaddress').focus();
+        return false;
+    }
+	save();
+    return false;
+}
+var save=function()
+{
+	
+    var bankname,bank,bankcode,bankaddress;
+    bankname=$.trim($('#bankname').val());
+    bank=$.trim($('#bank').val());
+    bankcode=$.trim($('#bankcode').val());
+    bankaddress=$.trim($('#bankaddress').val());
+
+
+    $.ajax({
+        type: "POST",
+        url: "/home/index/doyhxx",
+        data: {'bankname':bankname,'bank':bank,'bankcode':bankcode,'bankaddress':bankaddress},
+//      async:false,
+        //dataType: "json",
+        success: function(data){
+
+            if(data==1)
+            {
+                alert('已成功认证资料！');
+                location.href='/home/index/wo.html';
+            }else if(data==2){
+            	alert('提交资料失败，请联系客服！');
+            }
+
+
+        }
+    })
+    return false;
+}
+</script>

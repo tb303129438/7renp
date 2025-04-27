@@ -1,0 +1,802 @@
+[ 2024-04-16T12:02:09+08:00 ] 112.224.162.27 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2024-04-16T12:02:35+08:00 ] 112.224.162.27 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2024-04-16T12:02:47+08:00 ] 112.224.162.27 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2024-04-16T12:03:08+08:00 ] 112.224.162.27 /Admin/login/verify?0.3344011408309193
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2024-04-16T12:03:26+08:00 ] 112.224.162.27 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2024-04-16T12:04:10+08:00 ] 112.224.162.27 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2024-04-16T23:34:10+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2024-04-16T23:34:21+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2024-04-16T23:34:31+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2024-04-16T23:34:39+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2024-04-16T23:35:07+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2024-04-16T23:35:43+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2024-04-16T23:37:30+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2024-04-16T23:38:13+08:00 ] 39.71.190.130 /admin/index/password.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+NOTIC: [8] Undefined index: adminname /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/AdminController.class.php 第 26 行.
+
+[ 2024-04-16T23:38:15+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2024-04-16T23:38:28+08:00 ] 39.71.190.130 /Admin/login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `tm_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tm_admin` WHERE ( adminname='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 1 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [2] Missing argument 2 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [8] Undefined variable: iteration_count_log2 /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 38 行.
+NOTIC: [8] Undefined variable: portable_hashes /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 42 行.
+
+[ 2024-04-16T23:38:29+08:00 ] 39.71.190.130 /admin/login/index?u=admin&v=cs66
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [2] file_get_contents(http://sq.masmmm.net/api.php?host=che.xuanzeguiyuan.com): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000314s ]
+
+[ 2024-04-16T23:38:29+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2024-04-16T23:38:36+08:00 ] 39.71.190.130 /Admin/login/verify?0.6300136317722718
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2024-04-16T23:38:37+08:00 ] 39.71.190.130 /Admin/login/verify?0.11170726833259104
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2024-04-16T23:38:43+08:00 ] 39.71.190.130 /Admin/login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `tm_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tm_admin` WHERE ( adminname='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 1 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [2] Missing argument 2 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [8] Undefined variable: iteration_count_log2 /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 38 行.
+NOTIC: [8] Undefined variable: portable_hashes /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 42 行.
+
+[ 2024-04-16T23:38:44+08:00 ] 39.71.190.130 /admin/login/index?u=admin&v=dkur
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [2] file_get_contents(http://sq.masmmm.net/api.php?host=che.xuanzeguiyuan.com): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2024-04-16T23:38:44+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2024-04-16T23:38:57+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2024-04-16T23:39:16+08:00 ] 39.71.190.130 /Admin/login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `tm_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tm_admin` WHERE ( adminname='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 1 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [2] Missing argument 2 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [8] Undefined variable: iteration_count_log2 /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 38 行.
+NOTIC: [8] Undefined variable: portable_hashes /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 42 行.
+
+[ 2024-04-16T23:39:17+08:00 ] 39.71.190.130 /admin/login/index?u=admin&v=jkmf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [2] file_get_contents(http://sq.masmmm.net/api.php?host=che.xuanzeguiyuan.com): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2024-04-16T23:39:17+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2024-04-16T23:39:41+08:00 ] 39.71.190.130 /Admin/login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `tm_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tm_admin` WHERE ( adminname='MJ000001' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2024-04-16T23:39:42+08:00 ] 39.71.190.130 /admin/login/index?u=MJ000001&v=wlrn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [2] file_get_contents(http://sq.masmmm.net/api.php?host=che.xuanzeguiyuan.com): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2024-04-16T23:39:42+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2024-04-16T23:39:50+08:00 ] 39.71.190.130 /Admin/login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `tm_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tm_admin` WHERE ( adminname='MJ000001' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2024-04-16T23:39:51+08:00 ] 39.71.190.130 /admin/login/index?u=MJ000001&v=mfza
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [2] file_get_contents(http://sq.masmmm.net/api.php?host=che.xuanzeguiyuan.com): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2024-04-16T23:39:51+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2024-04-16T23:40:03+08:00 ] 39.71.190.130 /Admin/login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `tm_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tm_admin` WHERE ( adminname='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 1 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [2] Missing argument 2 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [8] Undefined variable: iteration_count_log2 /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 38 行.
+NOTIC: [8] Undefined variable: portable_hashes /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 42 行.
+
+[ 2024-04-16T23:40:05+08:00 ] 39.71.190.130 /admin/login/index?u=admin&v=5pet
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [2] file_get_contents(http://sq.masmmm.net/api.php?host=che.xuanzeguiyuan.com): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2024-04-16T23:40:05+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2024-04-16T23:40:17+08:00 ] 39.71.190.130 /Admin/login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `tm_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tm_admin` WHERE ( adminname='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 1 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [2] Missing argument 2 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [8] Undefined variable: iteration_count_log2 /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 38 行.
+NOTIC: [8] Undefined variable: portable_hashes /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 42 行.
+
+[ 2024-04-16T23:40:18+08:00 ] 39.71.190.130 /admin/login/index?u=admin&v=au7c
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [2] file_get_contents(http://sq.masmmm.net/api.php?host=che.xuanzeguiyuan.com): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2024-04-16T23:40:18+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2024-04-16T23:40:29+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2024-04-16T23:40:41+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2024-04-16T23:41:57+08:00 ] 39.71.190.130 /Admin/login/verify?0.002131908430951901
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2024-04-16T23:42:01+08:00 ] 39.71.190.130 /Admin/login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `tm_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tm_admin` WHERE ( adminname='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 1 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [2] Missing argument 2 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [8] Undefined variable: iteration_count_log2 /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 38 行.
+NOTIC: [8] Undefined variable: portable_hashes /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 42 行.
+
+[ 2024-04-16T23:42:03+08:00 ] 39.71.190.130 /admin/login/index?u=admin&v=anle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [2] file_get_contents(http://sq.masmmm.net/api.php?host=che.xuanzeguiyuan.com): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 7 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/che.xuanzeguiyuan.com/App/Common/Controller/MimiController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2024-04-16T23:42:03+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2024-04-16T23:42:55+08:00 ] 39.71.190.130 /Admin/login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `tm_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tm_admin` WHERE ( adminname='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 1 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [2] Missing argument 2 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [8] Undefined variable: iteration_count_log2 /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 38 行.
+NOTIC: [8] Undefined variable: portable_hashes /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 42 行.
+
+[ 2024-04-16T23:42:55+08:00 ] 39.71.190.130 /admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0007s ]
+SQL: SELECT count(1) as total FROM `tm_user`  [ RunTime:0.0001s ]
+SQL: SELECT count(1) as total FROM `tm_user` WHERE ( status=1 )  [ RunTime:0.0001s ]
+SQL: SELECT count(1) as total FROM `tm_user` WHERE ( status=0 )  [ RunTime:0.0001s ]
+SQL: SELECT count(1) as total FROM `tm_user` WHERE ( createtime>1713196800 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tm_income` [ RunTime:0.0004s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( status=1 and gotegary=2 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tm_parameter` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tm_parameter` ORDER BY id asc  [ RunTime:0.0002s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( status=1 and gotegary=1 and createtime>1713196800 )  [ RunTime:0.0001s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( status=1 and gotegary=4 and createtime>1713196800 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2024-04-16T23:51:09+08:00 ] 39.71.190.130 /admin/index/member.html?t=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tm_user` WHERE ( 1=1 and tohelp=0 and status=1 and (number like "%%" or username like "%%" or mobile like "%%" or realname like "%%" ) ) ORDER BY  id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: select count(*) as total from tm_user where 1=1 and tohelp=0 and status=1 and (number like "%%" or username like "%%" or mobile like "%%" or realname like "%%" ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Admin/3db4199aa2d7dfb9022e93b26d4fe403.php 第 357 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Admin/3db4199aa2d7dfb9022e93b26d4fe403.php 第 363 行.
+NOTIC: [8] Undefined index: tohelp /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Admin/3db4199aa2d7dfb9022e93b26d4fe403.php 第 434 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2024-04-16T23:51:11+08:00 ] 39.71.190.130 /admin/index/member.html?t=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tm_user` WHERE ( 1=1 and status=0 and (number like "%%" or username like "%%" or mobile like "%%" or realname like "%%" ) ) ORDER BY  id desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: select count(*) as total from tm_user where 1=1 and status=0 and (number like "%%" or username like "%%" or mobile like "%%" or realname like "%%" ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Admin/3db4199aa2d7dfb9022e93b26d4fe403.php 第 357 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Admin/3db4199aa2d7dfb9022e93b26d4fe403.php 第 363 行.
+NOTIC: [8] Undefined index: tohelp /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Admin/3db4199aa2d7dfb9022e93b26d4fe403.php 第 434 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2024-04-16T23:51:13+08:00 ] 39.71.190.130 /admin/index/member.html?t=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tm_user` WHERE ( 1=1 and tohelp=0 and status=1 and (number like "%%" or username like "%%" or mobile like "%%" or realname like "%%" ) ) ORDER BY  id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: select count(*) as total from tm_user where 1=1 and tohelp=0 and status=1 and (number like "%%" or username like "%%" or mobile like "%%" or realname like "%%" ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Admin/3db4199aa2d7dfb9022e93b26d4fe403.php 第 357 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Admin/3db4199aa2d7dfb9022e93b26d4fe403.php 第 363 行.
+NOTIC: [8] Undefined index: tohelp /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Admin/3db4199aa2d7dfb9022e93b26d4fe403.php 第 434 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2024-04-16T23:51:13+08:00 ] 39.71.190.130 /admin/index/member.html?t=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tm_user` WHERE ( 1=1 and tohelp=1 and status=1 and (number like "%%" or username like "%%" or mobile like "%%" or realname like "%%" ) ) ORDER BY  id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: select count(*) as total from tm_user where 1=1 and tohelp=1 and status=1 and (number like "%%" or username like "%%" or mobile like "%%" or realname like "%%" ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tm_user`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Admin/3db4199aa2d7dfb9022e93b26d4fe403.php 第 357 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Admin/3db4199aa2d7dfb9022e93b26d4fe403.php 第 363 行.
+NOTIC: [8] Undefined index: tohelp /www/wwwroot/che.xuanzeguiyuan.com/App/Runtime/Cache/Admin/3db4199aa2d7dfb9022e93b26d4fe403.php 第 434 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2024-04-16T23:51:23+08:00 ] 39.71.190.130 /admin/index/login?id=249
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tm_user` WHERE ( id=249 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2024-04-16T23:51:27+08:00 ] 39.71.190.130 /admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0007s ]
+SQL: SELECT count(1) as total FROM `tm_user`  [ RunTime:0.0001s ]
+SQL: SELECT count(1) as total FROM `tm_user` WHERE ( status=1 )  [ RunTime:0.0001s ]
+SQL: SELECT count(1) as total FROM `tm_user` WHERE ( status=0 )  [ RunTime:0.0001s ]
+SQL: SELECT count(1) as total FROM `tm_user` WHERE ( createtime>1713196800 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tm_income` [ RunTime:0.0004s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( status=1 and gotegary=2 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tm_parameter` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tm_parameter` ORDER BY id asc  [ RunTime:0.0002s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( status=1 and gotegary=1 and createtime>1713196800 )  [ RunTime:0.0002s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( status=1 and gotegary=4 and createtime>1713196800 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+

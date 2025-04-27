@@ -1,0 +1,155 @@
+<!doctype html>
+<style>
+	/*#c1{
+		width:80px;
+		float: left;
+	}*/
+	#city{
+		width:98%;
+	}
+	#city select{width: 30%;float: left;margin-left: 2.5%;}
+	#dist{
+		width:98%;
+	}
+	#dist select{width: 30%;float: left;margin-left: 2.5%;}
+</style>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="/Public/Mc/lib/mui/css/mui.min.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/style.css"/>
+		<script type="text/javascript" src="/Public/Mc/lib/bootstrap/js/jquery.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Mc/home/js/city.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/Mc/home/js/jquery.cityselect.js"></script>
+	</head>
+	<script src="/Public/Mc/lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+	<body>
+		<header class="mui-bar mui-bar-nav bg_hs">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">提交购车订单</h1>
+		</header>
+		
+		<div class="m_contai">
+			<div class="mui-content p_top">
+				<div class="tjxq-title mui-text-center">
+									</div>
+				<div class="list_box">
+					<ul>
+						<li class="list">
+							<div class="xxjs_box">
+								<div class="flex">
+									<div class="tjdd_img">
+										<img src="{$product.pic}"/>
+									</div>
+									<div class="tjdd_xx">
+										{$product.productname}
+										<p>陌车返现价：{$product.price}万</p>
+									</div>
+								</div>
+							</div>
+						</li>
+					<form action="/Home/index/dotjdd" method="post" id='form1'>
+						<li class="list">
+							<div class="xxjs_box">
+								<div class="zffs">
+									<p>支付方式</p>
+									<p>银行支付</p>
+								</div>
+							</div>
+						</li>
+						<p>购车城市：</p>
+						<!--<input type="text" name="city" id="city"/>-->
+						
+						
+						<div id="city"> 
+							<select class="prov" id="c1" name="c1"></select>  
+							<select class="city" disabled="disabled" name="c2"><option value="0">请选择</option></select> 
+							<select class="dist" disabled="disabled" name="c3"><option value="0">请选择</option></select> 
+						</div> 
+						
+						<p style="clear: both;width: 100%;height: 0.1em;"></p>
+						<p>上牌城市：</p>
+						<!--<input type="text" name="dist" id="dist"/>-->
+						<div id="dist"> 
+							<select class="prov" id="dist" name="di1"></select>  
+							<select class="city" disabled="disabled" name="di2"><option value="0">请选择</option></select> 
+							<select class="dist" disabled="disabled" name="di3"><option value="0">请选择</option></select> 
+						</div>
+						<p style="clear: both;width: 100%;height: 0.1em;"></p>
+						
+						
+						<p>外观颜色</p>
+						<!--<input type="text" name="cr" id="cr"/>-->
+						<select id="cr" name="cr">
+							<option value="雪山白">雪山白</option>
+							<option value="黑色">黑色</option>
+						</select>
+						<p>购车方式</p>
+						<!--<input type="text" name="gc_fs" id="gc_fs"/>-->
+						<select id="gc_fs" name="gc_fs">
+							<option value="新车贷款">新车贷款</option>
+							<option value="新车全款">新车全款</option>
+						</select>
+						<p>备注</p>
+						<input type="text" name="remark" id="remark"/>
+						
+						<li class="list">
+							<div class="xxjs_box">
+								<!-- <div class="flex dj">
+									<div class="xq_dj">
+										<span>定金<b>￥58000</b></span>
+									</div>
+									<div>
+										没有车源可退
+									</div>
+									<div>
+										可抵购车款
+									</div>
+								</div> -->
+								<input type="hidden" name="price" value="{$product.price}" id="price"/>
+								<input type="hidden" name="pic" value="{$product.pic}" id="pic"/>
+								<input type="hidden" name="id" value="{$product.id}" id="id"/>
+								<input type="hidden" name="number" value="{$product.number}" id="number"/>
+								<div class="zfan">
+									<a href="javascript:$('#form1').submit();" onclick="return Check();">提交订单</a>
+									<!--<a href="javascript:document.form1.submit();">提交订单</a>-->
+									<!--<button type="submit" class="zfan" onclick="return Check();">提交订单</button>-->
+								</div>
+							</div>
+						</li>
+						</form>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
+
+<script type="text/javascript" src="__PUBLIC__/Mc/home/js/tjdd.js"></script>
+<script>
+	
+$(function(){
+		$("#city").citySelect({
+			nodata:"none",
+			required:false
+		}); 
+	});
+	
+$(function(){
+		$("#dist").citySelect({
+			nodata:"none",
+			required:false
+		}); 
+	});
+</script>

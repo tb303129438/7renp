@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>汽车分销平台</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Pc/libs/bootstrap/css/bootstrap.min.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Pc/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Pc/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Pc/css/mobile.css"/>
+		
+		<script type="text/javascript" src="__PUBLIC__/Pc/libs/jq/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Pc/libs/bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Pc/home/js/jxmc.js" ></script>
+		
+		
+	</head>
+	<body>
+		<include file="./Tm/Pc/Left.html" />
+		
+		<div class="right_box">
+			
+			<include file="./Tm/Pc/Top.html" />
+			
+			
+			<div class="right_main">
+				
+				<div class="qb_box container-fluid">
+					<div class="row">
+						<div class="qb_list col-md-3">
+							<div class="qb_contai">
+								<a href="/pc/wo/jdmx/id/1">
+									<div class="qbfl">
+										<p>{$jfy.integral1}</p>
+										<p>推广积分余额</p>
+									</div>
+									<div class="qb_bottom">
+										<p>查看明细<i class="yjt"></i></p>
+									</div>
+									<div class="qb_ico"></div>
+								</a>
+							</div>
+						</div>
+						<div class="qb_list col-md-3">
+							<div class="qb_contai">
+								<a href="/pc/wo/jdmx/id/2">
+									<div class="qbfl">
+										<p>{$jfy.integral2}</p>
+										<p>注册积分余额</p>
+									</div>
+									<div class="qb_bottom">
+										<p>查看明细<i class="yjt"></i></p>
+									</div>
+									<div class="qb_ico"></div>
+								</a>
+							</div>
+						</div>
+						<div class="qb_list col-md-3">
+							<div class="qb_contai">
+								<a href="/pc/wo/jdmx/id/4">
+									<div class="qbfl">
+										<p>{$jfy.integral4}</p>
+										<p>消费积分余额</p>
+									</div>
+									<div class="qb_bottom">
+										<p>查看明细<i class="yjt"></i></p>
+									</div>
+									<div class="qb_ico"></div>
+								</a>
+							</div>
+						</div>
+						<div class="qb_list col-md-3">
+							<div class="qb_contai">
+								<a href="#">
+									<div class="qbfl">
+										<p>{$ppdtotal}</p>
+										<p>奖金累积</p>
+									</div>
+									<div class="qb_bottom">
+									</div>
+									<div class="qb_ico"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="pa_tb_10 bg_blue">
+								<div class="gg_box">
+									<div class="gg_title">
+										<i class="gg_laba"></i>站内公告
+									</div>
+									<ul class="gg_gruop">
+										<volist name="xtgg" id="vo">
+										<li class="gg_list">
+											<a href="/pc/wo/ggxq?typeid={$vo.typeid}">
+												<p class="float_r">{$vo.createtime|date="Y-m-d",###}</p>
+												<p>{$vo.typename}</p>
+											</a>
+										</li>
+										</volist>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

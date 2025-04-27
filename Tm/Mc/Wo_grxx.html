@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
+		<title>汽车分销平台</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/iconfont/iconfont.css"/>
+		<script type="text/javascript" src="__PUBLIC__/Mc/libs/jQuery/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Mc/js/jxmc.js" ></script>
+	</head>
+	<body>
+		<include file="./Tm/Mc/Left.html" />
+		<div class="zgb"></div>
+		<div class="nav_btn"><i class="icon iconfont icon-daohang"></i></div>
+		<div class="mobile_contai">
+			<div class="topbar">
+				个人信息
+			</div>
+				<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.min.js" ></script>
+				<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/mui/css/mui.picker.min.css"/>
+				
+				<div class="tab_box">
+					<div class="tab_contai">
+						<div class="tab_contai_1">
+							<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.min.js" ></script>
+							<div class="form_gruop_box">
+							<div class="contai_area bg_hui">
+								<form action="" method="post">
+									<div class="inp_box">
+										<p>会员账号</p>
+										<input type="text" class="inp" value="{$user.username}" disabled>
+									</div>
+									<div class="inp_box">
+										<p>会员姓名</p>
+										<input type="text" class="inp" value="{$user.realname}" name="realname" id="realname">
+									</div>
+									<div class="inp_box">
+										<p>手机号码</p>
+										<input type="text" class="inp" value="{$user.mobile}" name="mobile" id="mobile">
+									</div>
+									<div class="inp_box">
+										<p>身份证号码</p>
+										<input type="text" class="inp" value="{$user.paper}" name="paper" id="paper">
+									</div>
+									
+									<!--选择框在secle.js填写选择内容-->
+									<!--<div class="inp_box" id="showUserPicker">
+										<p>选择东西</p>
+										<input type="text" id="select" class="inp" name="" id="" value="" placeholder="请输入密码" />
+									</div>
+									
+									<div class="inp_box" id='showCityPicker3'>
+										<p>选择地区</p>
+										<input type="text" class="inp" name="" id="cityResult3" value="" placeholder="请输入密码" />
+									</div>
+									<div class="inp_box" id='showCityPicker3'>
+										<p>反馈内容</p>
+										
+										<textarea></textarea>
+									</div>-->
+									<div class="tsy_box">
+										为了账户及积分安全，请及时补全个人信息
+									</div>
+									<div class="btn_box text_c" id='showCityPicker3'>
+								  		<button type="submit" class="but" onclick="return Check();">确认修改</button>
+								  	</div>
+								</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+		</div>
+	</body>
+	
+	<!--选择器js-->
+	<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.picker.min.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.poppicker.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/city.data-3.js" ></script>
+	
+	
+	<!--单选-->
+	<!--<script type="text/javascript" src="__PUBLIC__/Mc/js/secle.js" ></script>-->
+	
+	<!--选择地区-->
+	<!--<script type="text/javascript" src="__PUBLIC__/Mc/js/city.js" ></script>-->
+	
+</html>
+<script type="text/javascript" src="/Public/Mc/home/js/password.js" ></script>
+<script>
+
+	//修改密码
+	var Check=function()
+	{
+		if ($.trim($('#realname').val()) == '')
+		{
+			alert('姓名不能为空');
+			$('#realname').focus();
+			return false;
+
+		}
+		if ($.trim($('#mobile').val()) == '')
+  		{
+        alert('请先输入手机号码！');
+        $('#mobile').focus();
+        return false;
+    	}
+    	var reg = /^1(3|4|5|7|8)\d{9}$/;
+    	if(!reg.test($.trim($('#mobile').val())))
+    	{
+        alert("手机号码格式不对！");
+        $('#mobile').focus();
+        return false;
+    	}
+    	if ($.trim($('#paper').val()) == '')
+   	 	{
+        alert('请先输入身份证号码！');
+        $('#paper').focus();
+        return false;
+    	}
+
+   	 	var reg = /^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/;
+    	if(!reg.test($.trim($('#paper').val())))
+    	{
+        alert("身份证号码格式不对！");
+        $('#paper').focus();
+        return false;
+    	}
+	save();
+    return false;
+}
+	
+var save=function()
+{
+
+
+    var realname,mobile,paper;
+    realname=$.trim($('#realname').val());
+    mobile=$.trim($('#mobile').val());
+    paper=$.trim($('#paper').val());
+    
+		$.ajax({
+			type: "POST",
+			url: "/home/wo/dogrxx",
+			data: {
+				'realname': $.trim($('#realname').val()),
+				'mobile': $.trim($('#mobile').val()),
+				'paper': $.trim($('#paper').val()),
+			},
+//			async: false,
+			success: function (data) {
+
+				if(data==1)
+            {
+                alert('修改成功！');
+                location.href='/home/wo/wo.html';
+            }
+            if(data==2)
+            {
+                alert('名称已经被使用！');
+                $('#realname').focus();
+                return false;
+            }
+            
+            if(data==4)
+            {
+                alert('手机已经被使用！');
+                $('#mobile').focus();
+                return false;
+            }
+            if(data==6)
+            {
+                alert('身份证号码已经被使用,请重新输入！');
+                $('#paper').focus();
+                return false;
+            }
+           
+            
+			}
+		})
+	}
+
+</script>

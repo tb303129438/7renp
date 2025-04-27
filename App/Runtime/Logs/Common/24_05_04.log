@@ -1,0 +1,6 @@
+[ 2024-05-04T18:25:36+08:00 ] 38.45.123.38 /data/captcha/captcha_bg1.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载模块:Data
+

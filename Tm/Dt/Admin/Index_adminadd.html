@@ -1,0 +1,102 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+<!--页面右侧内容块-->
+<!--顶部信息栏-->
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="tabbable" id="tabs-184023">
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#panel-32409" data-toggle="tab">新建管理员账户</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="wxts2"></div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="panel-32409">
+                                <div class="xjzh">
+                                    <div class="container-fluid">
+                                        <form class="form-horizontal" id="form" name="form" method="post" action="/admin/index/doadminadd.html">
+                                            <div class="row btred">
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" class="col-sm-3 control-label">管理员帐户<span>&nbsp;*</span></label>
+                                                    <div class="input-group col-sm-4">
+                                                        <input type="text" class="form-control" id="username" name="username" placeholder="输入管理员帐户">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">登录密码<span>&nbsp;*</span></label>
+                                                    <div class="input-group col-sm-4">
+                                                        <input type="password" class="form-control" id="password" name="password" value="" placeholder="输入登录密码">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">确认登录密码<span>&nbsp;*</span></label>
+                                                    <div class="input-group col-sm-4">
+                                                        <input type="password" class="form-control" id="repassword" name="repassword" value="" placeholder="输入确认登录密码">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">姓名<span>&nbsp;*</span></label>
+                                                    <div class="input-group col-sm-4">
+                                                        <input type="text" class="form-control" id="realname" name="realname" placeholder="输入姓名">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">职位<span>&nbsp;*</span></label>
+                                                    <div class="input-group col-sm-4">
+                                                        <input type="text" class="form-control" id="job" name="job" placeholder="输入职位">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">权限<span>&nbsp;*</span></label>
+                                                    <div class="input-group col-sm-4">
+
+                                                        <volist name="room" id="vo">
+                                                           <label name="power{$vo.id}" ><input type="checkbox"   name="power[]" value="{$vo.id}" onclick="checkboxClick('power','{$vo.id}',this);"> {$vo.title}</label>
+                                                            <br>
+                                                            
+                                                            <volist name="vo.sub" id="vo1">
+                                                             &nbsp;&nbsp;&nbsp;&nbsp;<label name="powersub{$vo.id}" onclick="checkboxClick('{$vo.id}',this);"><input type="checkbox"   name="power[]" value="{$vo1.id}" onclick="checkboxsubClick('{$vo.id}',this);"> {$vo1.title}</label><br>
+                                                            </volist>
+
+                                                        </volist>
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-4 col-sm-offset-2">
+                                                        <div class="but-box">
+                                                            <input type="submit" class="width-100" name="" id="" value="提交"  onclick="return Check()" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<include file="./Tm/Dt/Admin/Foot.html" />
+
+<script src="__PUBLIC__/Admin/js/adminadd.js" type="text/javascript" charset="utf-8"></script>

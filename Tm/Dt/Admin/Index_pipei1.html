@@ -1,0 +1,154 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <script type="text/javascript" src="__PUBLIC__/Dt/lib/jedate/jedate.min.js" ></script>
+    <div class="main">
+
+
+        <div class="panel panel-primary">
+            <div class="panel-body panel-heading">
+                <h3 class="panel-title">提供帮助列表</h3>
+            </div>
+            <div class="panel-footer">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <th>订单号</th>
+                            <th>会员名</th>
+                            <th>姓名</th>
+                            <th>匹配人数</th>
+                            <th>积分</th>
+                            <th>剩余积分</th>
+                            <th>时间</th>
+                            <th>状态</th>
+                        </tr>
+                        <volist name="tdata" id="vo">
+                        <tr>
+                            <td>{$vo.orderid}</td>
+                            <td>{$vo.username}</td>
+                            <td>{$vo.realname}</td>
+                            <td>0</td>
+                            <td>{$vo.price}</td>
+                            <td>0</td>
+                            <td>
+                                {$vo.createtime|date="Y-m-d H:i:s",###}
+                            </td>
+                            <td>等待匹配</td>
+                        </tr>
+                            <tr><td colspan="7">
+                                <table  class="table">
+                                    <tr><td colspan="10">匹配列表</td></tr>
+                                    <tr>
+                                        <th>选择</th>
+                                        <th>订单号</th>
+                                        <th>会员名</th>
+                                        <th>姓名</th>
+                                        <th>匹配人数</th>
+                                        <th>积分</th>
+                                        <th>剩余积分</th>
+                                        <th>时间</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <volist name="vo.sub" id="vo1">
+                                        <tr>
+                                            <td><input type="checkbox" name="vo1" checked></td>
+                                            <td>{$vo1.orderid}</td>
+                                            <td>{$vo1.username}</td>
+                                            <td>{$vo1.realname}</td>
+                                            <td>0</td>
+                                            <td>{$vo1.price}</td>
+                                            <td>0</td>
+                                            <td>
+                                                {$vo1.createtime|date="Y-m-d H:i:s",###}
+                                            </td>
+                                            <td></td>
+                                            <td><a href="">取消</a></td>
+                                        </tr>
+
+
+                                        <tr><td colspan="10"><input type="button" id="button1" name="button1" value="确定匹配" >  <input type="button" id="button3" name="button3" value="取消匹配" ></td></tr>                                    </volist>
+                                </table>
+
+                            </td></tr>
+                        </volist>
+
+
+
+                    </table>
+                    <div>
+                        <nav>
+                            <ul class="pagination pull-right">
+                                <li><a href="#">上一页</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">下一页</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-body panel-heading">
+                <h3 class="panel-title">接受帮助列表</h3>
+            </div>
+            <div class="panel-footer">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <th>订单号</th>
+                            <th>会员名</th>
+                            <th>姓名</th>
+                            <th>匹配人数</th>
+                            <th>积分</th>
+                            <th>剩余积分</th>
+                            <th>时间</th>
+                            <th>状态</th>
+                        </tr>
+                        <volist name="gdata" id="vo">
+                            <tr>
+                                <td>{$vo.orderid}</td>
+                                <td>{$vo.username}</td>
+                                <td>{$vo.realname}</td>
+                                <td>0</td>
+                                <td>{$vo.price}</td>
+                                <td>0</td>
+                                <td>
+                                    {$vo.createtime|date="Y-m-d H:i:s",###}
+                                </td>
+                                <td>等待匹配</td>
+                            </tr>
+
+                        </volist>
+                    </table>
+                    <div>
+                        <nav>
+                            <ul class="pagination pull-right">
+                                <li><a href="#">上一页</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">下一页</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<include file="./Tm/Dt/Admin/Foot.html" />
+
+<script src="__PUBLIC__/Admin/js/member.js" type="text/javascript" charset="utf-8"></script>

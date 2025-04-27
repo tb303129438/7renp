@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
+		<title>汽车分销平台</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/iconfont/iconfont.css"/>
+		<script type="text/javascript" src="__PUBLIC__/Mc/libs/jQuery/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Mc/js/jxmc.js" ></script>
+	</head>
+	<body>
+		<include file="./Tm/Mc/Left.html" />
+		<div class="zgb"></div>
+		<div class="nav_btn"><i class="icon iconfont icon-daohang"></i></div>
+		<div class="mobile_contai">
+			<div class="topbar">
+				激活帐号
+			</div>
+				<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.min.js" ></script>
+				<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/mui/css/mui.picker.min.css"/>
+				
+				<div class="tab_box">
+					<div class="tab_contai">
+						<div class="tab_contai_1">
+							<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.min.js" ></script>
+							<div class="form_gruop_box">
+								<form action="/home/wo/dojhzh" method="post">
+									<div class="inp_box">
+										<p>您的会员账号</p>
+										<input type="text" class="inp" value="{$Think.session.username}" disabled="true" />
+									</div>
+									<div class="inp_box">
+										<p>注册积分余额</p>
+										<input type="text" class="inp" value="{$integral.integral2}" name="" id="" disabled="true "/>
+									</div>
+									<div class="inp_box">
+										<p>激活会员帐号</p>
+										<input type="text" class="inp" value="{$data.username}" name="name" id="name"/>
+									</div>
+									<div class="inp_box">
+										<p>所属组长</p>
+										<input type="text" class="inp" value=""  name="team" id="team" value=""/>
+									</div>
+									<div class="inp_box">
+										<p>所需注册积分</p>
+										<input type="text" class="inp" value="10000.00" name="price" id="price" disabled="true "/>
+									</div>
+									<div class="tsy_box">
+										注意：激活会员将扣取您的注册积分，激活会员时请务必需谨慎
+									</div>
+									<div class="btn_box text_c" id='showCityPicker3'>
+									<input type="hidden" id="id" name="id" value="{$data.id}">
+								  		<button type="submit" class="but">确认修改</button>		 <!--onclick="return Check();"-->
+								  	</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+		</div>
+	</body>
+	
+	<!--选择器js-->
+	<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.picker.min.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.poppicker.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/city.data-3.js" ></script>
+	
+	
+	<!--单选-->
+	<!--<script type="text/javascript" src="__PUBLIC__/Mc/js/secle.js" ></script>-->
+	
+	<!--选择地区-->
+	<!--<script type="text/javascript" src="__PUBLIC__/Mc/js/city.js" ></script>-->
+	
+</html>
+<script type="text/javascript" src="/Public/Mc/home/js/password.js" ></script>

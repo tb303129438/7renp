@@ -1,0 +1,92 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <script type="text/javascript" src="__PUBLIC__/Dt/lib/jedate/jedate.min.js" ></script>
+    <div class="main">
+        <div class="index_cont">
+
+
+            <div class="table-responsive table_box">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#panel-32409" data-toggle="tab">激活码对帐</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="selct">
+                    <form class="form-inline" role="form">
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">开始时间</div>
+                                <input id="b" name="b" class="form-control stu1" type="text" placeholder="输入开始日期" value="{$begintime|date='Y-m-d',###}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">结束时间</div>
+                                <input id="e" name="e" class="form-control stu2" type="text" placeholder="输入结束日期" value="{$endtime|date='Y-m-d',###}">
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            jeDate({
+                                dateCell:".stu1",
+                                format:"YYYY-MM-DD",
+                                isTime:false,
+                                minDate:"1900-1-1",
+                                maxDate:"2099-12-12"
+                            });
+                            jeDate({
+                                dateCell:".stu2",
+                                format:"YYYY-MM-DD",
+                                isTime:false,
+                                minDate:"1900-1-1",
+                                maxDate:"2099-12-12"
+                            });
+                        </script>
+                        <input type="button" class="btn btn-default" name="button" id="button" value="查询"  onclick="searchuser();" />
+                    </form>
+                </div>
+                <table class="table">
+                    <tr>
+
+                        <th>内容</th>
+                        <th>动作</th>
+                        <th>数量</th>
+                        <th>时间</th>
+
+                    </tr>
+                    <volist name="room" id="vo" key="i">
+                    <tr>
+
+                        <td>{$vo.title}</td>
+                        <td>
+                        <switch name="vo.status">
+                            <case value="1">充值</case>
+                            <case value="2">转帐</case>
+                            <case value="3">使用</case>
+                            <case value="4">扣除</case>
+                        </switch>
+                        </td>
+                        <td>{$vo.price}</td>
+                        <td>{$vo.createtime|date="Y-m-d H:i:s",###}</td>
+
+                    </tr>
+                </volist>
+                </table>
+
+                <include file="./Tm/Dt/Page.html" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<include file="./Tm/Dt/Foot.html" />
+<script src="__PUBLIC__/Dt/Home/ljihuoma.js" type="text/javascript" charset="utf-8"></script>

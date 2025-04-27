@@ -1,0 +1,128 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Dt/lib/treeview/jquery.treeview.css"/>
+<script type="text/javascript" src="__PUBLIC__/Dt/lib/treeview/jquery.cookie.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/Dt/lib/treeview/jquery.treeview.js" ></script>
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <!--主要内容块-->
+    <div class="main">
+        <div class="table-responsive table_box">
+            <div>
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#panel-32409" data-toggle="tab">产品大类</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel-footer">
+                <div class="sousuo">
+                    <div class="input-group col-sm-5">
+                        <span class="input-group-addon">添加分类</span>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="添加大类">
+							  <span class="input-group-btn">
+					            <button class="btn btn-default" type="button" onclick="add()">添加</button>
+					          </span>
+                    </div>
+                </div>
+                <div class="tree_box">
+
+                            {$str}
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#tree").treeview({
+            animated: "fast",
+            collapsed: false,
+            unique: false,
+            //persist: "cookie",
+//					toggle: function() {
+//						window.console && console.log("%o was toggled", this);
+//					}
+        });
+    </script>
+    <style type="text/css">
+        .xq_box{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width:300px;
+        }
+        .xq_box ul,.xq_box ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .xq_box{
+            /*width: 130px;*/
+            background: #fff;
+        }
+        .xq_box table{
+            border: 1px solid #e6e6e6;
+            border-collapse: collapse;
+        }
+        .xq_box table td{
+            padding: 5px;
+        }
+    .xq_box_a{font-size:10px;color:#666;margin-left:20px;}
+    </style>
+
+<div class="xq_box" style="display: none;" >
+        <div class="input-group">
+                        <span class="input-group-addon">添加小类</span>
+                        <input type="text" class="form-control" id="subtitle" name="subtitle" placeholder="添加小类">
+                              <span class="input-group-btn">
+                              <input type="hidden" id="subid" name="subid">
+                                <button class="btn btn-default" type="button" onclick="addsub()">添加</button>
+                              </span>
+                    </div>
+    </div>
+
+</div>
+
+
+
+<include file="./Tm/Dt/Admin/Foot.html" />
+
+
+<script src="__PUBLIC__/Admin/js/cotegary_index.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+//  $("#tree").treeview("#gray");
+    //$("#gray").treeview();
+    $(".tree_box li a").hover(
+        function(e) {
+            var xx = e.originalEvent.x || e.originalEvent.layerX || 0; 
+            var yy = e.originalEvent.y || e.originalEvent.layerY || 0; 
+            $(".xq_box").css({top:yy+"px",left:(xx)+"px",display:"block"});
+            var xm = $(this).text();
+            $(".xm").text(xm);
+            
+            var id=$(this).prop('id');
+            $('#subid').val(id);
+
+        },
+        function(){
+            // $(".xq_box").delay(200).hide(0).hover(function(){
+
+            //     $(this).show(0);
+            // },function(){
+            //     $(this).hide(0);
+            // });
+           
+            $(".xq_box").mouseleave(function(){
+               $(this).hide();
+            })
+            
+            
+        }
+    );
+</script> 

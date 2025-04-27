@@ -1,0 +1,42 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <script type="text/javascript" src="__PUBLIC__/Dt/lib/jedate/jedate.min.js" ></script>
+    <div class="main">
+        <div class="panel panel-primary">
+            <div class="panel-body panel-heading">
+                <h3 class="panel-title">网站公告</h3>
+            </div>
+            <div class="panel-footer clearfix">
+                <table class="table">
+                    <tr>
+
+                        <th>标题</th>
+                        <th>发布时间</th>
+                        <th>操作</th>
+                    </tr>
+                    <volist name="room" id="vo" key="i">
+
+                    <tr>
+                        <td>{$vo.title}</td>
+                        <td>{$vo.createtime|date="Y-m-d H:i:s",###}</td>
+                        <td><a href="/admin/index/news_edit.html?id={$vo.id}">修改</a> <a href="javascript:void()" onclick="del('{$vo.id}');">删除</a></td>
+                    </tr>
+                        </volist>
+                </table>
+                <gt name="total" value="$pagesize">
+                    <include file="./Tm/Dt/Page.html" />
+                </gt>
+            </div>
+        </div>
+    </div>
+</div>
+
+<include file="./Tm/Dt/Admin/Foot.html" />
+
+<script src="__PUBLIC__/Admin/js/news.js" type="text/javascript" charset="utf-8"></script>

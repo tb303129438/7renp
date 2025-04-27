@@ -1,0 +1,56 @@
+[ 2024-04-14T23:58:24+08:00 ] 39.71.190.130 /Admin/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2024-04-14T23:58:30+08:00 ] 39.71.190.130 /Admin/login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `tm_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tm_admin` WHERE ( adminname='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 1 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [2] Missing argument 2 for Think\PasswordHash::__construct(), called in /www/wwwroot/che.xuanzeguiyuan.com/App/Admin/Controller/LoginController.class.php on line 202 and defined /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 34 行.
+NOTIC: [8] Undefined variable: iteration_count_log2 /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 38 行.
+NOTIC: [8] Undefined variable: portable_hashes /www/wwwroot/che.xuanzeguiyuan.com/Tp/Library/Think/PasswordHash.class.php 第 42 行.
+
+[ 2024-04-14T23:58:30+08:00 ] 39.71.190.130 /admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `tm_user` [ RunTime:0.0009s ]
+SQL: SELECT count(1) as total FROM `tm_user`  [ RunTime:0.0002s ]
+SQL: SELECT count(1) as total FROM `tm_user` WHERE ( status=1 )  [ RunTime:0.0002s ]
+SQL: SELECT count(1) as total FROM `tm_user` WHERE ( status=0 )  [ RunTime:0.0001s ]
+SQL: SELECT count(1) as total FROM `tm_user` WHERE ( createtime>1713024000 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tm_income` [ RunTime:0.0005s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( status=1 and gotegary=2 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tm_parameter` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tm_parameter` ORDER BY id asc  [ RunTime:0.0002s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( status=1 and gotegary=1 and createtime>1713024000 )  [ RunTime:0.0002s ]
+SQL: SELECT sum(price) as total FROM `tm_income` WHERE ( status=1 and gotegary=4 and createtime>1713024000 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+

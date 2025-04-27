@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
+		<title>汽车分销平台</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/iconfont/iconfont.css"/>
+		<script type="text/javascript" src="__PUBLIC__/Mc/libs/jQuery/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Mc/home/js/jxmc.js" ></script>
+		
+		
+		
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/swiper/css/swiper.min.css"/>
+		<script type="text/javascript" src="__PUBLIC__/Mc/libs/swiper/js/swiper.jquery.min.js" ></script>
+	</head>
+	<body>
+		<div class="mobile_contai">
+			<div class="tab_box">
+				<ul class="tab_title text_c">
+					<li class="active">参数配置</li>
+					<li>车款详情</li>
+				</ul>
+				<div class="tab_contai">
+					<div class="tab_contai_1">
+						<div class="imgBox">
+							<img src="{$product.pic}"/>
+						</div>
+						<div class="contai_main">
+							<div class="car_info">
+								<h3>{$product.productname}</h3>
+								<p class="clear_fix">
+									<span class="float_l">指导价：<i class="color_ceng">{$product.price}万</i></span>
+								</p>
+							</div>
+							<div class="car_dj clear_fix">
+							</div>
+						</div>
+					</div>
+					<div class="tab_contai_2">
+						
+						<div class="imgBox">
+							{$product.content}
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<include file="./Tm/Mc/foot.html"/>
+	</body>
+	<script type="text/javascript">
+	    var swiper = new Swiper('.banner_box .swiper-container', {
+	    	autoplay: 3000,
+	    	loop : true,
+	        pagination: '.swiper-pagination',
+	        paginationClickable: true
+	    });
+	</script>
+</html>

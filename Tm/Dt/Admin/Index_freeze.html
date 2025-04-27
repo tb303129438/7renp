@@ -1,0 +1,151 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <script type="text/javascript" src="__PUBLIC__/Dt/lib/jedate/jedate.min.js" ></script>
+    <div class="main">
+        <div class="index_cont">
+
+
+            <div class="table-responsive table_box">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#panel-32409" data-toggle="tab">冻结积分</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="selct">
+                    <form class="form-inline" role="form">
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">开始时间</div>
+                                <input id="b" name="b" class="form-control stu1" type="text" placeholder="输入开始日期" value="{$begintime|date='Y-m-d',###}" onfocus="getbigtime();" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">结束时间</div>
+                                <input id="e" name="e" class="form-control stu2" type="text" placeholder="输入结束日期" value="{$endtime|date='Y-m-d',###}" onfocus="getsmalltime();" readonly >
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            jeDate({
+                                dateCell:".stu1",
+                                format:"YYYY-MM-DD",
+                                isTime:false,
+                                minDate:"1900-1-1",
+                                maxDate:"2099-12-12"
+                            });
+                            jeDate({
+                                dateCell:".stu2",
+                                format:"YYYY-MM-DD",
+                                isTime:false,
+                                minDate:"1900-1-1",
+                                maxDate:"2099-12-12"
+                            });
+
+                            var getsmalltime=function()
+                            {
+
+                                if($.trim($('#b').val())!='')
+                                {
+                                    if(confirm('确认开始时间为：'+$('#b').val()+'吗?'));
+                                    {
+                                        jeDate({
+                                            dateCell:".stu2",
+                                            format:"YYYY-MM-DD",
+                                            isTime:false,
+                                            minDate:$('#b').val(),
+                                            maxDate:"2099-12-12"
+                                        });
+                                    }
+                                }
+                            }
+                            var getbigtime=function()
+                            {
+
+                                if($.trim($('#e').val())!='')
+                                {
+                                    if(confirm('确认结束时间为：'+$('#e').val()+'吗?'));
+                                    {
+                                        jeDate({
+                                            dateCell:".stu1",
+                                            format:"YYYY-MM-DD",
+                                            isTime:false,
+                                            minDate:"1900-1-1",
+                                            maxDate:$('#e').val()
+                                        });
+                                    }
+                                }
+                            }
+
+                        </script>
+                        <input type="button" class="btn btn-default" name="button" id="button" value="查询"  onclick="searchuser();" />
+                    </form>
+                </div>
+                <table class="table">
+                    <tr>
+                        <th>冻结开始时间</th>
+                        <th>解冻时间</th>
+                        <th>静/动态帐户</th>
+                        <th>重消帐户</th>
+                        <th>获得会员</th>
+                        <th>来源</th>
+                        <th>类型</th>
+                        <th>内容</th>
+                        <th>操作</th>
+
+
+                    </tr>
+                    <if condition="count($room) eq 0">
+
+                        <tr><td colspan="9">没有查询到您要找的结果</td></tr>
+                        <else />
+                    <volist name="room" id="vo" key="i">
+                        <tr>
+                            <td>{$vo.begintime|date="Y-m-d H:i:s",###}</td>
+                            <td><?php echo date("Y-m-d H:i:s",$vo['begintime']+15*24*3600); ?></td>
+                            <td>{$vo.integral1}</td>
+                            <td>{$vo.integral2}</td>
+                            <td>
+                                {$vo.username}
+                            </td>
+                            <td>
+                               {$vo.fromusername}
+                            </td>
+                            <td>
+                                <switch name="vo.gotegary">
+                                    <case value="1">静态收入</case>
+                                    <case value="2">动态积分</case>
+
+
+                                </switch>
+                            </td>
+
+                            <td>{$vo.title}</td>
+                            <td><a href="/admin/index/dofreeze?id={$vo.id}&o={$o}">解冻</a></td>
+
+
+                        </tr>
+                    </volist>
+                        <tr><td colspan="9">冻结总积分为：{$integraltotal}</td></tr>
+
+                    </if>
+                </table>
+
+                <include file="./Tm/Dt/Page.html" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<include file="./Tm/Dt/Foot.html" />
+<script src="__PUBLIC__/Admin/js/freeze.js" type="text/javascript" charset="utf-8"></script>

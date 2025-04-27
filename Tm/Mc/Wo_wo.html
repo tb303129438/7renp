@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
+		<title>汽车分销平台</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/iconfont/iconfont.css"/>
+		<script type="text/javascript" src="__PUBLIC__/Mc/libs/jQuery/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Mc/home/js/jxmc.js" ></script>
+	</head>
+	<body>
+		<include file="./Tm/Mc/Left.html" />
+		
+		<div class="zgb"></div>
+		<div class="nav_btn"><i class="icon iconfont icon-daohang"></i></div>
+		<div class="mobile_contai">
+			<div class="header">
+				<div class="header_contai">
+					<div class="imgBox">
+						<img src="__PUBLIC__/Mc/image/headerImg.png"/>
+					</div>
+					<span class="user_box">{$Think.session.username}</span>
+				</div>
+			</div>
+			<div class="contai_main">
+				<div class="qb_contai">
+					<ul class="qb_gruop">
+						<li class="qb_list text_c">
+							<div class="qb_box">
+								<p><a href="/home/wo/jdmx/id/1">推广积分余额</a></p>
+								<p>
+							<if condition="$integral.integral1 neq ''">
+									{$integral.integral1}
+							<else />
+								0.00
+							</if>
+							</p>
+							</div>
+							<p class="ckqb"><a href="/home/wo/jdmx/id/1">查看明细</a></p>
+						</li>
+						<li class="qb_list text_c">
+								<div class="qb_box">
+									<p><a href="/home/wo/jdmx/id/2">注册积分余额</a></p>
+									<p>
+							<if condition="$integral.integral2 neq ''">
+								{$integral.integral2}
+							
+							<else />
+								0.00
+							</if>
+								</p>
+								</div>
+								<p class="ckqb"><a href="/home/wo/jdmx/id/2">查看明细</a></p>
+						</li>
+						
+						<li class="qb_list text_c">
+							<div class="qb_box">
+								<p> <a href="/home/wo/jdmx/id/4">消费积分余额</a></p>
+								<if condition="$integral.integral4 neq ''">
+									{$integral.integral4}
+								<else />
+									0.00
+								</if>
+								</p>
+							</div>
+							<p class="ckqb"><a href="/home/wo/jdmx/id/4">查看明细</a></p>
+						</li>
+						<li class="qb_list text_c">
+								<div class="qb_box">
+									<p><a href="/home/wo/jdmx">奖金累计</a></p>
+								
+									<p>
+{$ppdtotal}
+									</p>
+									<!--<p><a href="/home/wo/jdmx">查看明细</a></p>-->
+								
+								</div>
+								<p class="ckqb"></p>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="contai_area bg_hui">
+					<div class="gg_box">
+						<dl class="gg_gruop">
+							<dt>站内公告</dt>
+						<volist name="xtgg" id="vo">
+							<dd>
+								<div class="gg_list">
+									<a href="/home/wo/ggxq?typeid={$vo.typeid}">
+									<p>{$vo.typename}</p>
+									<span>{$vo.createtime|date='Y-m-d',###}</span>
+									</a>
+								</div>
+							</dd>
+						</volist>
+						</dl>
+					</div>
+				</div>	
+				
+			</div>
+		</div>
+	</body>
+</html>

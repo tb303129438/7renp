@@ -1,0 +1,65 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <script type="text/javascript" src="__PUBLIC__/Dt/lib/jedate/jedate.min.js" ></script>
+    <div class="main">
+        <div class="index_cont">
+
+
+            <div class="table-responsive table_box">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#panel-32409" data-toggle="tab">会员列表</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="selct">
+                
+                <table class="table">
+                    <tr>
+
+                        <th>会员编号</th> 
+                        <th>会员帐户</th>
+                        <!--<th>姓名</th>-->
+                        <th>中心名称</th>
+                        <th>所在地区</th>
+                        <th>申请时间</th>
+                        <!--<th>状态</th>-->
+                        <th>操作</th>
+                    </tr>
+                    <volist name="bd" id="vo" key="i">
+                    <tr>
+
+                         <td>{$vo.id}</td> 
+                        <td>{$vo.username}</td>
+                        <td>{$vo.tusername}</td>
+                        <td>{$vo.city}</td>
+                        <td>{$vo.createtime|date="Y-m-d H:i:s",###}</td>
+                        <td>
+                        	<if condition="$vo.tohelp eq 0">
+                            	<a href="/admin/index/dosqbd.html?id={$vo.id}">审核</a> | 当前等级：普通会员
+                            <else />
+                            	<a>已审核</a> | 当前等级：报单中心
+                            </if>
+                        </td>
+                    </tr>
+                </volist>
+                </table>
+				<gt name="total" value="$pagesize">
+                	<include file="./Tm/Dt/Page.html" />
+                </gt>
+            </div>
+        </div>
+    </div>
+</div>
+
+<include file="./Tm/Dt/Admin/Foot.html" />
+
+<script src="__PUBLIC__/Admin/js/member.js" type="text/javascript" charset="utf-8"></script>
+

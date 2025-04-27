@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="/Public/Mc/lib/mui/css/mui.min.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/style.css"/>
+	</head>
+	<script src="/Public/Mc/lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+	<body>
+		<header class="mui-bar mui-bar-nav bg_hs">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">支付购车订单</h1>
+		</header>
+		<div class="m_contai">
+			<div class="mui-content p_top">
+				<div class="tjxq-title mui-text-center">
+									</div>
+				<div class="list_box">
+					<ul>
+						<li class="list">
+			
+							<div class="xxjs_box">
+								<div class="flex">
+									<div class="tjdd_img">
+										<img src="{$order.pic}"/>
+									</div>
+									<div class="tjdd_xx">
+										{$order.productname}
+										<p>陌车返现价：{$order.price}万</p>
+									</div>
+								
+								</div>
+							</div>
+							
+						</li>
+						<li class="list">
+							<div class="xxjs_box">
+								<div class="zffs">
+									<p>支付方式</p>
+									<p>银行支付</p>
+								</div>
+							</div>
+						</li>
+						
+						<li class="list">
+							<div class="xxjs_box">
+								<div class="flex dj">
+									<div class="xq_dj">
+										<span>定金<b>￥58000</b></span>
+									</div>
+									<div>
+										没有车源可退
+									</div>
+									<div>
+										可抵购车款
+									</div>
+								</div>
+								
+								<div class="zfan">
+									<a href="/Home/index/dozf.html">支付订单</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>

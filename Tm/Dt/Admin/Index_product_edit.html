@@ -1,0 +1,166 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+<link href="__PUBLIC__/upload/css.css" rel="stylesheet" media="screen" type="text/css">
+
+
+<script type="text/javascript" src="__PUBLIC__/Dt/lib/jedate/jedate.min.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/upload/jquery.form.js"></script>
+<script type="text/javascript" src="__PUBLIC__/upload/upload.js"></script>
+<script type="text/javascript" src="__PUBLIC__/P1/js/jquery.cityselect.js"></script>
+<!--编辑器-->
+<script type="text/javascript" charset="utf8" src="__PUBLIC__/Ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf8" src="__PUBLIC__/Ueditor/ueditor.all.min.js"> </script>
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="tabbable" id="tabs-184023">
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a data-toggle="tab">修改产品</a>
+                                </li>
+                            </ul>
+                        </div>
+						
+                        <div class="tab-content bgcolor-d5e2eb pad20">
+                            <form action="/admin/index/doproduct_edit.html" class="form-horizontal" method="post" id="myform" name="myform">
+                                
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">产品名称：</label>
+                                    <div class="col-sm-4">
+								      <input type="text" class="form-control" id="productname" name="productname" value="{$vo.productname}">
+								    </div>
+                                </div>
+                                <div class="form-group">
+		                        <label class="col-sm-2 control-label">产品推荐：</label>&nbsp;&nbsp;
+		                        	 <input type="radio" name="one" id="jrtj" value="0" <eq name="vo.syqf" value="0">checked</eq>>无&nbsp;&nbsp;
+		                            <input type="radio" name="one" id="jrtj" value="1" <eq name="vo.syqf" value="1">checked</eq>>今日推荐&nbsp;&nbsp;
+		                            <input type="radio" name="one" id="jxyc" value="2" <eq name="vo.syqf" value="2">checked</eq>>精选优车
+		                    	</div>  
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">产品分类：</label>
+                                    <div class="col-sm-4" id="city">
+                                 <select class="prov" id="c1" name="c1"></select> 
+                    <select class="city" disabled="disabled" id="c2" name="c2"><option value="">请选择</option></select>
+                    <select class="dist" disabled="disabled" id="c3" name="c3"><option value="">请选择</option></select>
+                    </div></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">产品编号：</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="number" name="number" value="{$vo.number}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">产品价格：</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="price" name="price" value="{$vo.price}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">出产地：</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="origin" name="origin" value="{$vo.origin}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">马力：</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="horsepower" name="horsepower" value="{$vo.horsepower}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">颜色：</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="color" name="color" value="{$vo.color}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">排量：</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="pailiang" name="pailiang" value="{$vo.pailiang}">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">产品图片：</label>
+                                    <div class="col-sm-4">
+                                        <div id="img1" class="imgcontent">
+                                            <div  class="btnimg">
+
+                                                <if condition="$vo.pic eq ''">
+                                                    <img   src="/Public/upload/bg.jpg" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                    <else />
+                                                    <img   src="{$vo.pic}" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+                                                </if>
+                                                <span class="btnspan" ></span>
+                                                <input id="fileupload1" type="file" name="mypic">
+
+                                                <div class="progress">
+                                                    <span class="bar"></span><span class="percent">0%</span >
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <input type="hidden" id="img1url" name="img1url" value="{$vo.pic}">
+                                        	 <span color="red">上传尺寸建议380*240</span>&nbsp;
+                                        上传图片大小不能超过200K<br>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">产品详情：</label>
+                                    <div class="col-sm-10">
+                                        <!--<div id="editor">-->
+
+                                        <!--</div>-->
+                                       
+                                        <script id="editor" type="text/plain" style="width:500px;height:300px;">{$vo.content}</script>
+
+								    </div>
+                                </div>
+                                <div class="form-group">
+                                	<label class="col-sm-2 control-label"></label>
+                                	<div class="col-sm-6">
+                                        <input type="hidden" id="id" name="id" value="{$vo.id}">
+                                        <input type="hidden" id="o" name="o" value="{$o}">
+                                    	<input type="submit" value="提交" onclick="return Check()" class="btn btn-default"/>
+                                   </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+<script>
+    //initSample();
+    //var stem = CKEDITOR.instances.editor.getData();
+   var ue = UE.getEditor('editor');
+   upload("img1","fileupload1");
+
+    $(function() {
+              
+                $("#city").citySelect({
+                url:eval({$str}),
+                prov:"{$vo.c1}",
+                city:"{$vo.c2}",
+                dist:"{$vo.c3}",
+                nodata:"none"
+            });
+
+              
+    });
+</script>
+
+<include file="./Tm/Dt/Foot.html" />
+<script src="__PUBLIC__/Admin/js/product_add.js" type="text/javascript" charset="utf-8"></script>

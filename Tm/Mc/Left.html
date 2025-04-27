@@ -1,0 +1,119 @@
+<nav id="nav" zt="0">
+			<div class="nav_box">
+				<div class="nav_info_box">
+					<div class="nav_info">
+						<div class="info_tx">
+							<div class="info_img"></div>
+						</div>
+						<div class="info_user_box">
+							<p>{$Think.session.username}</p>
+							<p>{$Think.session.realname}</p>
+							<?php $user = M('user')->where("id=".session('id'))->find();?>
+							<if condition="$user.tohelp eq 0">
+								<p style="color: #00A2D4;">普通会员</p>
+							<else />
+								<p style="color: #00A2D4">报单中心</p>
+							</if>
+						</div>
+					</div>
+				</div>
+				<ul class="nav_gruop">
+					 <li class="nav_list">
+						<a href="/Home/index/index">
+							<i class="icon iconfont icon-shouye"></i>
+							商城首页
+						</a>
+					</li> 
+					<li class="nav_list">
+						<a href="/Home/wo/wo">
+							<i class="icon iconfont icon-shouye"></i>
+							系统首页
+						</a>
+					</li>
+					<li class="nav_list">
+						<a href="javascript:;" class="nav_title">
+							<i class="icon iconfont icon-yewuguanli"></i>
+							业务管理
+							<span class="icon iconfont icon-icon1"></span>
+						</a>
+						<ul class="lave_gruop">
+							<li><a href="/Home/index/registered.html">新会员注册</a></li>
+							<li><a class="mui-navigate-right" href="/Home/wo/bdlb.html">报单列表</a></li>
+							<?php $ret = M('user')->where("id=".session('id'))->find(); ?>
+							<if condition="$ret.tohelp eq 0">
+								<li><a class="mui-navigate-right" href="/Home/wo/sqbdzx.html">报单中心</a></li>
+							</if>
+						</ul>
+					</li>
+					<li class="nav_list">
+						<a href="javascript:;" class="nav_title">
+							<i class="icon iconfont icon-c7"></i>
+							财务管理
+							<span class="icon iconfont icon-icon1"></span>
+						</a>
+						
+						<ul class="lave_gruop">
+							<!--<li><a href="/Home/wo/jjjl.html">积分记录</a></li>-->
+							<li><a href="/Home/wo/jdmx.html">财务明细</a></li>
+							<li><a href="/Home/wo/recharge.html">积分转让</a></li>
+							<?php $qe = M("bycar")->where("userid=".session('id'))->find();?>
+							
+								<li><a href="/pc/wo/tx">资金兑现</a></li>
+								<li><a href="/pc/wo/gcsq">购车申请</a></li>
+							
+						</ul>
+					</li>
+					<li class="nav_list">
+						<a href="javascript:;" class="nav_title">
+							<i class="icon iconfont icon-2701"></i>
+							团队管理
+							<span class="icon iconfont icon-icon1"></span>
+						</a>
+						
+						<ul class="lave_gruop">
+							<li><a href="/Home/wo/zhjh.html">帐号激活</a></li>
+							<li><a href="/Home/wo/tjlb.html">推荐列表</a></li>
+							<li><a href="/Home/wo/wtjg.html">网体结构</a></li>
+							<!--<li><a href="#">账号激活</a></li>-->
+						</ul>
+					</li>
+					<li class="nav_list">
+						<a href="javascript:;" class="nav_title">
+							<i class="icon iconfont icon-zhanghu"></i>
+							个人设置
+							<span class="icon iconfont icon-icon1"></span>
+						</a>
+							<ul class="lave_gruop">
+								<li><a href="/Home/wo/grxx.html">个人信息</a></li>
+								<li><a href="/Home/wo/yhxx.html">银行信息</a></li>
+								<li><a href="/Home/wo/mmxg.html">修改密码</a></li>
+							</ul>
+					</li>
+					<!--<li class="nav_list">
+						<a href="javascript:;" class="nav_title">
+							<i class="icon iconfont icon-xinjian-youxiang"></i>
+							站内信件
+							<span class="icon iconfont icon-icon1"></span>
+						</a>
+					</li>-->
+					<li class="nav_list">
+						<a href="javascript:;" class="nav_title">
+							<i class="icon iconfont icon--shouyezhuanhuan"></i>
+							系统公告
+							<span class="icon iconfont icon-icon1"></span>
+						</a>
+						<ul class="lave_gruop">
+								<li><a href="/Home/wo/xtgg.html">系统公告</a></li>
+								<!-- <li><a href="/Home/wo/znxj.html">反馈消息</a></li> -->
+						</ul>
+					</li>
+					<li class="nav_list">
+						<a href="/home/index/logout">
+							<i class="icon iconfont icon-exit"></i>
+							安全退出
+						</a>
+						
+					</li>
+				</ul>
+			</div>
+		</nav>

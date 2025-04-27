@@ -1,0 +1,27 @@
+<footer class="footer_nav">
+			<div class="footer_nav_box text_c">
+				<a href="/home/index/index.html">
+					<p><i class="icon iconfont icon-shouye"></i></p>
+					<p>首页</p>
+				</a>
+				<!--<a href="/home/index/buyCar.html" class="active">
+					<p><i class="icon iconfont icon-qiche"></i></p>
+					<p>车型</p>
+				</a>-->
+				<!--<a href="chanpin.html">
+					<p><i class="icon iconfont icon-chanpin"></i></p>
+					<p>产品</p>
+				</a>-->
+				<if condition="$Think.session.username eq ''">
+					<a href="/home/index/login.html">
+						<p><i class="icon iconfont icon-denglu"></i></p>
+						<p>登陆</p>
+					</a>
+				<else />
+					<a href="/home/wo/wo.html">
+						<p><i class="icon iconfont icon-denglu"></i></p>
+						<p>个人中心</p>
+					</a>
+				</if>
+			</div>
+		</footer>

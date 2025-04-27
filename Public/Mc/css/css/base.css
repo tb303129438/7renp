@@ -1,0 +1,278 @@
+*{
+	box-sizing: border-box;
+}
+html,body,ul,li,ol,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,input,textarea,form,img,button{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #a8a8a8;
+}
+img{
+	border: none;
+	width: 100%;
+}
+.imgBox{
+	font-size: 0;
+	position: relative;
+}
+ul,ol,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+i,b{
+	font-style: normal;
+}
+input{
+	outline: none;
+	color: #fff;
+}
+.font_color{
+	color: #65ccff;
+}
+.float_l{
+	float: left;
+}
+.float_r{
+	float: right;
+}
+.clear_fix:after{
+	content: '';
+	display: block;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	clear: both;
+}
+.text_l{
+	text-align: left;
+}
+.text_r{
+	text-align: right;
+}
+.text_c{
+	text-align: center;
+}
+
+
+.mobile_contai{
+    width: 100%;
+	max-width: 640px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.overhide{
+	overflow: hidden;
+}
+.zgb{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.6);
+	z-index: 888;
+	display: none;
+}
+.mar_auto{
+	margin: 0 auto;
+}
+
+.bg_hui{
+	background-color: #e5f9ff;
+}
+
+/*导航*/
+#nav{
+    width: 180px;
+    background-color: #131f24;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -180px;
+    z-index: 999;
+}
+#nav .nav_box{
+	height: 100%;
+	overflow-y: auto;
+}
+.nav_gruop a{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	padding-left: 48px;
+}
+.lave_gruop a:before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #6f7b7f;
+    position: absolute;
+    left: 32px;
+    top: 15px;
+}
+.nav_list > a > i.icon{
+	position: absolute;
+    left: 16px;
+    top: -1px;
+    font-size: 22px;
+}
+.nav_list > a > span.icon{
+	position: absolute;
+    right: 16px;
+    top: 1px;
+    font-size: 18px;
+}
+.nav_list .lave_gruop{
+	display: none;
+}
+.nav_info_box{
+	padding: 20px 0;
+    border-bottom: 1px solid #17b2f2;
+    margin-bottom: 20px;
+}
+.nav_btn{
+	width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    position: fixed;
+    top: 4px;
+    left: 0;
+    z-index: 990;
+    color: #fff;
+}
+.nav_btn .icon{
+	font-size: 20px;
+}
+.nav_info{
+	display: flex;
+}
+.nav_info .info_tx{
+	flex: 0 0 50px;
+}
+.info_user_box p{
+	height: 25px;
+	line-height: 25px;
+	color: #fff;
+}
+.nav_info .info_user_box{
+	flex: 1;
+	margin-left: 8px;
+}
+.nav_info{
+	width: 130px;
+	margin: 0 auto;
+}
+.nav_info .info_img{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background: #fff url(../images/man.png) no-repeat center center;
+	
+}
+
+.topbar{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #5f86bb;
+    box-shadow: 0px 1px 4px #9db3d2;
+    color: #fff;
+    padding-left: 50px;
+}
+.top_title{
+	height: 100%;
+	background: url(../images/top_title.png) no-repeat;
+	background-size: 220px;
+}
+.marB_10{
+	margin-bottom: 10px;
+}
+.title1{
+	background-position-y: 15px;
+}
+.title2{
+	background-position-y: -21px;
+}
+.title3{
+	background-position-y: -58px;
+}
+.title4{
+	background-position-y: -94px;
+}
+.title5{
+	background-position-y: -131px;
+}
+.title6{
+	background-position-y: -168px;
+}
+.title7{
+	background-position-y: -205px;
+}
+.title8{
+	background-position-y: -242px;
+}
+.title9{
+	background-position-y: -279px;
+}
+.title10{
+	background-position-y: 0px;
+}
+.select_row{
+	height: 30px;
+	background: #fff;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	position: relative;
+	/*padding-right: 30px;*/
+}
+.select_row input{
+	width: 100%;
+	height: 30px;
+	color: #000;
+	text-align: center;
+}
+.select_row form input::-webkit-input-placeholder{
+	color: #787373;
+}
+.select_row button{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: transparent;
+	border: none;
+	z-index: 599;
+}
+.select_row .icon{
+	font-size: 22px;
+}
+.mui-backdrop {
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.3);
+}
+.xzrq{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 499;
+}

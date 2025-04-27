@@ -1,0 +1,86 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="tabbable" id="tabs-184023">
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#panel-32409" data-toggle="tab">生成充值卡号</a>
+                                </li>
+                            </ul>
+                        </div>
+                       <div class="wxts2">
+                            <p class="zhuyi">注意：凡是带<span style="color: red;">&nbsp;*&nbsp;</span>的为必填项！</p>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="panel-32409">
+                                <div class="xjzh">
+                                 <div class="container-fluid" id="createresuft" style="display:none">
+                                  正在生成，请稍候……
+                                 </div>
+                                    <div class="container-fluid"  id="createcard">
+                                        <form class="form-horizontal" role="form">
+                                            <div class="row btred">
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" class="col-sm-3 control-label">卡号开始<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="cardbegin" name="cardbegin" placeholder="卡号开始" value="{$number}">
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">充值卡数量<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="cardnum" name="cardnum"  placeholder="充值卡数量">
+                                                        
+                                                    </div>
+                                                </div>
+                                                 <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">充值卡价值<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="price" name="price"  placeholder="充值卡价值">
+                                                        
+                                                    </div>
+                                                </div>
+                                               
+                                              
+
+
+                                                <div class="form-group">
+                                                    <div class="col-sm-4 col-sm-offset-2">
+                                                        <div class="but-box">
+                                                            <input type="button" class="width-100" name="" id="" value="提交" onclick="return create();"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--手机导航-->
+
+
+
+</div>
+
+
+<include file="./Tm/Dt/Admin/Foot.html" />
+<script src="__PUBLIC__/Admin/js/card_index.js" type="text/javascript" charset="utf-8"></script>

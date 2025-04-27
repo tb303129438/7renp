@@ -1,0 +1,86 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>汽车分销平台</title>
+		<link rel="stylesheet" type="text/css" href="/Public/Pc/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="/Public/Pc/css/login.css"/>
+		<script type="text/javascript" src="/Public/Pc/libs/jq/jquery-1.9.1.min.js" ></script>
+		
+	</head>
+	<body>
+		
+		<div class="login_box">
+			
+			<div class="login_contai">
+				
+				<div class="login_logo">
+					<img src="/Public/Pc/img/pcLogo.png"/>
+				</div>
+				<div class="form_box">
+					<form action="/pc/index/dologin" method="post">
+						<div class="form_row">
+							<span class="inp_name"><i class="form_icon icon_user"></i>账 号</span>
+							<input type="text" class="login_inp" name="username" id="username" value="" placeholder="输入您的账号" />
+						</div>
+						<div class="form_row">
+							<span class="inp_name"><i class="form_icon icon_pasw"></i>密 码</span>
+							<input type="password" class="login_inp" name="password" id="" value="" placeholder="输入您的密码" />
+						</div>
+						<div class="form_row form_row_yzm">
+							<span class="inp_name"><i class="form_icon icon_yzm"></i>验证码</span>
+							<input type="text" class="login_inp" name="verify" id="verify" value="<?php echo ($code); ?>" placeholder="输入验证码" />
+							<div class="yzm_box">
+								<!--<a href="javascript:;">-->
+								<dd id="captcha-container">
+									<img style="height: 40px;" src="/Admin/login/verify" title="点击刷新">
+								</dd>
+							</div>
+						</div>
+						<div class="login_but_box">
+							<input type="submit" class="login_but" name="" id="" value="登 录" onclick="return Check()"/>
+						</div>
+						<div class="text_r">
+							<a href="/home/index/szmm.html">忘记密码？</a>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
+<script type="text/javascript" src="libs/jq/jquery-1.9.1.min.js" ></script>
+		<script>
+			
+			$('.form_row .login_inp').focus(function(){
+				
+				$(this).parent().addClass('active');
+				
+			})
+			
+			$('.form_row .login_inp').blur(function(){
+				
+				$(this).parent().removeClass('active');
+				
+				
+			})
+			
+		</script>
+<script type="text/javascript" src="/Public/Mc/home/js/login.js" ></script>
+<script>
+	var captcha_img = $('#captcha-container').find('img')
+    var verifyimg = captcha_img.attr("src");
+    captcha_img.attr('title', '点击刷新');
+    captcha_img.click(function(){
+        if( verifyimg.indexOf('?')>0){
+            $(this).attr("src", verifyimg+'&random='+Math.random());
+        }else{
+            $(this).attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
+        }
+    });
+</script>

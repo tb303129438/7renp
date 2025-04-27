@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>汽车分销平台</title>
+		
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Pc/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Pc/css/style.css"/>
+		
+		<script type="text/javascript" src="__PUBLIC__/Pc/libs/jq/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Pc/js/jxmc.js" ></script>
+		
+		
+	</head>
+	<body>
+		
+		<include file="./Tm/Pc/Left.html" />
+		
+		<div class="right_box">
+			
+			<include file="./Tm/Pc/Top.html" />
+				
+			
+			<div class="right_main">
+				
+				<div class="main_title">
+				反馈
+				</div>
+				
+				<div class="form_box fk_box">
+					
+					<form action="/pc/wo/dosqfk" method="post">
+						
+						<div class="inp_row fk_title">
+							<p class="text_title">标题</p>
+							<p class="input_box"><input type="text" name="title" id="title" value="" placeholder="请输入标题" /></p>
+						</div>
+						<div class="inp_row">
+							<p class="text_title">内容</p>
+							<p class="input_box">
+								<textarea placeholder="请输入反馈内容" name="content" id="content"></textarea>
+							</p>
+						</div>
+						<div class="btn_box text_r">
+							<button type="submit" class="btn">确认提交</button>
+						</div>
+					</form>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

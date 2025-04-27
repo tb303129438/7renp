@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="/Public/Mc/lib/mui/css/mui.min.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/lib/mui/fonts/iconfont.css"/>
+		
+		<script type="text/javascript" src="/Public/Mc/lib/swiper/js/swiper.jquery.min.js" ></script>
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/lib/mui/css/mui.picker.min.css"/>
+		<script type="text/javascript" src="__PUBLIC__/Mc/lib/bootstrap/js/jquery.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Mc/lib/bootstrap/js/bootstrap.min.js" ></script>
+		
+	</head>
+	<script src="/Public/Mc/lib/mui/js/mui.min.js"></script>
+	
+	<script type="text/javascript">
+		mui.init()
+	</script>
+	<body>
+
+		<style>
+			.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar{
+				background: #FFA800!important;
+				display: none;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item{
+				background: #fff;
+				color: #4e4e4e;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item+.mui-control-item{
+				border-left: 1px solid #fff;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+				color: #fff;
+				background: #ffc554;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted{
+				border: 1px solid #ffc554;
+				border-radius: 6px;
+			}
+			.mui-scroll{
+				position: initial;
+			}
+		</style>
+		<header class="mui-bar mui-bar-nav bg_hs">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">密码修改</h1>
+		</header>
+		<div class="mui-content">
+			
+			<div id="slider" class="mui-slider">
+				<div style="padding: 10px 20px;">
+					<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+						<a class="mui-control-item" href="#item2mobile">
+							报单币
+						</a>
+					</div>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
+					
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll">
+							<div class="form_box">
+								<if condition="isset($_SESSION['info']['username'])">
+								<form action="" method="post">
+									<div class="form-group">
+									    <label>原始安全密码</label>
+									    <input type="password" class="form-control" value="" id="paypassword" name="paypassword">
+								  	</div>
+								  	
+									<div class="form-group">
+									    <label>新的安全密码</label>
+									    <input type="password" class="form-control" value="" id="snewpaypassword" name="snewpaypassword">
+								  	</div>
+								  	
+								  	<div class="form-group">
+									    <label>确认安全密码</label>
+									    <input type="password" class="form-control" value="" id="srenewpaypassword" name="srenewpaypassword">
+								  	</div>
+								  	
+								  	<div class="tsy">
+								  		<i class="icon iconfont icon-zhuyi color_lan"></i>
+								  		<span>登录密码与安全密码不能相同否则将导致安全密码失效，使账户积分无法得到安全保障。</span>
+								  	</div>
+								  	
+								  	<div class="but_box">
+								  		<button type="submit" class="but" onclick="return editpwd();">更改密码</button>
+								  	</div>
+								  	<else />
+								  	
+								</form>
+								</if>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+	</body>
+</html>
+<script type="text/javascript" src="__PUBLIC__/Mc/home/js/password.js" ></script>
+<script>
+
+	//修改密码
+	var editpwd=function()
+	{
+		if ($.trim($('#snewpaypassword').val()) == '')
+		{
+			alert('请先输入新安全密码');
+			$('#snewpaypassword').focus();
+			return false;
+
+		}
+		if($.trim($('#snewpaypassword').val()).length<6)
+		{
+			alert("新安全密码不能小于6位数！");
+			$('#snewpaypassword').focus();
+			return false;
+		}
+
+		if ($.trim($('#srenewpaypassword').val()) == '')
+		{
+			alert('请先输入确认新安全密码');
+			$('#srenewpaypassword').focus();
+			return false;
+
+		}
+		if ($.trim($('#srenewpaypassword').val()) != $.trim($('#srenewpaypassword').val()))
+		{
+			alert('新安全密码与确认新安全密码不一致，请重新输入！');
+			$('#srenewpaypassword').focus();
+			return false;
+
+		}
+
+
+		$.ajax({
+			type: "POST",
+			url: "/home/index/resetpaypwd",
+			data: {
+				'uname': $.trim($('#uname').val()),
+				'mobile': $.trim($('#mobile').val()),
+				'mobile_code': $.trim($('#mobile_code').val()),
+				'newpwd': $.trim($('#snewpaypassword').val()),
+			},
+			async: true,
+			success: function (msg) {
+
+				if(msg=='success')
+				{
+					alert('重置安全密码成功，请用新安全密码进行下单！');
+
+					$('#resetting').hide();
+					$('#panel-589644').show();
+
+				}
+			}
+		})
+	}
+
+</script>

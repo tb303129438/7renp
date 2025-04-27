@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>陌车</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <link rel="stylesheet" type="text/css" href="/Public/Mc/lib/bootstrap/css/bootstrap.min.css"/>
+	    
+	    <link rel="stylesheet" type="text/css" href="/Public/Mc/lib/swiper/css/swiper.min.css"/>
+		<script type="text/javascript" src="/Public/Mc/lib/bootstrap/js/jquery.min.js" ></script>
+		<script type="text/javascript" src="/Public/Mc/lib/swiper/js/swiper.jquery.min.js" ></script>
+		
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/lib/mui/css/mui.min.css"/>
+		<script type="text/javascript" src="/Public/Mc/lib/mui/js/mui.min.js" ></script>
+		
+	    <link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/base.css"/>
+	    <link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/style.css"/>
+	    <link rel="stylesheet" type="text/css" href="/Public/Mc/lib/mui/fonts/iconfont.css"/>
+	    
+		
+	</head>
+	<script type="text/javascript" charset="utf-8">
+      	mui.init();
+   </script>
+	
+	<body class="mui-ios mui-ios-9 mui-ios-9-1">
+		<include file="./Tm/Mc/Footer.html" />
+		<div class="mui-content">
+			
+<!--首页-->
+<style>
+	.mui-bar-nav{
+		box-shadow: none;
+	}
+</style>
+		
+		<div class="m_contai">
+<!--订单-->
+			<style type="text/css">
+				.mui-segmented-control{
+					border-color: #FFA800;
+				}
+				.mui-segmented-control .mui-control-item{
+					color: #FFA800;
+				    border-color: #FFA800;
+				    border-left: 1px solid #FFA800;
+				}
+				.mui-segmented-control .mui-control-item.mui-active{
+					background: #FFA800;
+				}
+			</style>
+				<div style="padding: 10px 10px; position: fixed;top: 0;z-index: 999;background: #fff;">
+					<div id="segmentedControl" class="mui-segmented-control">
+						<a class="mui-control-item mui-active" href="#item21">进行中</a>
+						<a class="mui-control-item" href="#item22">已完成</a>
+						<a class="mui-control-item" href="#item23">已取消</a>
+					</div>
+				</div>
+				<div style="padding-top: 60px; background: #fff;">
+					<div id="item21" class="mui-control-content mui-active">
+						<ul class="mui-table-view">
+							
+							
+							
+							<volist name="roomoom" id="vo" key="i">
+							<li class="mui-table-view-cell">
+								<div class="flex">
+									<div class="dd_list_img">
+										<img src="/Public/Mc/images/tj_img.png"/>
+									</div>
+									
+								
+									<div class="mui-text-right">
+										<p>{$vo.createtime|date="Y-m-d H:i:s",###}</p>
+										<p>{$vo.productname}</p>
+										<p class="color_ffa">￥{$vo.price}</p>
+										<p class="mui-badge-inverted"></p>
+									</div>
+								</div>
+								
+							</li>
+							</volist>
+							
+							
+						</ul>
+					</div>
+					
+					<div id="item22" class="mui-control-content">
+						<ul class="mui-table-view">
+							<!--<li class="mui-table-view-cell">-->
+								<!--<div class="flex">-->
+									<!--<div class="dd_list_img">
+										<!--<img src="/Public/Mc/images/tj_img.png"/>-->
+									<!--</div>-->
+									<div class="mui-text-right">
+										<!--<p>2017-10-10</p>
+										<p>玛莎拉蒂-BBQ001</p>-->
+										<!--<p class="color_ffa">￥5800</p>-->
+										<!--<p>已完成</p>-->
+									<!--</div>
+								</div>-->
+							</li>
+						</ul>
+					</div>
+					<div id="item23" class="mui-control-content">
+						<ul class="mui-table-view">
+							<!--<li class="mui-table-view-cell">
+								<div class="flex">-->
+									<!--<div class="dd_list_img">
+										<img src="/Public/Mc/images/tj_img.png"/>
+									</div>
+									<div class="mui-text-right">
+										<p>2017-10-10</p>
+										<p>玛莎拉蒂-BBQ001</p>
+										<p class="color_ffa">￥5800</p>
+										<p>已取消</p>
+									</div>-->
+								<!--</div>
+							</li>-->
+					</div>
+				</div>
+			</div>
+
+	<!--<script src="../js/mui.min.js"></script>-->
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+	</script>
+	
+	<script>
+		    var swiper = new Swiper('.swiper_box1 .swiper-container', {
+		    	autoplay: 3000,
+		    	loop : true,
+		        pagination: '.swiper-pagination',
+		        paginationClickable: true
+		    });
+		    
+	        var swiper = new Swiper('.swiper_box2 .swiper-container', {
+		        pagination: '.swiper-pagination',
+		    	loop : true,
+		        slidesPerView: 'auto',
+		        paginationClickable: true,
+		        spaceBetween: 20
+		    });
+	        var swiper = new Swiper('.swiper_box3 .swiper-container', {
+		        pagination: '.swiper-pagination',
+		    	loop : true,
+		        slidesPerView: 'auto',
+		        paginationClickable: true,
+		        spaceBetween: 10
+		    });
+		    mui('.mui-bar-tab').on('tap','a',function(){
+	    	document.location.href=this.href;
+	    	});
+    	</script>
+</body>
+	
+</html>
+

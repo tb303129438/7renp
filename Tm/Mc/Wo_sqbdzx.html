@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
+		<title>汽车分销平台</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/iconfont/iconfont.css"/>
+		<script type="text/javascript" src="__PUBLIC__/Mc/libs/jQuery/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Mc/js/jxmc.js" ></script>
+	</head>
+	<body>
+		<include file="./Tm/Mc/Left.html" />
+		<div class="zgb"></div>
+		<div class="nav_btn"><i class="icon iconfont icon-daohang"></i></div>
+		<div class="mobile_contai">
+			<div class="topbar">
+				<div class="top_title title3"></div>
+			</div>
+				<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.min.js" ></script>
+				<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/libs/mui/css/mui.picker.min.css"/>
+				
+				<div class="tab_box">
+					<div class="tab_contai">
+						
+						
+						<div class="tab_contai_1">
+							<script type="text/javascript" src="__PUBLIC__/Mc/libs/mui/js/mui.min.js" ></script>
+							<div class="form_gruop_box">
+								<div class="contai_area bg_hui">
+									<form action="/home/wo/dosqbdzx" method="post">
+										<div class="inp_box">
+											<p>申请会员</p>
+											<input type="text" class="inp" id="username" name="username" value="{$user.username}" readonly="true"/>
+										</div>
+										<div class="inp_box">
+											<p>中心名称</p>
+											<input type="text" class="inp" name="tusername" id="tusername"  />
+										</div>
+										<!--<div class="inp_box">
+											<p>所在地区</p>
+											<div id="city" > 
+												<select class="prov" id="c1" name="c1"></select>  
+												<select class="city" disabled="disabled" name="c2"><option value="0">请选择</option></select> 
+												<select class="dist" disabled="disabled" name="c3"><option value="0">请选择</option></select> 
+											</div> 
+										</div>-->
+										<div class="inp_box" >
+											<p>所在地区</p>
+											<input type="text" class="inp" name="city" value="" placeholder="请输入地区" />
+										</div>
+										
+										
+										<div class="btn_box text_c">
+									  		<button type="submit" class="inp" id="alertBtn" onclick="return Check();">提交</button>		
+									  	</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+		</div>
+	</body>
+	
+	<!--选择器js-->
+	<script type="text/javascript" src="/Public/Mc/home/js/bdzx.js"></script>
+	
+</html>
+<!--<script>
+$(function(){
+				$("#city").citySelect({
+					nodata:"none",
+					required:false
+				}); 
+			});
+			
+</script>-->

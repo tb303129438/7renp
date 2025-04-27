@@ -1,0 +1,139 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <script type="text/javascript" src="__PUBLIC__/Dt/lib/jedate/jedate.min.js" ></script>
+    <div class="main">
+        <div class="panel panel-primary">
+            <div class="panel-body panel-heading">
+                <h3 class="panel-title">产品管理</h3>
+            </div>
+            <div class="panel-footer clearfix">
+                <div class="selct">
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">关键字</div>
+                                <input id="k" name="k" class="form-control " type="text" placeholder="输入关键字" value="{$keyword}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">开始时间</div>
+                                <input id="b" name="b" class="form-control stu1" type="text" placeholder="输入开始日期" value="{$begintime|date='Y-m-d',###}" onfocus="getbigtime();" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">结束时间</div>
+                                <input id="e" name="e" class="form-control stu2" type="text" placeholder="输入结束日期" value="{$endtime|date='Y-m-d',###}" onfocus="getsmalltime();" readonly >
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            jeDate({
+                                dateCell:".stu1",
+                                format:"YYYY-MM-DD",
+                                isTime:false,
+                                minDate:"1900-1-1",
+                                maxDate:"2099-12-12"
+                            });
+                            jeDate({
+                                dateCell:".stu2",
+                                format:"YYYY-MM-DD",
+                                isTime:false,
+                                minDate:"1900-1-1",
+                                maxDate:"2099-12-12"
+                            });
+
+                            var getsmalltime=function()
+                            {
+
+                                if($.trim($('#b').val())!='')
+                                {
+                                    if(confirm('确认开始时间为：'+$('#b').val()+'吗?'));
+                                    {
+                                        jeDate({
+                                            dateCell:".stu2",
+                                            format:"YYYY-MM-DD",
+                                            isTime:false,
+                                            minDate:$('#b').val(),
+                                            maxDate:"2099-12-12"
+                                        });
+                                    }
+                                }
+                            }
+                            var getbigtime=function()
+                            {
+
+                                if($.trim($('#e').val())!='')
+                                {
+                                    if(confirm('确认结束时间为：'+$('#e').val()+'吗?'));
+                                    {
+                                        jeDate({
+                                            dateCell:".stu1",
+                                            format:"YYYY-MM-DD",
+                                            isTime:false,
+                                            minDate:"1900-1-1",
+                                            maxDate:$('#e').val()
+                                        });
+                                    }
+                                }
+                            }
+
+                        </script>
+                        <input type="button" class="btn btn-default" name="button" id="button" value="查询"  onclick="searchuser();" />
+                    </form>
+                </div>
+
+                <table class="table">
+                    <tr>
+                        <th>产品图片</th>
+                        <th>产品名称</th>
+                        <th>产品编号</th>
+                        <th>产品价格</th>
+                        <th>位置</th>
+                        <th>发布时间</th>
+                        <th>操作</th>
+                    </tr>
+                    <volist name="room" id="vo" key="i">
+
+                    <tr>
+                        <td>
+                            <if condition="$vo.pic eq ''">
+                               <img   src="/Public/upload/bg.jpg" class="btnbg" style="width:50px;height:50px;left:0px;z-Index:-1;"/>
+                            <else />
+                                <img   src="{$vo.pic}" class="btnbg" style="width:50px;height:50px;left:0px;z-Index:-1;"/>
+                            </if>
+                        </td>
+                        <td>{$vo.productname}</td>
+                        <td>{$vo.number}</td>
+                        <td>{$vo.price}</td>
+                        <td>
+                        <if condition="$vo.syqf eq 0">
+                            无
+                        <elseif condition="$vo.syqf eq 1"/>
+                            今日推荐
+                        <else /> 
+                            精选优车  
+                        </if>
+                        </td>
+                        <td>{$vo.createtime|date="Y-m-d H:i:s",###}</td>
+                        <td><a href="/admin/index/product_edit.html?id={$vo.id}&o={$o}">修改</a> <a href="javascript:void()" onclick="del('{$vo.id}');">删除</a></td>
+                    </tr>
+                        </volist>
+                </table>
+                <gt name="total" value="$pagesize">
+                    <include file="./Tm/Dt/Page.html" />
+                </gt>
+            </div>
+        </div>
+    </div>
+</div>
+
+<include file="./Tm/Dt/Admin/Foot.html" />
+
+<script src="__PUBLIC__/Admin/js/product.js" type="text/javascript" charset="utf-8"></script>

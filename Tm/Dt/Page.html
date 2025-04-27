@@ -1,0 +1,118 @@
+
+<div>
+
+    <nav>
+        <ul class="pagination pagination-sm pull-right">
+
+            <li>
+                <a href="{$pageurl}page=1{$search}">首页</a>
+
+            </li>
+            <li>
+                <if condition="$page eq 1">
+                    <a href="{$pageurl}page=1{$search}">上一页</a>
+                    <else />
+                    <a href="{$pageurl}page={$page-1}{$search}">上一页</a>
+                </if>
+            </li>
+            <if condition="$count lt 5">
+                <for start="0" end="$count">
+
+                    <if condition="$page eq $i+1">
+                        <li class="active"><a >{$i+1}</a></li>
+                        <else />
+                        <li ><a href="{$pageurl}page={$i+1}{$search}">{$i+1}</a></li>
+                    </if>
+
+                </for>
+                <else />
+                <if condition="$page elt 2">
+
+
+
+                    <for start="1" end="6">
+                        <eq name="i" value="$page">
+                            <li class="active"><a href="{$pageurl}page={$page}{$search}" >{$page}</a></li>
+                            <else />
+                            <li ><a href="{$pageurl}page={$i}{$search}">{$i}</a></li>
+                        </eq>
+                    </for>
+                    <elseif condition="$count-$page lt 5" />
+                    <for start="$count-4" end="$count+1">
+
+                        <eq name="page" value="$i">
+                            <li class="active"><a href="{$pageurl}page={$i}{$search}" >{$i}</a></li>
+                            <else />
+                            <li ><a href="{$pageurl}page={$i}{$search}">{$i}</a></li>
+                        </eq>
+
+
+                    </for>
+                    <else />
+                    <for start="$page-2" end="$page+3">
+
+                        <eq name="page" value="$i">
+                            <li  class="active"><a href="{$pageurl}page={$i}{$search}">{$i}</a></li>
+                            <else />
+                            <li ><a href="{$pageurl}page={$i}{$search}">{$i}</a></li>
+                        </eq>
+
+
+                    </for>
+                </if>
+
+
+            </if>
+            <li>
+                <if condition="$page eq $count">
+                    <a href="#">下一页</a>
+                    <else />
+                    <a href="{$pageurl}page={$page+1}{$search}">下一页</a>
+                </if>
+            </li>
+            <li>
+                <a href="{$pageurl}page={$count}{$search}">尾页</a>
+            </li>
+            <li>
+                <a ><input type="text" style="width:40px;margin: 0px;padding: 0px;height:16px;border-color:#337ab7"; id="topage"></a>
+            </li>
+            <li>
+               <a href="javascript:gopage()"> 跳转</a>
+            </li>
+            <li>
+                <input type="hidden" id="pagecount" name="pagecount" value="{$count}">
+                <a >共{$count}页{$total}条记录</a>
+
+            </li>
+        </ul>
+
+    </nav>
+
+</div>
+<script>
+    var gopage=function()
+    {
+        if($.trim($('#topage').val())=='')
+        {
+            alert('请输入要跳转的页数');
+            $('#topage').focus();
+            return;
+        }
+        var reg = new RegExp("^[0-9]*$");
+        if(!reg.test($.trim($('#topage').val()))){
+            alert("请输入整数!");
+            $('#topage').focus();
+            return;
+        }
+        if(parseInt($.trim($('#topage').val()),10)>parseInt($.trim($('#pagecount').val()),10))
+        {
+            alert('输入页数大于总页数');
+            $('#topage').focus();
+            return;
+        }
+
+
+
+        location.href='{$pageurl}page='+$('#topage').val()+'{$search}';
+    }
+</script>

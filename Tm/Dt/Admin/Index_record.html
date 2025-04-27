@@ -1,0 +1,208 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+<script>
+    //倒计时
+    function daojishi(miao,ti,i){
+        var times=miao;
+        ti = setInterval(daoji,1000);
+        function daoji(){
+
+            if(times <= 0){
+                clearInterval(ti);
+                $('#lasttime'+i).html(0);
+                return;
+            }else{
+                times--;
+            }
+            var hours = parseInt(times/3600) < 10 ? "0"+ parseInt((times/3600)) : parseInt(times/3600);
+            var second = times%60 < 10 ? "0"+ (times%60) : times%60;
+            var minutes = ((times-hours*3600-second)/60)//- < 10 ? "0"+ (times-second)/60 : ((times-second)/60);
+            $('#lasttime'+i).html(hours+":"+minutes+":"+second);
+
+
+        }
+
+    }
+
+
+
+</script>
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <script type="text/javascript" src="__PUBLIC__/Dt/lib/jedate/jedate.min.js" ></script>
+    <div class="main">
+
+
+
+        <div>
+            <ul class="nav nav-tabs">
+			  <li role="presentation" class="active"><a href="#">匹配记录</a></li>
+			</ul>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <div class="selct">
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon">关键字</div>
+                                    <input id="k" name="k" class="form-control " type="text" placeholder="输入关键字" value="{$keyword}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon">开始时间</div>
+                                    <input id="b" name="b" class="form-control stu1" type="text" placeholder="输入开始日期" value="{$begintime|date='Y-m-d',###}" onfocus="getbigtime();" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon">结束时间</div>
+                                    <input id="e" name="e" class="form-control stu2" type="text" placeholder="输入结束日期" value="{$endtime|date='Y-m-d',###}" onfocus="getsmalltime();" readonly >
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                jeDate({
+                                    dateCell:".stu1",
+                                    format:"YYYY-MM-DD",
+                                    isTime:false,
+                                    minDate:"1900-1-1",
+                                    maxDate:"2099-12-12"
+                                });
+                                jeDate({
+                                    dateCell:".stu2",
+                                    format:"YYYY-MM-DD",
+                                    isTime:false,
+                                    minDate:"1900-1-1",
+                                    maxDate:"2099-12-12"
+                                });
+
+                                var getsmalltime=function()
+                                {
+
+                                    if($.trim($('#b').val())!='')
+                                    {
+                                        if(confirm('确认开始时间为：'+$('#b').val()+'吗?'));
+                                        {
+                                            jeDate({
+                                                dateCell:".stu2",
+                                                format:"YYYY-MM-DD",
+                                                isTime:false,
+                                                minDate:$('#b').val(),
+                                                maxDate:"2099-12-12"
+                                            });
+                                        }
+                                    }
+                                }
+                                var getbigtime=function()
+                                {
+
+                                    if($.trim($('#e').val())!='')
+                                    {
+                                        if(confirm('确认结束时间为：'+$('#e').val()+'吗?'));
+                                        {
+                                            jeDate({
+                                                dateCell:".stu1",
+                                                format:"YYYY-MM-DD",
+                                                isTime:false,
+                                                minDate:"1900-1-1",
+                                                maxDate:$('#e').val()
+                                            });
+                                        }
+                                    }
+                                }
+
+                            </script>
+                            <input type="button" class="btn btn-default" name="button" id="button" value="查询"  onclick="searchuser();" />
+                        </form>
+                    </div>
+
+                    <table class="table">
+                        <tr>
+                            <th>提供帮助单号</th>
+                            <th>提供帮助用户名</th>
+                            <th>接受帮助单号</th>
+                            <th>接受帮助用户名</th>
+                            <th>匹配积分</th>
+                            <th>匹配时间</th>
+                            <th>剩余时间</th>
+                            <th>凭据</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+
+
+
+                        <gt name="total" value="0">
+                                <volist name="room" id="vo">
+                                    <tr>
+                                        <td>{$vo.orderid}</td>
+                                        <td>{$vo.username}</td>
+                                        <td>{$vo.orderid1}</td>
+                                        <td>{$vo.username1}</td>
+                                        <td>{$vo.price}</td>
+                                        <td>{$vo.begintime|date="Y-m-d H:i:s",###}</td>
+                                        <td >
+                                            <if condition="$vo.status eq 1">
+                                                <div  id="lasttime{$vo.id}"> </div>
+                                                <script>daojishi("<php>echo 12*3600-(time()-$vo['begintime']);</php>",'it{$vo.id}','{$vo.id}');</script>
+                                                <else />
+                                                0
+                                            </if>
+
+
+                                        </td>
+                                        <td>
+                                            <if condition="$vo.pic eq ''">
+                                                <img   src="/Public/upload/bg.jpg" class="btnbg" style="width:50px;height:50px;left:0px;z-Index:-1;"/>
+                                                <else />
+                                                <img   src="{$vo.pic}" class="btnbg" style="width:50px;height:50px;left:0px;z-Index:-1;"/>
+                                            </if>
+                                        </td>
+
+                                        <td> <switch name="vo.status">
+                                            <case value="0">排队中</case>
+                                            <case value="1">等待打款</case>
+                                            <case value="2">等待确认</case>
+                                            <case value="3">已完成</case>
+
+                                        </switch></td>
+
+                                        <td>
+                                            <a href="/admin/index/record_view.html?id={$vo.id}">详情</a></td>
+                                    </tr>
+
+                                </volist>
+                            <else />
+                            <tr><td colspan="10">没有查询到有相关的匹配记录。</td></tr>
+                        </gt>
+
+
+
+                    </table>
+                  <gt name="total" value="$pagesize">
+                   <include file="./Tm/Dt/Page.html" />
+                  </gt>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+						<script>
+							$("#shijian").find("a").click(function(){
+//								alert($("#shijian").find("a").length)
+								var zt = $(this).parent().parent().next().find("div").css("display")
+								if (zt == "none") {
+									$(this).parent().parent().next().find("div").slideDown().parent().css("padding","8");
+								} else{
+									$(this).parent().parent().next().find("div").slideUp().parent().css("padding","0");
+								}
+							})
+						</script>
+<include file="./Tm/Dt/Admin/Foot.html" />
+
+<script src="__PUBLIC__/Admin/js/record.js" type="text/javascript" charset="utf-8"></script>
+

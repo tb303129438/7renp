@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="__PUBLIC__/Mc/lib/mui/css/mui.min.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/lib/mui/css/mui.picker.min.css"/>
+	</head>
+	<script src="__PUBLIC__/Mc/lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Mc/js/jquery-1.9.1.js" ></script>
+	<body>
+		<header class="mui-bar mui-bar-nav bg_hs">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">转让</h1>
+		</header>
+		<div class="m_contai">
+			<div class="mui-content p_top">
+				<ul class="bdzx_box">
+					<form action="/Home/wo/dogcjjzz" method="post">
+						<style type="text/css">
+							h4{
+								font-weight: normal;
+								margin-bottom: 6px;
+								font-size: 16px;
+							}
+							.bdzx_box{
+								background: #fff;
+							}
+							/*.slect{
+								    line-height: 21px;
+								    height: 40px;
+								    margin-bottom: 15px;
+								    padding: 10px 15px;
+								    -webkit-user-select: text;
+								    border: 1px solid rgba(0,0,0,.2)!important;
+								    border-radius: 3px;
+								    outline: 0;
+								    background-color: #fff;
+								    -webkit-appearance: none;
+								    font-size: 16px;
+							}*/
+						</style>
+						<p style="margin-top: -15px;font-size: 12px;">销售积分只能转到服务中心的报单币，其他账户暂时无法互转</p>
+						<br/>
+						<p>账户余额：{$recharge.integral4}</p>
+						<li style="margin-bottom: 10px;">
+							<h4>请输入你要转让的积分</h4>
+							<div class="">
+								<input type="text" value="" placeholder="请输入你要转让的积分" id="recharge" name="recharge">
+							</div>
+						<li>
+						<li style="margin-bottom: 10px;">
+							<h4>请输入你要转让的用户</h4>
+							<div class="">
+								<input type="text" value="" placeholder="请输入你要转让的用户" id="name" name="name">
+							</div>
+						<li>
+						<li style="margin-bottom: 10px;">
+							
+							<div class="">
+								
+								<input type="radio"  name="zz" id="bdb" value="1" checked="checked">报单币
+							</div>
+						<li>
+							<h4>安全密码</h4>
+							<div>
+								<input type="password" value="" placeholder="请输入你的安全密码" id="password" name="password">
+							</div>
+						</li>
+						<li>
+							<div class="but_box">
+						  		<button type="submit" class="but" id="alertBtn" onclick="return Check();">提交</button>
+						  	</div>
+						</li>
+					</form>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+function Check()
+{
+	 if ($.trim($('#recharge').val()) == '')
+	       {
+	           alert('请先输入积分！');
+	           $('#recharge').focus();
+	           return false;
+	       }
+	 if ($.trim($('#name').val()) == '')
+       {
+           alert('请输入转让账户！');
+           $('#name').focus();
+           return false;
+       }
+     if ($.trim($('#password').val()) == '')
+       {
+           alert('请输入交易密码！');
+           $('#password').focus();
+           return false;
+       }
+}
+</script>>

@@ -1,0 +1,65 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+<!--顶部信息栏-->
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+        <div class="container-fluid">
+            <div class="wxts2">
+                <p><i class="glyphicon glyphicon-play"></i>&nbsp;温馨提示</p>
+                <p class="borcent"></p>
+                <h2>1、系统提示： 激活码可以用来激活用户，每个激活码需要200积分，！</h2>
+            </div>
+            <div class="bz_box">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">充值激活码账户</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="username" name="username"  placeholder="请输入充值激活码帐户" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">充值类型</label>
+                        <div class="col-sm-5">
+                            <label><input type="radio"  name="gotegary" value="1" checked> 充值</label>　<label><input type="radio" name="gotegary" value="2"> 扣除</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">购买激活码数量</label>
+                        <div class="col-sm-5">
+                            <input type="email" class="form-control" id="yzje" name="yzje" value="1" placeholder="请输入购买激活码数量" onblur="changeprice($('#yzje').val());">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword3" id="price"  class="col-sm-2 control-label">快速选择</label>
+                        <div class="col-sm-6">
+                            <ul class="ksxz">
+                                <li><a href="javascript:;" class="border_jin" onclick="changeprice(5);">5<span class="sj"></span></a></li>
+                                <li><a href="javascript:;" onclick="changeprice(10);"><span></span>10</a></li>
+                                <li><a href="javascript:;" onclick="changeprice(20);"><span></span>20</a></li>
+                                <li><a href="javascript:;" onclick="changeprice(50);"><span></span>50</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-5">
+                            <button type="button" id="button" class="btn btn-default" onclick="Check()">提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<include file="./Tm/Dt/Foot.html" />
+<script src="__PUBLIC__/Admin/js/jihuoma.js" type="text/javascript" charset="utf-8"></script>

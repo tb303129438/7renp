@@ -1,0 +1,156 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+<link href="__PUBLIC__/upload/css.css" rel="stylesheet" media="screen" type="text/css">
+<script>
+    //倒计时
+    function daojishi(miao,ti,i){
+        var times=miao;
+        ti = setInterval(daoji,1000);
+        function daoji(){
+
+            if(times <= 0){
+                clearInterval(ti);
+                $('#lasttime'+i).html(0);
+                return;
+            }else{
+                times--;
+            }
+            var hours = parseInt(times/3600) < 10 ? "0"+ parseInt((times/3600)) : parseInt(times/3600);
+            var second = times%60 < 10 ? "0"+ (times%60) : times%60;
+            var minutes = ((times-hours*3600-second)/60)//- < 10 ? "0"+ (times-second)/60 : ((times-second)/60);
+            $('#lasttime'+i).html(hours+":"+minutes+":"+second);
+
+
+        }
+
+    }
+
+
+
+</script>
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <script type="text/javascript" src="__PUBLIC__/Dt/lib/jedate/jedate.min.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/upload/jquery.form.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/upload/upload.js"></script>
+    <!--主要内容块-->
+    <div class="main">
+        <div class="panel panel-primary">
+            <div class="panel-body panel-heading">
+                <h3 class="panel-title">提供帮助详情</h3>
+            </div>
+            <div>
+                <volist name="room" id="vo">
+                <div class="panel-body">
+                    <h4>提供帮助排单号：{$vo.orderid}</h4>
+                    <ul>
+                        <li>参加者：{$vo.username}</li>
+                        <li>提供帮助数额：RMB {$vo.price}</li>
+                        <li>排队日期：{$vo.createtime|date='Y-m-d',###}</li>
+                        <li>当前状态：<span class="color-d84a38">
+                            <switch name="vo.status">
+                                <case value="0">排队中，等待匹配</case>
+                                <case value="1">匹配完成，等待打款</case>
+                                <case value="2">打款完成，等待确认</case>
+                                <case value="3">确认完成，成功提供帮助</case>
+
+                            </switch>
+
+                        </span></li>
+                        <if condition="$vo.status eq 3">
+                        <li>利息：<span class="color-d84a38">{$vo.interest}</span></li>
+                        <li>重复消费：<span class="color-d84a38">{$vo.replay}</span></li>
+                        </if>
+                    </ul>
+                </div>
+
+                    <volist name="vo.sub" id="vo1">
+                <div class="panel-footer container-fluid bg-f0">
+                    <div class="row">
+                        <ul class="biaot">
+                            <li class="col-sm-3">
+                                <p>{$vo1.orderid}</p>
+                                <p><span class="color-35aa47"><switch name="vo1.status">
+                             <case value="1">
+                            等待确认打款
+                             </case>
+                             <case value="2">
+                                已经打款
+                             </case>
+                             <case value="3">
+                                 已经收款，订单完成
+                             </case>
+                         </switch></span></p>
+                            </li>
+                            <li class="col-sm-3">
+                                <p>匹配日期</p>
+                                <p>{$vo.begintime|date='Y-m-d',###}</p>
+                            </li>
+                            <li class="col-sm-2">{$vo1.username}</li>
+                            <li class="col-sm-2 text-right"><a href="javascript:;"class="glyphicon glyphicon-chevron-down shouq"></a></li>
+
+                        </ul>
+                    </div>
+                    <div style="display:none;">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tr>
+                                    <td width="120px">支付宝：</td>
+                                    <td>{$vo1.alipay}</td>
+                                </tr>
+                                <tr>
+                                    <td>银行信息：</td>
+                                    <td>{$vo1.bank} / {$vo1.bankcode}/ {$vo1.bankname}</td>
+                                </tr>
+                                <tr>
+                                    <td>联络接收人：</td>
+                                    <td>{$vo1.realname}:{$vo1.mobile}</td>
+                                </tr>
+                                <tr>
+                                    <td>联络推荐人：</td>
+                                    <td>{$vo1.trealname}:{$vo1.tmobile}</td>
+                                </tr>
+                                <tr>
+                                    <td>打款倒计时：</td>
+                                    <td> <if condition="$vo1.status eq 1">
+                                        <div  id="lasttime{$vo1.id}"> </div>
+                                        <script>daojishi("<php>echo 12*3600-(time()-$vo['begintime']);</php>",'it{$vo1.id}','{$vo1.id}');</script>
+                                        <else />
+                                        0
+                                    </if></td>
+                                </tr>
+                                <tr>
+                                    <td>凭据图片</td>
+                                    <td>
+
+                                        <if condition="$vo1.pic eq ''">
+                                            <img   src="__PUBLIC__/upload/bg.jpg" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/>
+
+
+                                        <else />
+                                            <a href="{$vo1.pic}" target="_blank"> <img   src="{$vo1.pic}" class="btnbg" style="width:100px;height:100px;left:0px;z-Index:-1;"/></a>
+
+                                        </if>
+                                        <script>upload("img{$vo1.id}","fileupload{$vo1.id}");</script>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+                    </div>
+                </div>
+                    </volist>
+
+                </volist>
+
+            </div>
+        </div>
+        <input type="button" id="button" name="button" onclick="javascript:history.go(-1);" value="返回" class="btn btn-primary" >
+    </div>
+</div>
+
+
+<include file="./Tm/Dt/Foot.html" />

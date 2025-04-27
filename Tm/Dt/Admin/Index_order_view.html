@@ -1,0 +1,168 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+<script src="__PUBLIC__/Ckeditor/ckeditor.js"></script>
+<script src="__PUBLIC__/Ckeditor/sample.js"></script>
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="tabbable" id="tabs-184023">
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a data-toggle="tab">订单详情</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content bgcolor-d5e2eb pad20">
+                            <form action="/admin/index/donews_add.html" class="form-horizontal" method="post" id="myform" name="myform">
+                               
+                               
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">订单号:</label>
+                                    <div class="col-sm-4">
+                                    {$data.orderid}
+                                    </div>
+                                </div>
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">产品图片：</label>
+                                    <div class="col-sm-4">
+                                     <img src="{$product.pic}" style="width:100px;height:100px;"/>
+                                    </div>
+                                </div>
+
+
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">商品名称:</label>
+                                    <div class="col-sm-4">
+                                    {$data.productname}
+                                    </div>
+                                </div>
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">商品数量:</label>
+                                    <div class="col-sm-4">
+                                   {$data.number}
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">商品价格:</label>
+                                    <div class="col-sm-4">
+                                 ￥<span class="jiage" id="price">{$data.price}</span>
+                                    </div>
+                                </div>
+
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">使用券:</label>
+                                    <div class="col-sm-4">
+                                 <span class="jiage" id="price">{$product.ticket}</span>
+                                    </div>
+                                </div>
+
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">联系人:</label>
+                                    <div class="col-sm-4">
+                                 {$adata.contact}
+                                    </div>
+                                </div>
+
+                                
+
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">手机:</label>
+                                    <div class="col-sm-4">
+                                 {$adata.mobile}
+                                    </div>
+                                </div>
+
+
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">详细地址:</label>
+                                    <div class="col-sm-4">
+                               {$adata.province}{$adata.city}{$adata.dist}
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">收货省市:</label>
+                                    <div class="col-sm-4">
+                                {$adata.province}{$adata.city}{$adata.dist}
+                                    </div>
+                                </div>
+
+                                   <div class="form-group">
+                                    <label class="col-sm-2 control-label">详细地址:</label>
+                                    <div class="col-sm-4">
+                                {$adata.province}{$adata.city}{$adata.dist}
+                                    </div>
+                                </div>
+
+
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label">状态:</label>
+                                    <div class="col-sm-4">
+                               <switch name="data.status">
+                        <case value="1">
+                            下单
+                        </case>
+                        <case value="2">
+                            已付款
+                        </case>
+                        <case value="3">
+                            已发货　<a href="javascript:void()" onclick="orderok('{$data.id}')">收货</a>
+                        </case>
+                        <case value="4">
+                            交易成功
+                        </case>
+                        <case value="5">
+                            退货
+                        </case>
+                        <case value="6">
+                            关闭
+                        </case>
+
+                    </switch>
+                                    </div>
+                                </div>
+
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">快递:</label>
+                                    <div class="col-sm-4">
+                                {$adata.kdgs}
+                                    </div>
+                                </div>
+
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">快递单号:</label>
+                                    <div class="col-sm-4">
+                                {$adata.kddh}
+                                    </div>
+                                </div>
+
+
+                              
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+<script>
+    //initSample();
+    //var stem = CKEDITOR.instances.editor.getData();
+    CKEDITOR.replace( 'editor' );
+</script>
+
+<include file="./Tm/Dt/Foot.html" />
+<script src="__PUBLIC__/Admin/js/news_add.js" type="text/javascript" charset="utf-8"></script>

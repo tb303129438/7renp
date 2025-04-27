@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="__PUBLIC__/Mc/lib/mui/css/mui.min.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/css/css/style.css"/>
+	</head>
+	<script src="__PUBLIC__/Mc/lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+	<body>
+		<header class="mui-bar mui-bar-nav bg_hs">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">推荐列表</h1>
+		</header>
+		<div class="m_contai">
+			<div class="main main_p_body">
+				<div class="sea_box">
+					<div class="sea_list">
+						<form action="" method="post">
+							<div class="mui-input-row mui-search">
+								<input type="search" class="mui-input-clear" placeholder="请输入查询内容" data-input-clear="1" data-input-search="1">
+								<button type="submit" class="sea_but"><span class="mui-icon mui-icon-search"></span></button>
+							</div>
+						</form>
+					</div>
+					<link rel="stylesheet" type="text/css" href="__PUBLIC__/Mc/lib/mui/css/mui.picker.min.css"/>
+					<div class="sea_list">
+						<div data-options='{"type":"month","beginYear":1990,"endYear":2017}' class="btn mui-btn mui-btn-block date_but">
+							<form action="" method="post">
+								<input id="date" type="hidden" class="mui-input-clear" placeholder="" data-input-clear="1" data-input-search="1">
+								<button type="submit" class="sea_but" style="top: -2px;font-size: 24px;padding-top: 0px;padding-bottom: 0;"><span class="mui-icon mui-icon-search"></span></button>
+								<div class="mui-input-row mui-search" style="overflow: initial;" id="dateShow">请选择日期
+								</div>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+				
+				
+				
+				<volist name="player" id="vo" key="i">
+				<div class="list_box">
+					<div class="tjlb">
+						<div class="tjlb_title">
+							<div class="mui-text-left">{$vo.createtime|date="Y-m-d H:i:s",###}</div>
+							<div class="mui-text-right">推荐人数：<span>{$vo.times}</span></div>
+						</div>
+						<div class="tjlb_body">
+							<div class="tjlb_user">
+								<div class="img_box">
+									
+								</div>
+								<div class="user_name">
+									<p>admin</p>
+									<h4>{$vo.username}</h4>
+								</div>
+							</div>
+							<div class="fpls">
+								<h4 class="mui-pull-right">轮数　<span>{$vo.}</span></h4>
+							</div>
+						</div>
+						<div class="tjlb_foot">
+							<div class="mui-text-left">13800138000</div>
+						</div>
+					</div>
+					<div class="mui-text-right ahref">
+					</div>
+				</div>
+				</volist>
+				
+				
+				
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="__PUBLIC__/Mc/lib/mui/js/mui.picker.min.js" ></script>
+		<script>
+			(function($) {
+				$.init();
+				var result = $('#date')[0];
+				var resultShow = $('#dateShow')[0];
+				var btns = $('.btn');
+				btns.each(function(i, btn) {
+					btn.addEventListener('tap', function() {
+						var optionsJson = this.getAttribute('data-options') || '{}';
+						var options = JSON.parse(optionsJson);
+						var id = this.getAttribute('id');
+						/*
+						 * 首次显示时实例化组件
+						 * 示例为了简洁，将 options 放在了按钮的 dom 上
+						 * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+						 */
+						var picker = new $.DtPicker(options);
+						picker.show(function(rs) {
+							/*
+							 * rs.value 拼合后的 value
+							 * rs.text 拼合后的 text
+							 * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+							 * rs.m 月，用法同年
+							 * rs.d 日，用法同年
+							 * rs.h 时，用法同年
+							 * rs.i 分（minutes 的第二个字母），用法同年
+							 */
+							result.value = rs.text;
+							resultShow.innerText = rs.text;
+							
+							/* 
+							 * 返回 false 可以阻止选择框的关闭
+							 * return false;
+							 */
+							/*
+							 * 释放组件资源，释放后将将不能再操作组件
+							 * 通常情况下，不需要示放组件，new DtPicker(options) 后，可以一直使用。
+							 * 当前示例，因为内容较多，如不进行资原释放，在某些设备上会较慢。
+							 * 所以每次用完便立即调用 dispose 进行释放，下次用时再创建新实例。
+							 */
+							picker.dispose();
+						});
+					}, false);
+				});
+			})(mui);
+		</script>
+	</body>
+
+</html>

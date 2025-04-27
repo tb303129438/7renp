@@ -1,0 +1,89 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css.css" rel="stylesheet" media="screen" type="text/css">
+
+
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.form.js"></script>
+</head>
+
+<body>
+<div id="img1" class="imgcontent">
+	<div  class="btnimg">
+
+		<img class="btnbg"  src="/Public/upload/bg.jpg" />
+		<span class="btnspan" ></span>
+		<input id="fileupload1" type="file" name="mypic">
+
+		<div class="progress">
+			<span class="bar"></span><span class="percent">0%</span >
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>
+<script type="text/javascript">
+$(function () {
+	
+	
+	upload("img1","fileupload1");
+
+
+});
+
+
+function upload(img,fileid){
+	var btn=$("#"+img+" .btn");
+	var btn2=$("#"+img+" .btnspan");
+	var btnbg=$("#"+img+" .btnbg");
+	var bar = $("#"+img+" .bar");
+	var percent = $("#"+img+" .percent");
+	var progress = $("#"+img+" .progress");
+	$("#"+fileid).wrap("<form id='"+fileid+"myupload' action='action.php' method='post' enctype='multipart/form-data'></form>");
+    $("#"+fileid).change(function(){
+		$("#"+fileid+"myupload").ajaxSubmit({
+			dataType:  'json',
+			beforeSend: function() {
+        		
+				progress.show();
+        		var percentVal = '0%';
+        		bar.width(percentVal);
+        		percent.html(percentVal);
+				btn2.html("上传中...");
+    		},
+    		uploadProgress: function(event, position, total, percentComplete) {
+        		var percentVal = percentComplete + '%';
+        		bar.width(percentVal);
+        		percent.html(percentVal);
+    		},
+			success: function(data) {
+
+				//files.html("<b>"+data.name+"("+data.size+"k)</b> <span class='delimg' rel='"+data.pic+"'>删除</span>");
+				var imgurl = "/Public/upload/files/"+data.pic;
+				//showimg.html("<img src='"+imgurl+"'>");
+				$("#"+img+"url").val(imgurl);
+				btn2.html("");
+				
+				btnbg.attr('src',imgurl);
+				
+			},
+			error:function(xhr){
+				alert(xhr.responseText);
+				btn2.html("上传失败");
+				bar.width('0')
+				files.html(xhr.responseText);
+				
+			}
+		});
+	});
+	
+	
+	
+}
+</script>

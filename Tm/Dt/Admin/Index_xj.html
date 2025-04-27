@@ -1,0 +1,111 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="tabbable" id="tabs-184023">
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#panel-32409" data-toggle="tab">现金钱包</a>
+                                </li>
+                            </ul>
+                        </div>
+                       <div class="wxts2">
+                            <!--<p class="zhuyi">注意：凡是带<span style="color: red;">&nbsp;*&nbsp;</span>的为必填项！</p>-->
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="panel-32409">
+                                <div class="xjzh">
+                                 <div class="container-fluid" id="createresuft" style="display:none">
+                                  正在生成，请稍候……
+                                 </div>
+                                    <div class="container-fluid"  id="createcard">
+                                        <form class="form-horizontal" role="form" method="post" action="/Admin/index/dogcjj">
+                                            <div class="row btred">
+                                            
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" class="col-sm-3 control-label">转让账户<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="name" name="name" placeholder="请输入转让账户" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" class="col-sm-3 control-label">转让积分<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="zzje" name="zzje" placeholder="请输入转让积分" value="">
+
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="form-group">
+                                                    <label for="inputPassword3" class="col-sm-3 control-label">安全密码<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <input type="password" class="form-control" id="paypassword" name="paypassword"  placeholder="请输入安全密码">
+                                                        
+                                                    </div>
+                                                </div> -->
+
+                                                <div class="form-group">
+                                                    <div class="col-sm-4 col-sm-offset-2">
+                                                        <div class="but-box">
+                                                            <input type="submit" class="width-100" name="" id="" value="提交" onclick="return Check();"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--手机导航-->
+
+
+
+</div>
+
+
+<include file="./Tm/Dt/Admin/Foot.html" />
+<script>
+    function Check()
+{
+    if ($.trim($('#name').val()) == '')
+    {
+        alert('转让账户不能为空！');
+        $('#name').focus();
+        return false;
+    }
+    
+    if ($.trim($('#zzje').val()) == '')
+    {
+        alert('请先输入积分！');
+        $('#zzje').focus();
+        return false;
+    }
+    // if ($.trim($('#paypassword').val()) == '')
+    // {
+    //     alert('交易密码不能为空！');
+    //     $('#paypassword').focus();
+    //     return false;
+    // }
+    
+    save();
+    return false;
+}
+
+
+</script>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>汽车分销平台</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Pc/libs/bootstrap/css/bootstrap.min.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Pc/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Pc/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Pc/css/mobile.css"/>
+		
+		<script type="text/javascript" src="__PUBLIC__/Pc/libs/jq/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Pc/libs/bootstrap/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Pc/home/js/jxmc.js" ></script>
+		
+		
+	</head>
+	<body>
+		<include file="./Tm/Pc/Left.html" />
+		
+		<div class="right_box">
+			
+			<include file="./Tm/Pc/Top.html" />
+			
+			<div class="right_main">
+				
+				<div class="main_title">
+					注册新会员
+				</div>
+				<if condition="$aq.tohelp eq 0">
+					<div class="tsy_box" style="color: red;">
+						<i class="tsy_ico"></i>注意：您的帐号类型为普通会员，注册的新用户需联系服务中心进行激活！
+					</div>
+				</if>
+				
+				
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12">
+						
+							<div class="form_box">
+								
+								<form action="" method="post" id="formssss">
+									
+									<div class="inp_row">
+										<p class="text_title">会员账号</p>
+										<p class="input_box"><input type="text" name="username" id="username" value="{$hhh}" placeholder="请输入帐号"  /></p>
+									</div>
+									<div class="inp_row">
+										<p class="text_title">会员姓名</p>
+										<p class="input_box"><input type="text" name="realname" id="realname" value="" placeholder="请输入姓名" /></p>
+									</div>
+									<div class="inp_row">
+										<p class="text_title">身份证号</p>
+										<p class="input_box"><input type="text" name="paper" id="paper" value="" placeholder="请输入身份证号码" /></p>
+									</div>
+									<div class="inp_row">
+										<p class="text_title">手机号码</p>
+										<p class="input_box"><input type="text" name="mobile" id="mobile" value="" placeholder="请输入手机号码" /></p>
+									</div>
+									<if condition="$aq.tohelp eq 0">
+										<div class="inp_row">
+											<p class="text_title">推荐会员</p>
+											<p class="input_box"><input type="text" name="tusername" id="tusername" value="{$aq.username}" placeholder="请输入推荐人" readonly="true"/></p>
+										</div>
+									<else />
+										<div class="inp_row">
+											<p class="text_title">推荐会员</p>
+											<p class="input_box"><input type="text" name="tusername" id="tusername" value="" placeholder="请输入推荐人"/></p>
+										</div>
+									</if>
+									<if condition="$aq.tohelp eq 0">
+										<div class="inp_row">
+											<p class="text_title">报单中心</p>
+											<p class="input_box"><input type="text" name="fwzx" id="fwzx" value="" placeholder="请输入报单中心" /></p>
+										</div>
+									</if>
+									
+									
+									<div class="inp_row">
+										<p class="text_title">登陆密码</p>
+										<p class="input_box"><input type="password" name="password" id="password" value="111111" placeholder="" /></p><span style="color: brown;">注意：登录密码默认为111111</span>
+									</div>
+									<div class="inp_row">
+										<p class="text_title">安全密码</p>
+										<p class="input_box"><input type="password" name="paypassword" id="paypassword" value="222222" placeholder="" /></p><span style="color: brown;">注意：安全密码默认为222222</span>
+									</div>
+									<div class="btn_box text_r">
+										<button type="submit" class="btn" onclick="return Check();">确认提交</button>
+									</div>
+								</form>
+								
+							</div>
+					
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
+<script type="text/javascript" src="__PUBLIC__/Pc/home/js/add.js"></script>

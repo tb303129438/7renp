@@ -1,0 +1,88 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="tabbable" id="tabs-184023">
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#panel-32409" data-toggle="tab">开关设置</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="wxts2">
+                            <p class="zhuyi">注意：凡是带<span style="color: red;">&nbsp;*&nbsp;</span>的为必填项！</p>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="panel-32409">
+                                <div class="xjzh">
+                                    <div class="container-fluid">
+                                        <form class="form-horizontal" role="form">
+                                            <div class="row btred">
+
+
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" class="col-sm-3 control-label">网站开关控制<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <label><input type="radio"  name="web_config" value="0" <if condition="$setting.web_config eq 0">checked</if>> 开</label>
+                                                        <label><input type="radio"  name="web_config" value="1" <if condition="$setting.web_config eq 1">checked</if>> 关</label>&nbsp;&nbsp;
+
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" class="col-sm-3 control-label">提供帮助开关控制<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <label><input type="radio"  name="tohelp" value="0" <if condition="$setting.tohelp eq 0">checked</if>> 开</label>
+                                                        <label><input type="radio"  name="tohelp" value="1" <if condition="$setting.tohelp eq 1">checked</if>> 关</label>&nbsp;&nbsp;
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputEmail3" class="col-sm-3 control-label">得到帮助开关控制<span>&nbsp;*</span></label>
+                                                    <div class="col-sm-4">
+                                                        <label><input type="radio"  name="gethelp" value="0" <if condition="$setting.gethelp eq 0">checked</if>> 开</label>
+                                                        <label><input type="radio"  name="gethelp" value="1" <if condition="$setting.gethelp eq 1">checked</if>> 关</label>&nbsp;&nbsp;
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-4 col-sm-offset-2">
+                                                        <div class="but-box">
+                                                            <input type="submit" class="width-100" name="" id="" value="提交" onclick="return Check();"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--手机导航-->
+
+
+
+</div>
+
+
+<include file="./Tm/Dt/Admin/Foot.html" />
+<script src="__PUBLIC__/Admin/js/setting.js" type="text/javascript" charset="utf-8"></script>

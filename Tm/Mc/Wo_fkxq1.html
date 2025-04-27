@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="/Public/Mc/lib/mui/css/mui.min.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/style.css"/>
+	</head>
+	<script src="/Public/Mc/lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+	<body>
+
+		<style>
+			.gg_box{
+				padding: 0 20px;
+			}
+			.gg_box h2{
+			    font-size: 18px;
+			    text-align: center;
+			    padding: 14px;
+			    font-weight: normal;
+			}
+			.gg_contai{
+				text-indent: 2em;
+			}
+			.gg_footer{
+				padding: 10px 0;
+			}
+			.gg_footer p{
+				overflow: hidden;
+				font-size: 14px;
+			}
+		</style>
+		<header class="mui-bar mui-bar-nav bg_hs">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">反馈消息</h1>
+		</header>
+		<div class="mui-content">
+			<div class="gg_box">
+			<volist name="ccc" id="vo" key="i"></volist>
+				<div><h2>{$vo.title}</h2></div>
+				<div class="gg_contai">{$vo.content}</div>
+				<div class="gg_footer">
+					<p><span class="mui-pull-right">{$_SESSION['username']}</span></p>
+					<p><span class="mui-pull-right">{$vo.createtime|date="Y-m-d H:i:s",###}</span></p>
+				</div>
+			</volist>
+			</div>
+		</div>
+		
+				<div class="">
+				<volist name="ccc" id="vo" key="i"></volist>
+					<div class="gg_contai"><h4>{$vo.hfcontent}</h4></div>
+				</volist>
+				</div>
+	</body>
+</html>

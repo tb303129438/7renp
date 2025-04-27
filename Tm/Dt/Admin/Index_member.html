@@ -1,0 +1,165 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+
+<div id="right">
+    <include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <script type="text/javascript" src="__PUBLIC__/Dt/lib/jedate/jedate.min.js" ></script>
+    <div class="main">
+        <div class="index_cont">
+
+
+            <div class="table-responsive table_box">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#panel-32409" data-toggle="tab">会员列表</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="selct">
+                    <form class="form-inline" role="form">
+                       
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">关键字</div>
+                                <input id="k" name="k" class="form-control " type="text" placeholder="输入关键字" value="{$keyword}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">开始时间</div>
+                                <input id="b" name="b" class="form-control stu1" type="text" placeholder="输入开始日期" value="{$begintime|date='Y-m-d',###}" onfocus="getbigtime();" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">结束时间</div>
+                                <input id="e" name="e" class="form-control stu2" type="text" placeholder="输入结束日期" value="{$endtime|date='Y-m-d',###}" onfocus="getsmalltime();" readonly >
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            jeDate({
+                                dateCell:".stu1",
+                                format:"YYYY-MM-DD",
+                                isTime:false,
+                                minDate:"1900-1-1",
+                                maxDate:"2099-12-12"
+                            });
+                            jeDate({
+                                dateCell:".stu2",
+                                format:"YYYY-MM-DD",
+                                isTime:false,
+                                minDate:"1900-1-1",
+                                maxDate:"2099-12-12"
+                            });
+
+                            var getsmalltime=function()
+                            {
+
+                                if($.trim($('#b').val())!='')
+                                {
+                                    if(confirm('确认开始时间为：'+$('#b').val()+'吗?'));
+                                    {
+                                        jeDate({
+                                            dateCell:".stu2",
+                                            format:"YYYY-MM-DD",
+                                            isTime:false,
+                                            minDate:$('#b').val(),
+                                            maxDate:"2099-12-12"
+                                        });
+                                    }
+                                }
+                            }
+                            var getbigtime=function()
+                            {
+
+                                if($.trim($('#e').val())!='')
+                                {
+                                    if(confirm('确认结束时间为：'+$('#e').val()+'吗?'));
+                                    {
+                                        jeDate({
+                                            dateCell:".stu1",
+                                            format:"YYYY-MM-DD",
+                                            isTime:false,
+                                            minDate:"1900-1-1",
+                                            maxDate:$('#e').val()
+                                        });
+                                    }
+                                }
+                            }
+
+                        </script>
+                        <input type="button" class="btn btn-default" name="button" id="button" value="查询"  onclick="searchuser();" />
+                    </form>
+                </div>
+                
+                <table class="table">
+                    <tr>
+
+                        <!-- <th>会员编号</th> -->
+                        <th>会员帐户</th>
+                        <th>姓名</th>
+                        <th>手机</th>
+                        <th>推荐人</th>
+                        <th>注册时间</th>
+                        <th>服务中心</th>
+                        <th>操作</th>
+                    </tr>
+             <if condition="$ben.tohelp eq 0">
+                    <volist name="room" id="vo" key="i">
+                    <tr>
+
+                        <!-- <td>{$vo.id}</td> -->
+                        <td>{$vo.username}</td>
+                        <td>{$vo.realname}</td>
+                        <td>{$vo.mobile}</td>
+                        <td>{$vo.tusername}</td>
+                        <td>{$vo.createtime|date="Y-m-d H:i:s",###}</td>
+                        <!--<td>
+                            <switch name="vo.status">
+                                <case value="0">等待激活</case>
+                                <case value="1">已经激活 </case>
+                                <!--<case value="2">已经休眠</case>-->
+                                <!--<case value="3">已经冻结</case>-->
+                            <!--</switch>
+                        </td>-->
+<td>{$vo.fwzx}</td>
+                        <td>
+                            <!--<switch name="vo.status">
+                                <case value="0"><a href="javascript:void();" onclick="changestatus('{$vo.id}',1)">开通</a></case>
+                                <case value="1"><a href="javascript:void();" onclick="changestatus('{$vo.id}',3)">冻结</a> | <a  href="javascript:void();" onclick="changestatus('{$vo.id}',2)">休眠</a></case>
+                                <case value="2"><a href="javascript:void();" onclick="changestatus('{$vo.id}',1)">开通</a> | <a href="javascript:void();" onclick="changestatus('{$vo.id}',3)">冻结</a></case>
+                                <case value="3"><a href="javascript:void();" onclick="changestatus('{$vo.id}',1)">开通</a> | <a  href="javascript:void();" onclick="changestatus('{$vo.id}',2)">休眠</a> </case>
+                            </switch> -->
+                           
+                           	<!--<if condition="$vo.status eq 0"><a href="/pc/wo/jh.html?id={$vo.id}">激活| </a> <else /><span style="color: #23527c;">已激活 </span> | </if>-->
+                          
+                           
+                            <a href="/admin/index/profile.html?id={$vo.id}">修改</a> | <a href="/admin/index/user_password.html?id={$vo.id}">修改密码</a>
+                            |  <a href="javascript:void();" onclick="deleteuser('{$vo.id}')">删除</a> 
+                           <br>
+                           
+                              |
+                            <a href="/admin/index/login?id={$vo.id}" target="_blank">进入会员中心</a>
+                        </td>
+                    </tr>
+                </volist>
+                </if>
+                	
+                	
+                </table>
+				<gt name="total" value="$pagesize">
+                	<include file="./Tm/Dt/Page.html" />
+                </gt>
+            </div>
+        </div>
+    </div>
+</div>
+
+<include file="./Tm/Dt/Admin/Foot.html" />
+
+<script src="__PUBLIC__/Admin/js/member.js" type="text/javascript" charset="utf-8"></script>
+

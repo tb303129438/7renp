@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>陌车</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	    
+	    <link rel="stylesheet" type="text/css" href="/Public/Mc/lib/bootstrap/css/bootstrap.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="/Public/Mc/lib/swiper/css/swiper.min.css"/>
+		<script type="text/javascript" src="/Public/Mc/lib/bootstrap/js/jquery.min.js" ></script>
+		<script type="text/javascript" src="/Public/Mc/lib/swiper/js/swiper.jquery.min.js" ></script>
+		
+		<link rel="stylesheet" type="text/css" href="/Public/Mc/lib/mui/css/mui.min.css"/>
+		<script type="text/javascript" src="/Public/Mc/lib/mui/js/mui.min.js" ></script>
+		
+	    <link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/base.css"/>
+	    <link rel="stylesheet" type="text/css" href="/Public/Mc/css/css/style.css"/>
+	    <link rel="stylesheet" type="text/css" href="/Public/Mc/lib/mui/fonts/iconfont.css"/>
+	    
+		
+	</head>
+	<script type="text/javascript" charset="utf-8">
+      	mui.init();
+   </script>
+	
+	<body class="mui-ios mui-ios-9 mui-ios-9-1">
+		
+		<include file="./Tm/Mc/Footer.html" />
+		<div class="mui-content">
+			
+<!--首页-->
+<style>
+	.mui-bar-nav{
+		box-shadow: none;
+	}
+</style>
+		
+		<div class="m_contai">
+			<div id="tabbar" class="mui-control-content mui-active">
+				
+				<header class="mui-bar mui-bar-nav  mui-bar-transparent">
+					<div class="search_box">
+						<form action="/Home/index/shopcar" method="post">
+							<dl>
+								<dt><input class="input_bor_null" type="text" name="k" id="k" value="{$keyword}"  placeholder="请输入你要搜索的内容"  /></dt>
+								<dd><button type="submit"  class="search_but" value="查询" onclick="searchuser();"></button></dd>
+							</dl>
+						</form>
+					</div>
+				</header>
+					
+				
+				<div class="swiper_box1">
+					<div class="swiper-container">
+					  	<div class="swiper-wrapper">
+					  	
+					  	<div class="swiper-slide">
+					    	
+					    		<a href="/Home/index/details.html?id=53"><img src="{$room[3].img}"/></a>
+					    	</div>
+					    	<div class="swiper-slide">
+					    		<a href="/Home/index/details.html?id=52"><img src="{$room[2].img}"/></a>
+					    	</div>
+					    	<div class="swiper-slide">
+					    		<a href="/Home/index/details.html?id=51"><img src="{$room[1].img}"/></a>
+					    	</div>
+					  	</div>
+					  	
+					  	<div class="swiper-pagination"></div>
+					</div>
+				
+				</div>
+				
+				<div class="ggq">
+					<div class="jytj">
+						<div class="box_title">
+							<!--<a href="#tabbar-with-chat" class="mui-tab-item">查看全部 ></a>-->
+						</div>
+						<div class="box_body swiper_box2">
+							<div class="swiper-container">
+						        <div class="swiper-wrapper">
+						        	
+						        <volist name="jr" id="vo" key="i">
+						            <div class="swiper-slide">
+						            	<a href="/Home/index/details.html?id={$vo.id}"><img src="{$vo.pic}"/></a>
+						            	<p class="info">{$vo.productname}</p>
+						            	<p class="mony">￥{$vo.price}</p>
+						            </div>
+						         </volist>
+						        </div>
+						        
+						        <div class="swiper-pagination" style="display: none;"></div>
+						    </div>
+						</div>
+					</div>
+					<div class="jrtj">
+						<div class="box_title">
+							<!--<a href="#tabbar-with-chat" class="mui-tab-item">查看全部 ></a>-->
+							<!--精选优车-->
+						</div>
+						<div class="box_body swiper_box3">
+							<div class="swiper-container">
+						        <div class="swiper-wrapper">
+						        	
+						        	<volist name="jx" id="vo" key="i">
+							            <div class="swiper-slide">
+							            	<a href="/Home/index/details.html?id={$vo.id}"><img src="{$vo.pic}"/></a>
+							            	<p class="info">{$vo.productname}</p>
+							            	<p class="mony">￥{$vo.price}</p>
+							            </div>
+						           </volist>
+						        </div>
+						        <div class="swiper-pagination" style="display: none;"></div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+<!--购车-->
+
+	<!--<script src="../js/mui.min.js"></script>-->
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+	</script>
+	
+	<script>
+		 var swiper = new Swiper('.swiper_box1 .swiper-container', {
+		    	autoplay: 3000,
+		    	loop : true,
+		        pagination: '.swiper-pagination',
+		        paginationClickable: true
+		    });
+		    
+	        var swiper = new Swiper('.swiper_box2 .swiper-container', {
+		        pagination: '.swiper-pagination',
+		    	loop : true,
+		        slidesPerView: 'auto',
+		        paginationClickable: true,
+		        spaceBetween: 20
+		    });
+	        var swiper = new Swiper('.swiper_box3 .swiper-container', {
+		        pagination: '.swiper-pagination',
+		    	loop : true,
+		        slidesPerView: 'auto',
+		        paginationClickable: true,
+		        spaceBetween: 10
+		    });
+		    mui('.mui-bar-tab').on('tap','a',function(){
+	    	document.location.href=this.href;
+	   	 	});
+    	</script>
+</body>
+	
+</html>
+<script src="__PUBLIC__/Mc/home/js/product.js" type="text/javascript" charset="utf-8"></script>
+

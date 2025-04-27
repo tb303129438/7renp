@@ -1,0 +1,74 @@
+.mobile_contai{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url(../images/loginBg.jpg);
+    background-size: contain;
+}
+.login_box{
+	width: 100%;
+	max-width: 220px;
+	margin: 0 auto;    
+	margin-top: 60px;
+}
+.form_box{
+    padding: 20px 16px;
+	background-color: rgba(255,255,255,.1);
+	margin: 30px -30px;
+}
+.form_box > form > div{
+	margin-bottom: 12px;
+}
+.input_gruop{
+	padding: 6px 0;
+	height: 40px;
+	/*line-height: 40px;*/
+	border: 1px solid #fff;
+	position: relative;
+}
+.input_gruop > label{
+	display: inline-block;
+	height: 100%;
+	width: 80px;
+	text-align: right;
+	border-right: 1px solid #fff;
+	padding-right:10px;
+	position: relative;
+	line-height: 26px;
+}
+.input_gruop > label > .icon{
+	position: absolute;
+    left: 5px;
+    top: 1px;
+	font-size: 20px;
+}
+.input_gruop > input{
+	width: 120px;
+    border: none;
+    height: 100%;
+    background-color: transparent;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.icon-zhanghu{
+	line-height: 1;
+}
+.yzm_box{
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+	border-left: 1px solid #fff;
+}
+.btn_gruop input{
+	display: block;
+	width: 100%;
+	height: 40px;
+	border: none;
+	background: -webkit-linear-gradient(top,#5cb0ff,#034f96);
+    font-size: 16px;
+    border-radius: 4px;
+}

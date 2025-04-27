@@ -1,0 +1,60 @@
+<include file="./Tm/Dt/Admin/Top.html" />
+
+<include file="./Tm/Dt/Admin/Left.html" />
+
+<!--页面右侧内容块-->
+<!--顶部信息栏-->
+<div id="right">
+<include file="./Tm/Dt/Admin/Nav.html" />
+    <!--主要内容块-->
+    <div class="main">
+        <div class="panel panel-primary">
+        	<div class="panel-heading">
+	        	<h3 class="panel-title">会员信息</h3>
+	      	</div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th class="text-center">总会员数</th>
+                            <th class="text-center">已开通会员数</th>
+                            <th class="text-center">未开通会员数</th>
+                            <th class="text-center">今日新增会员数</th>
+                        </tr>
+                        
+
+                        <tr class="text-center">
+                            <td>{$room.usertotal}</td>
+                            <td>{$room.usertotal1}</td>
+                            <td>{$room.usertotal2}</td>
+                            <td>{$room.usertotal3}</td>
+                        </tr>
+                    </table>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th class="text-center">今日业绩</th>
+                            <th class="text-center">今日推广积分</th>
+                            <th class="text-center">今日消费积分</th>
+                          
+                        </tr>
+                        
+
+                        <tr class="text-center">
+                            <td>{$room.usertotal4}</td>
+                            <td>{$room['usertotal5']}</td>
+                            <td>{$room['usertotal6']}</td>
+                          
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+       
+    </div>
+</div>
+<!--手机导航-->
+
+
+
+<include file="./Tm/Dt/Admin/Foot.html" />
